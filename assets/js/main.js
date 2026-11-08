@@ -34,6 +34,7 @@ const translations = {
     section_products_badge: "ÜRETİM & SİSTEMLER",
     section_products_title: "Geliştirdiğimiz Sistemler",
     section_products_desc: "Tolerans sınırlarını zorlayan, yüksek çalışma süreli ve verimlilik odaklı endüstriyel makineler.",
+    btn_view_3d: "3D CAD Modelini İncele",
     
     // Product 1
     p1_tag: "SERİ FM-1 • METROLOJİ",
@@ -42,25 +43,29 @@ const translations = {
     p1_f1: "Hassasiyet: ±0.002 mm (±2 mikron) tekrarlanabilirlik",
     p1_f2: "Donanım: Çift çekirdek ESP32-P4 ve yüksek hızlı DSP",
     p1_f3: "Entegrasyon: Kapalı çevrim çekici hız geri beslemesi",
-    p1_btn: "FM-1 Detay ve Teklif",
+    p1_btn: "FM-1 Teklif Al",
 
     // Product 2
     p2_tag: "SERİ WG-AERO • YENİLENEBİLİR ENERJİ",
-    p2_title: "Kanallı Aerodinamik Rüzgar Jeneratörü",
+    p2_title: "Kanallı Aerodinamik Rüzgar Jeneratörü (2x2)",
     p2_desc: "Altıgenden kareye geçişli difüzör kanal geometrisi ile tasarlanmış, sınır tabaka hızlandırmalı mikro rüzgar türbini. Düşük rüzgarda yüksek tork ve güç katsayısı.",
     p2_f1: "Aerodinamik: Venturi kanallı hava akış ivmelendirmesi",
     p2_f2: "Başlama Hızı: < 1.8 m/s ultra düşük kalkış",
     p2_f3: "Uygulama: Mikroşebekeler, telekom, endüstriyel çatı sistemleri",
-    p2_btn: "WG-Aero Detay ve Teklif",
+    p2_btn: "WG-Aero Teklif Al",
 
     // Product 3
-    p3_tag: "SERİ SH-MK • GERİ DÖNÜŞÜM & İŞLEME",
-    p3_title: "Yüksek Torklu Endüstriyel Parçalayıcı",
+    p3_tag: "SERİ SH-MK8 • GERİ DÖNÜŞÜM & İŞLEME",
+    p3_title: "Yüksek Torklu Endüstriyel Parçalayıcı (MK8)",
     p3_desc: "Polimer atıkları, filament fireleri ve teknik kompozitlerin boyut küçültmesi için geliştirilmiş çift şaftlı endüstriyel parçalayıcı. ANSYS statik mukavemet (FEA) onaylı.",
-    p3_f1: "Bıçaklar: CNC hassas işlenmiş sertleştirilmiş takım çeliği (Bıçak A-F)",
+    p3_f1: "Bıçaklar: CNC hassas işlenmiş sertleştirilmiş takım çeliği",
     p3_f2: "Doğrulama: ANSYS ile statik ve dinamik gerilme analizi",
     p3_f3: "Tahrik: Planet redüktör ve sıkışma önleyici otomatik geri sarma",
-    p3_btn: "SH-MK Detay ve Teklif",
+    p3_btn: "SH-MK8 Teklif Al",
+
+    // 3D Modal
+    modal_3d_title: "İnteraktif 3D CAD Modeli",
+    modal_3d_hint: "Modeli fareniz veya dokunmatik ekranınızla 360° çevirebilir ve yakınlaştırabilirsiniz.",
 
     // Capabilities Section
     cap_badge: "MÜHENDİSLİK YETKİNLİKLERİ",
@@ -89,9 +94,9 @@ const translations = {
     contact_title: "Projeniz İçin Mühendislik Desteği Alın",
     contact_desc: "Hassas ölçüm sistemleri, rüzgar enerjisi çözümleri veya özel makine talepleriniz için doğrudan bize ulaşın.",
     form_machine_label: "İlgilendiğiniz Sistem",
-    form_machine_opt1: "Optik Filament Çap Ölçüm Cihazı (FM-1)",
-    form_machine_opt2: "Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero)",
-    form_machine_opt3: "Yüksek Torklu Endüstriyel Parçalayıcı (SH-MK)",
+    form_machine_opt1: "Optik Filament Çap Ölçüm Cihazı (FM-1 / Assembly V2.0)",
+    form_machine_opt2: "Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero / 2x2)",
+    form_machine_opt3: "Yüksek Torklu Endüstriyel Parçalayıcı (SH-MK8)",
     form_machine_opt4: "Özel Makine Tasarımı / Mühendislik Danışmanlığı",
     form_name: "Adınız Soyadınız",
     form_company: "Firma / Kurum",
@@ -137,6 +142,7 @@ const translations = {
     section_products_badge: "PRODUCTION & SYSTEMS",
     section_products_title: "Engineered Machinery Portfolio",
     section_products_desc: "Built to push tolerance limits, maximize uptime, and deliver consistent industrial performance.",
+    btn_view_3d: "Inspect 3D CAD Model",
     
     // Product 1
     p1_tag: "SERIES FM-1 • METROLOGY",
@@ -145,25 +151,29 @@ const translations = {
     p1_f1: "Precision: ±0.002 mm (±2 microns) repeatability",
     p1_f2: "Hardware: Dual-core ESP32-P4 & high-speed DSP",
     p1_f3: "Control: Closed-loop puller speed feedback",
-    p1_btn: "FM-1 Specs & Quote",
+    p1_btn: "Request FM-1 Quote",
 
     // Product 2
     p2_tag: "SERIES WG-AERO • RENEWABLE ENERGY",
-    p2_title: "Ducted Aerodynamic Wind Generator",
+    p2_title: "Ducted Aerodynamic Wind Generator (2x2)",
     p2_desc: "Diffuser-augmented micro wind turbine featuring a hexagonal-to-square ducted shroud. Accelerates boundary layer airflow for exceptional low-wind startup torque and power density.",
     p2_f1: "Aerodynamics: Venturi ducted airflow acceleration",
     p2_f2: "Cut-in Speed: < 1.8 m/s ultra-low startup",
     p2_f3: "Applications: Microgrids, telecom towers, industrial rooftops",
-    p2_btn: "WG-Aero Specs & Quote",
+    p2_btn: "Request WG-Aero Quote",
 
     // Product 3
-    p3_tag: "SERIES SH-MK • MATERIAL PROCESSING",
-    p3_title: "High-Torque Industrial Shredder",
+    p3_tag: "SERIES SH-MK8 • MATERIAL PROCESSING",
+    p3_title: "High-Torque Industrial Shredder (MK8)",
     p3_desc: "Heavy-duty dual-shaft shredder built for polymers, production scraps, and technical composites. Verified with comprehensive ANSYS finite element stress analysis (FEA).",
-    p3_f1: "Blades: CNC-profiled hardened alloy tool steel (Blades A-F)",
+    p3_f1: "Blades: CNC-profiled hardened alloy tool steel",
     p3_f2: "Validation: Full ANSYS static and dynamic structural FEA",
     p3_f3: "Drive: High-reduction planetary gear with anti-jam reverse",
-    p3_btn: "SH-MK Specs & Quote",
+    p3_btn: "Request SH-MK8 Quote",
+
+    // 3D Modal
+    modal_3d_title: "Interactive 3D CAD Model",
+    modal_3d_hint: "Rotate 360° and zoom using your mouse or touch gestures.",
 
     // Capabilities Section
     cap_badge: "ENGINEERING RIGOR",
@@ -192,9 +202,9 @@ const translations = {
     contact_title: "Request Engineering Specifications",
     contact_desc: "Get in touch directly with our engineering team for customized metrology, renewable generation, or custom machinery.",
     form_machine_label: "Target Machine System",
-    form_machine_opt1: "Optical Filament Diameter Gauge (FM-1)",
-    form_machine_opt2: "Ducted Aerodynamic Wind Generator (WG-Aero)",
-    form_machine_opt3: "High-Torque Industrial Shredder (SH-MK)",
+    form_machine_opt1: "Optical Filament Diameter Gauge (FM-1 / Assembly V2.0)",
+    form_machine_opt2: "Ducted Aerodynamic Wind Generator (WG-Aero / 2x2)",
+    form_machine_opt3: "High-Torque Industrial Shredder (SH-MK8)",
     form_machine_opt4: "Custom Machine Design / Engineering Consultation",
     form_name: "Full Name",
     form_company: "Company / Organization",
@@ -249,21 +259,16 @@ function setLanguage(lang) {
  * Automatic Location / Browser Language Detection
  */
 async function detectUserLanguage() {
-  // 1. Saved preference takes precedence
   const saved = localStorage.getItem('aph_lang');
   if (saved && (saved === 'tr' || saved === 'en')) {
     setLanguage(saved);
     return;
   }
 
-  // 2. Browser language check (instant, zero delay)
   const navLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
   let detected = navLang.startsWith('tr') ? 'tr' : 'en';
-
-  // Apply initial detection immediately to avoid content flashing
   setLanguage(detected);
 
-  // 3. Asynchronous IP Geolocation verification (checks if visitor is in Turkey)
   try {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 1800);
@@ -273,15 +278,12 @@ async function detectUserLanguage() {
     if (res.ok) {
       const data = await res.json();
       if (data.country_code === 'TR') {
-        // If not explicitly overridden by user, set to TR
         if (!localStorage.getItem('aph_lang')) {
           setLanguage('tr');
         }
       }
     }
-  } catch (err) {
-    // Network/timeout fallback is harmless, keep browser detection
-  }
+  } catch (err) {}
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -314,6 +316,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Interactive 3D Model Modal
+  const modal3D = document.getElementById('modal3D');
+  const modelViewer = document.getElementById('cadModelViewer');
+  const modal3DTitle = document.getElementById('modal3DTitle');
+  const close3DBtn = document.getElementById('close3DBtn');
+
+  const open3D = (modelSrc, titleText) => {
+    if (modal3D && modelViewer) {
+      modelViewer.src = modelSrc;
+      if (modal3DTitle) modal3DTitle.textContent = titleText;
+      modal3D.classList.remove('hidden');
+      modal3D.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const close3D = () => {
+    if (modal3D) {
+      modal3D.classList.add('hidden');
+      modal3D.classList.remove('flex');
+      document.body.style.overflow = '';
+      if (modelViewer) modelViewer.src = '';
+    }
+  };
+
+  document.querySelectorAll('[data-model-src]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const src = btn.getAttribute('data-model-src');
+      const title = btn.getAttribute('data-model-title') || '3D CAD Model';
+      open3D(src, title);
+    });
+  });
+
+  if (close3DBtn) close3DBtn.addEventListener('click', close3D);
+  if (modal3D) {
+    modal3D.addEventListener('click', (e) => {
+      if (e.target === modal3D) close3D();
+    });
+  }
+
   // Live Optical Filament Measurement Simulator
   const liveReading = document.getElementById('liveReading');
   const liveDeviation = document.getElementById('liveDeviation');
@@ -324,7 +367,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let history = [1.750, 1.751, 1.749, 1.750, 1.752, 1.749, 1.750, 1.751, 1.750, 1.750];
 
     setInterval(() => {
-      const noise = (Math.random() - 0.5) * 0.005; // ±0.0025 mm
+      const noise = (Math.random() - 0.5) * 0.005;
       const val = parseFloat((1.750 + noise).toFixed(3));
       const devMicrons = parseFloat(((val - 1.750) * 1000).toFixed(1));
 
