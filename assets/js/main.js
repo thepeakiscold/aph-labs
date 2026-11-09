@@ -14,7 +14,7 @@ const translations = {
     
     // Hero
     hero_badge: "PRECISION MACHINERY & ADVANCED INSTRUMENTS",
-    hero_title: "Precision Machine Engineering & Industrial Instruments",
+    hero_title: "Precision Engineering & Industrial Instruments",
     hero_desc: "APH Labs engineers high-precision optical instruments, specialized aerodynamic simulation systems, and heavy-duty industrial processing machinery.",
     hero_btn_explore: "Explore Systems",
     hero_btn_contact: "Engineering Inquiry",
@@ -149,7 +149,7 @@ const translations = {
     
     // Hero
     hero_badge: "HASSAS MAKİNE VE ENDÜSTRİYEL CİHAZLAR",
-    hero_title: "Hassas Makine Mühendisliği ve Endüstriyel Cihazlar",
+    hero_title: "Hassas Mühendislik ve Endüstriyel Cihazlar",
     hero_desc: "APH Labs; yüksek hassasiyetli optik ölçüm cihazları, özel aerodinamik simülasyon sistemleri ve ağır hizmet tipi endüstriyel makineler tasarlar ve üretir.",
     hero_btn_explore: "Sistemlerimizi İnceleyin",
     hero_btn_contact: "Mühendislik Talebi",
