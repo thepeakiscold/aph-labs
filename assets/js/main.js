@@ -131,7 +131,7 @@ const translations = {
     form_name_placeholder: "First and Last Name",
     form_company_label: "Company / Organization",
     form_company_placeholder: "Company Name",
-    form_email_label: "Corporate Email Address",
+    form_email_label: "Email Address",
     form_email_placeholder: "engineering@company.com",
     form_notes_label: "Technical Requirements & Project Scope",
     form_notes_placeholder: "Project scope, technical parameters, or specifications...",
@@ -275,7 +275,7 @@ const translations = {
     form_name_placeholder: "Adınız ve Soyadınız",
     form_company_label: "Firma / Kurum",
     form_company_placeholder: "Firma Adı",
-    form_email_label: "Kurumsal E-posta",
+    form_email_label: "E-posta",
     form_email_placeholder: "muhendislik@firma.com",
     form_notes_label: "Teknik Talepler & Açıklamalar",
     form_notes_placeholder: "Proje kapsamı veya teknik gereksinimler...",
@@ -430,7 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Target System": targetSystem,
         "Contact Person": fullName,
         "Company / Organization": company,
-        "Corporate Email": email,
+        "Email Address": email,
         "Technical Scope & Requirements": notes,
         "Direct Phone Line": "+90 552 128 06 17"
       };
