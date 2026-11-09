@@ -432,7 +432,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Company / Organization": company,
         "Email Address": email,
         "Technical Scope & Requirements": notes,
-        "Direct Phone Line": "+90 552 128 06 17"
+        "Direct Phone Line": "+90 553 821 62 99"
       };
 
       try {
