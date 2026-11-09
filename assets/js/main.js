@@ -25,19 +25,19 @@ const translations = {
 
     // System 1: Filament Gauge
     p1_tag: "METROLOGY & QUALITY INSPECTION",
-    p1_title: "Optical Filament Diameter Gauge (FM-1)",
+    p1_title: "Optical Filament Diameter Gauge",
     p1_desc: "Non-contact dual-axis optical measurement system developed for precision filament extrusion lines. Delivers sub-micron repeatability and dedicated high-frequency embedded DSP processing for accurate tolerance verification.",
     p1_btn: "Request Specifications",
 
     // System 2: Aerodynamic Generator
     p2_tag: "AERODYNAMIC SIMULATION & FLOW SYSTEMS",
-    p2_title: "Ducted Aerodynamic Flow Generator (2x2)",
+    p2_title: "Ducted Aerodynamic Flow Generator",
     p2_desc: "Specialized diffuser-augmented ducted flow system engineered for aerodynamic simulations, wind tunnel experiments, and boundary-layer fluid flow research, delivering controlled velocity profiles.",
     p2_btn: "Request Specifications",
 
     // System 3: Shredder
     p3_tag: "INDUSTRIAL PROCESSING",
-    p3_title: "Single-Shaft Industrial Shredder (SH-MK8)",
+    p3_title: "Single-Shaft Industrial Shredder",
     p3_desc: "Heavy-duty single-shaft shredder engineered for technical polymers, composite materials, and production scrap reduction. Equipped with hardened cutting tools and a high-reduction planetary drive.",
     p3_btn: "Request Specifications",
 
@@ -57,9 +57,9 @@ const translations = {
     contact_title: "Direct Engineering Inquiries",
     contact_desc: "Contact our engineering group directly regarding machinery specifications, custom engineering, or technical collaboration.",
     form_machine_label: "Target System",
-    form_machine_opt1: "Optical Filament Diameter Gauge (FM-1)",
-    form_machine_opt2: "Ducted Aerodynamic Flow Generator (2x2)",
-    form_machine_opt3: "Single-Shaft Industrial Shredder (SH-MK8)",
+    form_machine_opt1: "Optical Filament Diameter Gauge",
+    form_machine_opt2: "Ducted Aerodynamic Flow Generator",
+    form_machine_opt3: "Single-Shaft Industrial Shredder",
     form_machine_opt4: "Custom Engineering Consultation / Other",
     form_name_label: "Full Name",
     form_name_placeholder: "First and Last Name",
@@ -101,19 +101,19 @@ const translations = {
 
     // System 1: Filament Gauge
     p1_tag: "METROLOJİ & KALİTE KONTROL",
-    p1_title: "Optik Filament Çap Ölçüm Cihazı (FM-1)",
+    p1_title: "Optik Filament Çap Ölçüm Cihazı",
     p1_desc: "Hassas filament ekstrüzyon hatları için geliştirilmiş temassız çift eksenli optik ölçüm cihazı. Yüksek frekanslı optik algılama ve özel DSP işlemci mimarisiyle sub-mikron tekrarlanabilirlik ve kararlı tolerans denetimi sağlar.",
     p1_btn: "Detay ve Şartname",
 
     // System 2: Aerodynamic Generator
     p2_tag: "AERODİNAMİK SİMÜLASYON & AKIŞ SİSTEMLERİ",
-    p2_title: "Kanallı Aerodinamik Akış Jeneratörü (2x2)",
+    p2_title: "Kanallı Aerodinamik Akış Jeneratörü",
     p2_desc: "Aerodinamik simülasyonlar, rüzgar tüneli deneyleri ve sınır tabaka akış modellemeleri için geliştirilmiş difüzör kanallı akış sistemi. Kontrollü hava hızı profilleri ve hassas akışkanlar mekaniği test koşulları sunar.",
     p2_btn: "Detay ve Şartname",
 
     // System 3: Shredder
     p3_tag: "ENDÜSTRİYEL İŞLEME",
-    p3_title: "Tek Şaftlı Endüstriyel Parçalayıcı (SH-MK8)",
+    p3_title: "Tek Şaftlı Endüstriyel Parçalayıcı",
     p3_desc: "Teknik polimerler, kompozit malzemeler ve üretim firelerinin boyut küçültmesi için geliştirilmiş tek şaftlı endüstriyel kırma makinesi. Hassas işlenmiş kesici uçlar, yüksek torklu planet tahrik ve kesintisiz çalışma stabilitesi sunar.",
     p3_btn: "Detay ve Şartname",
 
@@ -133,9 +133,9 @@ const translations = {
     contact_title: "Projeniz İçin Doğrudan İletişime Geçin",
     contact_desc: "Özel makine tasarımı, metroloji entegrasyonu veya teknik şartnameler için bizimle bağlantı kurun.",
     form_machine_label: "İlgilendiğiniz Sistem",
-    form_machine_opt1: "Optik Filament Çap Ölçüm Cihazı (FM-1)",
-    form_machine_opt2: "Kanallı Aerodinamik Akış Jeneratörü (2x2)",
-    form_machine_opt3: "Tek Şaftlı Endüstriyel Parçalayıcı (SH-MK8)",
+    form_machine_opt1: "Optik Filament Çap Ölçüm Cihazı",
+    form_machine_opt2: "Kanallı Aerodinamik Akış Jeneratörü",
+    form_machine_opt3: "Tek Şaftlı Endüstriyel Parçalayıcı",
     form_machine_opt4: "Özel Mühendislik Danışmanlığı / Diğer",
     form_name_label: "Adınız Soyadınız",
     form_name_placeholder: "Adınız ve Soyadınız",
