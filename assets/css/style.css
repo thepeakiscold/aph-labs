@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  --burgundy-primary: #7A0C2E;
-  --burgundy-hover: #5F0923;
-  --burgundy-dark: #450517;
-  --burgundy-accent: #9B1B40;
+  /* Calibrated directly against official APH Labs emblem & typography */
+  --burgundy-primary: #6D0E2A;
+  --burgundy-hover: #520A1F;
+  --burgundy-dark: #3B0616;
+  --burgundy-accent: #8E1337;
   --burgundy-subtle: #FDF4F6;
-  --burgundy-border: #F1CCD4;
-  --burgundy-glow: rgba(122, 12, 46, 0.08);
+  --burgundy-border: #F4CBD3;
+  --burgundy-glow: rgba(109, 14, 42, 0.09);
   
   --bg-main: #FFFFFF;
-  --bg-neutral: #F8FAFC;
+  --bg-neutral: #FAFAFA;
   --border-color: #E2E8F0;
   --border-subtle: #F1F5F9;
   
   --text-primary: #0F172A;
   --text-secondary: #475569;
+  --text-graphite: #4A4A49;
   --text-muted: #64748B;
   
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -71,7 +73,7 @@ body {
 .btn-burgundy:hover {
   background-color: var(--burgundy-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(122, 12, 46, 0.25);
+  box-shadow: 0 4px 14px rgba(109, 14, 42, 0.28);
 }
 
 .btn-outline {
@@ -133,7 +135,7 @@ body {
 
 /* Studio Showcase Frames for Large Renderings */
 .studio-frame {
-  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f8fafc 100%);
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #fafafa 100%);
   border: 1px solid var(--border-color);
   border-radius: 1.25rem;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
