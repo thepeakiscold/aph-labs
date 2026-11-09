@@ -1,5 +1,5 @@
 /* APH LABS — Executive Minimalist Bordo & Beyaz (Burgundy & White) Theme */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
   --burgundy-primary: #7A0C2E;
@@ -93,17 +93,17 @@ body {
   background-color: var(--burgundy-subtle);
 }
 
-/* Clean Product & Feature Cards */
+/* Executive Cards */
 .executive-card {
   background: #FFFFFF;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: 10px;
   transition: all 0.25s ease;
 }
 
 .executive-card:hover {
   border-color: var(--burgundy-border);
-  box-shadow: 0 12px 30px -10px var(--burgundy-glow);
+  box-shadow: 0 16px 36px -12px var(--burgundy-glow);
 }
 
 /* Language Switcher */
@@ -129,4 +129,47 @@ body {
 .lang-toggle-btn:not(.active):hover {
   color: var(--burgundy-primary);
   background-color: var(--burgundy-subtle);
+}
+
+/* Specs Accordion Styling */
+details.spec-drawer summary::-webkit-details-marker {
+  display: none;
+}
+
+details.spec-drawer summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+details.spec-drawer[open] summary svg {
+  transform: rotate(180deg);
+}
+
+/* Spec Data Row */
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid #F1F5F9;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.spec-row:last-child {
+  border-bottom: none;
+}
+
+.spec-key {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.spec-val {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: right;
 }
