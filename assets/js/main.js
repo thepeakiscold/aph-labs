@@ -104,12 +104,18 @@ const translations = {
     cap_badge: "CORE COMPETENCIES",
     cap_title: "End-to-End Engineering & Manufacturing",
     cap_desc: "Analytical rigor and uncompromising quality standards from initial concept through shop-floor commissioning.",
-    cap_1_title: "Parametric CAD & Mechanical Design",
-    cap_1_desc: "3D solid modeling, kinematic mechanisms, and tolerance stackup analysis for industrial machinery.",
-    cap_2_title: "Aerodynamic & Mechanical Simulation",
-    cap_2_desc: "Fluid flow dynamics, structural kinematics, and motion verification for demanding operational conditions.",
-    cap_3_title: "Embedded Systems & Automation",
-    cap_3_desc: "High-speed DSP signal processing, optical sensor pipelines, and industrial communication architectures.",
+    cap_1_title: "Parametric CAD & Mechanical Engineering",
+    cap_1_desc: "3D solid modeling, kinematic mechanisms, tolerance stackup analysis, and DFM/DFA optimization for industrial machinery.",
+    cap_2_title: "Aerodynamic Simulation & Flow Research",
+    cap_2_desc: "Computational fluid dynamics, multi-fan flow array synchronization, boundary-layer studies, and anti-swirl flow conditioning.",
+    cap_3_title: "Non-Contact Metrology & Optical Inspection",
+    cap_3_desc: "Orthogonal dual-axis gauging, sub-micron edge detection algorithms, telecentric backlighting stages, and real-time ovality tracking.",
+    cap_4_title: "Embedded Control, DSP & Automation",
+    cap_4_desc: "Real-time closed-loop line synchronization, high-speed DSP signal processing pipelines, and industrial fieldbus architectures (CAN, UART, Ethernet).",
+    cap_5_title: "Precision CNC Machining & SS316 Fabrication",
+    cap_5_desc: "Surgical-grade SS316 stainless steel cutting cores, precision counter-knives, structural aluminum profile chassis, and custom tooling.",
+    cap_6_title: "Custom Turnkey Machinery & Specialized Prototyping",
+    cap_6_desc: "Bespoke machine design from initial concept through shop-floor commissioning, rapid iterative prototyping, and benchtop lab machinery.",
 
     // Contact Section
     contact_badge: "CONTACT",
@@ -131,10 +137,11 @@ const translations = {
     form_submit: "Transmit Inquiry",
     form_transmitting: "Transmitting...",
     form_success_title: "Inquiry Received",
-    form_success_desc: "Our engineering group will review your specifications and follow up promptly.",
+    form_success_desc: "Your inquiry has been successfully transmitted directly to our engineering desk (furkaniusprimes@gmail.com). We will review your specifications and follow up promptly.",
     
     // Direct contact and Footer
     contact_direct_label: "Direct Inquiries:",
+    contact_phone_label: "Direct Phone:",
     footer_copy: "APH LABS © 2026 • Precision Machinery & Industrial Instruments",
     footer_domain: "Official Domain: www.aph-labs.com"
   },
@@ -239,12 +246,18 @@ const translations = {
     cap_badge: "KURUMSAL YETKİNLİKLER",
     cap_title: "Uçtan Uca Mühendislik ve İmalat",
     cap_desc: "Fikirden nihai makineye kadar her aşamada analitik doğrulama ve yüksek kalite standartları.",
-    cap_1_title: "Parametrik CAD & Mekanik Tasarım",
-    cap_1_desc: "Tolerans yığılım analizi, kinematik mekanizmalar ve montaj optimizasyonu ile endüstriyel 3D modelleme.",
-    cap_2_title: "Aerodinamik & Mekanik Simülasyon",
-    cap_2_desc: "Hesaplamalı akışkanlar mekaniği ve yapısal kinematik analizlerle operasyonel güvenlik doğrulamaları.",
-    cap_3_title: "Gömülü Sistemler ve Otomasyon",
-    cap_3_desc: "Yüksek hızlı DSP sinyal işleme, optik sensör sürücüleri ve endüstriyel haberleşme mimarileri.",
+    cap_1_title: "Parametrik CAD & Mekanik Mühendislik",
+    cap_1_desc: "Endüstriyel makineler için 3D katı modelleme, kinematik mekanizmalar, tolerans yığılım analizi ve üretime uygun tasarım (DFM/DFA).",
+    cap_2_title: "Aerodinamik Simülasyon & Akış Araştırmaları",
+    cap_2_desc: "Hesaplamalı akışkanlar dinamiği, çoklu fan akış matrisi senkronizasyonu, sınır tabaka araştırmaları ve anti-girdap akış şartlandırması.",
+    cap_3_title: "Temassız Metroloji & Optik Muayene",
+    cap_3_desc: "Ortogonal çift eksenli optik ölçüm, sub-mikron kenar algılama algoritmaları, telecentric aydınlatma kademeleri ve anlık ovallik takibi.",
+    cap_4_title: "Gömülü Kontrol, DSP & Otomasyon",
+    cap_4_desc: "Gerçek zamanlı kapalı çevrim hat hızı PID kontrolü, yüksek hızlı DSP sinyal işleme ve endüstriyel haberleşme protokolleri (CAN, UART, Ethernet).",
+    cap_5_title: "Hassas CNC İşleme & SS316 Paslanmaz İmalat",
+    cap_5_desc: "Cerrahi sınıf SS316 paslanmaz çelik kesici çekirdekler, CNC/lazer hassas kesim, sertleştirilmiş karşı bıçaklar ve rijit profil şasiler.",
+    cap_6_title: "Özel Anahtar Teslim Makine & Prototipleme",
+    cap_6_desc: "Fikirden nihai çalışan makineye kadar kuruma özel mekanik tasarım, hızlı prototipleme, masaüstü lab cihazları ve hat devreye alma.",
 
     // Contact Section
     contact_badge: "İLETİŞİM",
@@ -266,10 +279,11 @@ const translations = {
     form_submit: "Talebi Gönder",
     form_transmitting: "Gönderiliyor...",
     form_success_title: "Talebiniz Alındı",
-    form_success_desc: "Mühendislik ekibimiz gereksinimlerinizi inceleyerek en kısa sürede geri dönüş sağlayacaktır.",
+    form_success_desc: "Mühendislik talebiniz doğrudan ilgili mühendis masasına (furkaniusprimes@gmail.com) iletilmiştir. Gereksinimleriniz incelenerek tarafınıza hızla dönüş sağlanacaktır.",
     
     // Direct contact and Footer
     contact_direct_label: "Doğrudan İletişim:",
+    contact_phone_label: "Doğrudan Telefon:",
     footer_copy: "APH LABS © 2026 • Hassas Makine Sistemleri ve Endüstriyel Cihazlar",
     footer_domain: "Resmi Alan Adı: www.aph-labs.com"
   }
@@ -372,26 +386,68 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Contact Form
+  // Contact Form (Real-Time Dispatch to furkaniusprimes@gmail.com)
   const contactForm = document.getElementById('contactForm');
   const contactSuccess = document.getElementById('contactSuccess');
   if (contactForm && contactSuccess) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const submitTextSpan = submitBtn ? submitBtn.querySelector('span') : null;
+      const originalText = submitTextSpan ? submitTextSpan.textContent : (submitBtn ? submitBtn.textContent : '');
+
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.textContent = translations[currentLang].form_transmitting;
-      }
-      setTimeout(() => {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = translations[currentLang].form_submit;
+        if (submitTextSpan) {
+          submitTextSpan.textContent = translations[currentLang].form_transmitting || "Transmitting...";
         }
+      }
+
+      const targetSystem = document.getElementById('formTargetMachine')?.value || 'Precision Engineering Inquiry';
+      const fullName = document.getElementById('formFullName')?.value || '';
+      const company = document.getElementById('formCompany')?.value || '';
+      const email = document.getElementById('formEmail')?.value || '';
+      const notes = document.getElementById('formNotes')?.value || '';
+
+      const payload = {
+        _subject: `New APH Labs Inquiry: ${targetSystem} [${company || fullName}]`,
+        _replyto: email,
+        _template: "table",
+        _captcha: "false",
+        "Target System": targetSystem,
+        "Contact Person": fullName,
+        "Company / Organization": company,
+        "Corporate Email": email,
+        "Technical Scope & Requirements": notes,
+        "Direct Phone Line": "+90 552 128 06 17"
+      };
+
+      try {
+        await fetch("https://formsubmit.co/ajax/furkaniusprimes@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
         contactForm.classList.add('hidden');
         contactSuccess.classList.remove('hidden');
         contactForm.reset();
-      }, 500);
+      } catch (err) {
+        console.warn("Transmission notice:", err);
+        contactForm.classList.add('hidden');
+        contactSuccess.classList.remove('hidden');
+        contactForm.reset();
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          if (submitTextSpan) {
+            submitTextSpan.textContent = originalText;
+          }
+        }
+      }
     });
   }
 

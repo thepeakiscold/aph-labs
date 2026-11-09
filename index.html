@@ -64,6 +64,11 @@
 
       <!-- Language Selector & Header Action -->
       <div class="hidden md:flex items-center gap-5">
+        <a href="tel:+905521280617" class="hidden xl:inline-flex items-center gap-1.5 text-xs font-mono font-semibold text-slate-600 hover:text-burgundy-700 transition-colors">
+          <svg class="w-3.5 h-3.5 text-burgundy-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +90 552 128 06 17
+        </a>
+
         <div class="flex items-center border border-slate-200 rounded p-0.5 bg-slate-50 text-xs">
           <button type="button" class="lang-toggle-btn lang-btn-en active">EN</button>
           <button type="button" class="lang-toggle-btn lang-btn-tr">TR</button>
@@ -93,6 +98,10 @@
       <a href="#systems" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_systems">Systems</a>
       <a href="#capabilities" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_capabilities">Capabilities</a>
       <a href="#contact" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_contact">Contact</a>
+      <a href="tel:+905521280617" class="flex items-center gap-2 text-slate-700 hover:text-burgundy-700 text-sm font-mono font-semibold pt-2 border-t border-slate-100">
+        <svg class="w-4 h-4 text-burgundy-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        +90 552 128 06 17
+      </a>
       <a href="#contact" class="btn-burgundy w-full justify-center text-xs mt-2" data-i18n="btn_rfq">Contact Us</a>
     </div>
   </header>
@@ -401,24 +410,42 @@
         <p class="text-slate-600 mt-2 text-base" data-i18n="cap_desc">Analytical rigor and uncompromising quality standards from initial concept through shop-floor commissioning.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
+        <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 hover:border-burgundy-200 hover:shadow-sm transition-all space-y-3">
           <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">01</div>
-          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_1_title">Parametric CAD &amp; Mechanical Design</h3>
-          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_1_desc">3D solid modeling, kinematic mechanisms, and tolerance stackup analysis for industrial machinery.</p>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_1_title">Parametric CAD &amp; Mechanical Engineering</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_1_desc">3D solid modeling, kinematic mechanisms, tolerance stackup analysis, and DFM/DFA optimization for industrial machinery.</p>
         </div>
 
-        <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
+        <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 hover:border-burgundy-200 hover:shadow-sm transition-all space-y-3">
           <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">02</div>
-          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_2_title">Aerodynamic &amp; Mechanical Simulation</h3>
-          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_2_desc">Fluid flow dynamics, structural kinematics, and motion verification for demanding operational conditions.</p>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_2_title">Aerodynamic Simulation &amp; Flow Research</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_2_desc">Computational fluid dynamics, multi-fan flow array synchronization, boundary-layer studies, and anti-swirl flow conditioning.</p>
         </div>
 
-        <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
+        <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 hover:border-burgundy-200 hover:shadow-sm transition-all space-y-3">
           <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">03</div>
-          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_3_title">Embedded Systems &amp; Automation</h3>
-          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_3_desc">High-speed DSP signal processing, optical sensor pipelines, and industrial communication architectures.</p>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_3_title">Non-Contact Metrology &amp; Optical Inspection</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_3_desc">Orthogonal dual-axis gauging, sub-micron edge detection algorithms, telecentric backlighting stages, and real-time ovality tracking.</p>
+        </div>
+
+        <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 hover:border-burgundy-200 hover:shadow-sm transition-all space-y-3">
+          <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">04</div>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_4_title">Embedded Control, DSP &amp; Automation</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_4_desc">Real-time closed-loop line synchronization, high-speed DSP signal processing pipelines, and industrial fieldbus architectures (CAN, UART, Ethernet).</p>
+        </div>
+
+        <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 hover:border-burgundy-200 hover:shadow-sm transition-all space-y-3">
+          <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">05</div>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_5_title">Precision CNC Machining &amp; SS316 Fabrication</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_5_desc">Surgical-grade SS316 stainless steel cutting cores, precision counter-knives, structural aluminum profile chassis, and custom tooling.</p>
+        </div>
+
+        <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 hover:border-burgundy-200 hover:shadow-sm transition-all space-y-3">
+          <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">06</div>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_6_title">Custom Turnkey Machinery &amp; Specialized Prototyping</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_6_desc">Bespoke machine design from initial concept through shop-floor commissioning, rapid iterative prototyping, and benchtop lab machinery.</p>
         </div>
 
       </div>
@@ -442,7 +469,7 @@
         <form id="contactForm" class="space-y-4 text-xs font-mono">
           <div>
             <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_machine_label">Target System</label>
-            <select id="formTargetMachine" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
+            <select id="formTargetMachine" name="Target System" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
               <option value="Optical Filament Diameter Gauge" data-i18n="form_machine_opt1">Optical Filament Diameter Gauge</option>
               <option value="Ducted Aerodynamic Flow Generator" data-i18n="form_machine_opt2">Ducted Aerodynamic Flow Generator</option>
               <option value="Single-Shaft Industrial Shredder" data-i18n="form_machine_opt3">Single-Shaft Industrial Shredder</option>
@@ -453,22 +480,22 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_name_label">Full Name</label>
-              <input type="text" required placeholder="First and Last Name" data-i18n-placeholder="form_name_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
+              <input type="text" id="formFullName" name="Full Name" required placeholder="First and Last Name" data-i18n-placeholder="form_name_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
             </div>
             <div>
               <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_company_label">Company / Organization</label>
-              <input type="text" required placeholder="Company Name" data-i18n-placeholder="form_company_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
+              <input type="text" id="formCompany" name="Company" required placeholder="Company Name" data-i18n-placeholder="form_company_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
             </div>
           </div>
 
           <div>
             <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_email_label">Corporate Email Address</label>
-            <input type="email" required placeholder="engineering@company.com" data-i18n-placeholder="form_email_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
+            <input type="email" id="formEmail" name="Email" required placeholder="engineering@company.com" data-i18n-placeholder="form_email_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
           </div>
 
           <div>
             <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_notes_label">Technical Requirements &amp; Project Scope</label>
-            <textarea rows="3" placeholder="Project scope, technical parameters, or specifications..." data-i18n-placeholder="form_notes_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm"></textarea>
+            <textarea id="formNotes" name="Technical Scope & Requirements" rows="3" placeholder="Project scope, technical parameters, or specifications..." data-i18n-placeholder="form_notes_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm"></textarea>
           </div>
 
           <button type="submit" class="w-full btn-burgundy justify-center text-sm py-3 mt-2">
@@ -477,18 +504,29 @@
         </form>
 
         <!-- Feedback Confirmation -->
-        <div id="contactSuccess" class="hidden text-center py-10 space-y-3">
+        <div id="contactSuccess" class="hidden text-center py-10 space-y-4">
           <div class="w-12 h-12 rounded-full bg-burgundy-50 border border-burgundy-300 text-burgundy-700 flex items-center justify-center mx-auto">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
           </div>
           <h4 class="text-xl font-bold text-slate-900" data-i18n="form_success_title">Inquiry Received</h4>
-          <p class="text-slate-600 text-xs max-w-sm mx-auto" data-i18n="form_success_desc">Our engineering group will review your specifications and follow up promptly.</p>
+          <p class="text-slate-600 text-xs max-w-md mx-auto" data-i18n="form_success_desc">Your inquiry has been successfully transmitted directly to our engineering desk (furkaniusprimes@gmail.com). We will review your specifications and follow up promptly.</p>
+          <div class="pt-2">
+            <button type="button" onclick="document.getElementById('contactSuccess').classList.add('hidden'); document.getElementById('contactForm').classList.remove('hidden');" class="btn-outline text-xs">
+              <span>Send Another Inquiry</span>
+            </button>
+          </div>
         </div>
 
-        <div class="pt-6 mt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-2">
-          <div>
-            <span data-i18n="contact_direct_label">Direct Inquiries:</span>
-            <a href="mailto:info@aph-labs.com" class="text-burgundy-700 font-semibold hover:underline ml-1">info@aph-labs.com</a>
+        <div class="pt-6 mt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-4">
+          <div class="flex flex-wrap items-center gap-4">
+            <div>
+              <span data-i18n="contact_direct_label">Direct Inquiries:</span>
+              <a href="mailto:info@aph-labs.com" class="text-burgundy-700 font-semibold hover:underline ml-1">info@aph-labs.com</a>
+            </div>
+            <div class="flex items-center">
+              <span data-i18n="contact_phone_label">Direct Phone:</span>
+              <a href="tel:+905521280617" class="text-burgundy-700 font-semibold hover:underline ml-1">+90 552 128 06 17</a>
+            </div>
           </div>
           <div data-i18n="footer_domain">Official Domain: www.aph-labs.com</div>
         </div>
@@ -508,7 +546,11 @@
         <span class="text-white font-bold tracking-wider" data-i18n="footer_copy">APH LABS © 2026 • Precision Machinery &amp; Industrial Instruments</span>
       </div>
 
-      <div class="flex items-center gap-6 text-slate-400">
+      <div class="flex flex-wrap items-center gap-6 text-slate-400">
+        <a href="tel:+905521280617" class="hover:text-white transition-colors flex items-center gap-1.5 text-slate-300">
+          <svg class="w-3.5 h-3.5 text-burgundy-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +90 552 128 06 17
+        </a>
         <a href="#systems" class="hover:text-white transition-colors" data-i18n="nav_systems">Systems</a>
         <a href="#capabilities" class="hover:text-white transition-colors" data-i18n="nav_capabilities">Capabilities</a>
         <a href="#contact" class="hover:text-white transition-colors" data-i18n="nav_contact">Contact</a>
