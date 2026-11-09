@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>APH Labs | Precision Machinery &amp; Industrial Metrology</title>
-  <meta name="description" content="APH Labs designs and manufactures specialized industrial machinery, high-precision optical metrology instrumentation, and clean energy systems.">
+  <meta name="description" content="APH Labs designs and manufactures specialized industrial machinery, high-precision optical metrology instrumentation, and aerodynamic flow simulation systems.">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -40,7 +40,7 @@
   <header class="fixed top-0 left-0 right-0 z-50 nav-blur">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Brand Mark -->
+      <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-3 group">
         <div class="w-10 h-10 rounded-lg bg-burgundy-700 flex items-center justify-center text-white shadow-sm group-hover:bg-burgundy-800 transition-colors">
           <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -55,32 +55,31 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
+      <!-- Desktop Navigation Links -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-        <a href="#systems" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_systems">Sistemler</a>
-        <a href="#capabilities" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_capabilities">Yetkinlikler</a>
-        <a href="#contact" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_contact">İletişim</a>
+        <a href="#systems" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_systems">Systems</a>
+        <a href="#capabilities" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_capabilities">Capabilities</a>
+        <a href="#contact" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_contact">Contact</a>
       </nav>
 
-      <!-- Language & Contact Action -->
+      <!-- Language Selector & Header Action -->
       <div class="hidden md:flex items-center gap-5">
-        <!-- TR / EN Switcher -->
         <div class="flex items-center border border-slate-200 rounded p-0.5 bg-slate-50 text-xs">
-          <button type="button" class="lang-toggle-btn lang-btn-tr active">TR</button>
-          <button type="button" class="lang-toggle-btn lang-btn-en">EN</button>
+          <button type="button" class="lang-toggle-btn lang-btn-en active">EN</button>
+          <button type="button" class="lang-toggle-btn lang-btn-tr">TR</button>
         </div>
 
         <a href="#contact" class="btn-burgundy text-xs py-2 px-4">
-          <span data-i18n="btn_rfq">İletişime Geçin</span>
+          <span data-i18n="btn_rfq">Contact Us</span>
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
       </div>
 
-      <!-- Mobile Menu Button -->
+      <!-- Mobile Navigation Hamburger -->
       <div class="flex items-center gap-3 md:hidden">
         <div class="flex items-center border border-slate-200 rounded p-0.5 bg-slate-50 text-xs">
-          <button type="button" class="lang-toggle-btn lang-btn-tr active text-[10px] px-1.5 py-0.5">TR</button>
-          <button type="button" class="lang-toggle-btn lang-btn-en text-[10px] px-1.5 py-0.5">EN</button>
+          <button type="button" class="lang-toggle-btn lang-btn-en active text-[10px] px-1.5 py-0.5">EN</button>
+          <button type="button" class="lang-toggle-btn lang-btn-tr text-[10px] px-1.5 py-0.5">TR</button>
         </div>
         <button id="mobileMenuBtn" class="p-2 text-slate-600 hover:text-slate-900 focus:outline-none" aria-label="Toggle Navigation">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -91,37 +90,37 @@
 
     <!-- Mobile Drawer -->
     <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 shadow-lg">
-      <a href="#systems" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_systems">Sistemler</a>
-      <a href="#capabilities" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_capabilities">Yetkinlikler</a>
-      <a href="#contact" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_contact">İletişim</a>
-      <a href="#contact" class="btn-burgundy w-full justify-center text-xs mt-2" data-i18n="btn_rfq">İletişime Geçin</a>
+      <a href="#systems" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_systems">Systems</a>
+      <a href="#capabilities" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_capabilities">Capabilities</a>
+      <a href="#contact" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_contact">Contact</a>
+      <a href="#contact" class="btn-burgundy w-full justify-center text-xs mt-2" data-i18n="btn_rfq">Contact Us</a>
     </div>
   </header>
 
-  <!-- Hero Section (Clean, Impactful Executive Header) -->
+  <!-- Hero Section -->
   <section class="pt-40 pb-24 lg:pt-48 lg:pb-32 border-b border-slate-100">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
       
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-burgundy-50 border border-burgundy-200 text-xs font-mono text-burgundy-800">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-burgundy-50 border border-burgundy-200 text-xs font-mono text-burgundy-800">
         <span class="w-2 h-2 rounded-full bg-burgundy-700"></span>
-        <span data-i18n="hero_badge">ENDÜSTRİYEL SİSTEMLER VE METROLOJİ</span>
+        <span data-i18n="hero_badge">PRECISION MACHINERY &amp; ADVANCED METROLOGY</span>
       </div>
 
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.12]" data-i18n="hero_title">
-        Hassas Makine Mühendisliği ve İleri Metroloji
+        Precision Machine Engineering &amp; Industrial Metrology
       </h1>
 
       <p class="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed" data-i18n="hero_desc">
-        APH Labs; yüksek hassasiyetli optik metroloji cihazları, aerodinamik enerji sistemleri ve ağır hizmet tipi endüstriyel makineler tasarlar ve üretir.
+        APH Labs engineers high-precision optical metrology equipment, specialized aerodynamic simulation systems, and heavy-duty industrial processing machinery.
       </p>
 
       <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
         <a href="#systems" class="btn-burgundy">
-          <span data-i18n="hero_btn_explore">Sistemlerimizi İnceleyin</span>
+          <span data-i18n="hero_btn_explore">Explore Systems</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </a>
         <a href="#contact" class="btn-outline">
-          <span data-i18n="hero_btn_contact">Mühendislik Talebi</span>
+          <span data-i18n="hero_btn_contact">Engineering Inquiry</span>
           <svg class="w-4 h-4 text-burgundy-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
       </div>
@@ -129,77 +128,77 @@
     </div>
   </section>
 
-  <!-- Systems Portfolio (High-res Studio Renders, Clean Presentation) -->
+  <!-- Systems Portfolio (Clean, Executive Studio Presentations) -->
   <section id="systems" class="py-24 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="max-w-2xl mx-auto text-center mb-16">
-        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="section_systems_badge">MÜHENDİSLİK PORTFÖYÜ</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight" data-i18n="section_systems_title">Öne Çıkan Sistemler</h2>
-        <p class="text-slate-600 mt-2 text-base" data-i18n="section_systems_desc">Yüksek güvenilirlik, dar toleranslar ve endüstriyel standartlar için geliştirilmiş tescilli çözümler.</p>
+        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="section_systems_badge">ENGINEERING PORTFOLIO</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight" data-i18n="section_systems_title">Featured Systems</h2>
+        <p class="text-slate-600 mt-2 text-base" data-i18n="section_systems_desc">Proprietary machinery engineered for demanding industrial environments, tight tolerances, and operational reliability.</p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        <!-- System 1: Optical Filament Gauge -->
+        <!-- System 1: Optical Filament Gauge (FM-1) -->
         <div class="executive-card flex flex-col justify-between overflow-hidden">
           <div>
             <div class="bg-slate-100/80 p-8 flex items-center justify-center border-b border-slate-200">
-              <img src="assets/img/cad/filament_gauge_render.png" alt="Optical Filament Gauge" class="h-60 w-full object-contain">
+              <img src="assets/img/cad/filament_gauge_render.png" alt="Optical Filament Diameter Gauge FM-1" class="h-60 w-full object-contain">
             </div>
             <div class="p-8 space-y-3">
-              <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold block" data-i18n="p1_tag">METROLOJİ &amp; KALİTE KONTROL</span>
-              <h3 class="text-xl font-bold text-slate-900" data-i18n="p1_title">Optik Filament Çap Ölçüm Cihazı</h3>
+              <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold block" data-i18n="p1_tag">METROLOGY &amp; QUALITY INSPECTION</span>
+              <h3 class="text-xl font-bold text-slate-900" data-i18n="p1_title">Optical Filament Diameter Gauge (FM-1)</h3>
               <p class="text-slate-600 text-sm leading-relaxed" data-i18n="p1_desc">
-                3D yazıcı filament ekstrüzyon hatları için geliştirilmiş temassız çift eksenli optik ölçüm sistemi. Sub-mikron tekrarlanabilirlik, anlık veri işleme ve kapalı çevrim hat entegrasyonu sunar.
+                Non-contact dual-axis optical measurement system developed for precision filament extrusion lines. Delivers sub-micron repeatability and dedicated high-frequency embedded DSP processing for accurate tolerance verification.
               </p>
             </div>
           </div>
           <div class="p-8 pt-0">
-            <a href="#contact" data-target-machine="Optik Filament Çap Ölçüm Cihazı (FM-1)" class="w-full btn-outline text-xs justify-center text-center block">
-              <span data-i18n="p1_btn">Detay ve Şartname</span>
+            <a href="#contact" data-target-machine="0" class="w-full btn-outline text-xs justify-center text-center block">
+              <span data-i18n="p1_btn">Request Specifications</span>
             </a>
           </div>
         </div>
 
-        <!-- System 2: Ducted Wind Generator -->
+        <!-- System 2: Aerodynamic Flow Generator (2x2) -->
         <div class="executive-card flex flex-col justify-between overflow-hidden">
           <div>
             <div class="bg-slate-100/80 p-8 flex items-center justify-center border-b border-slate-200">
-              <img src="assets/img/cad/wind_generator_render.png" alt="Ducted Wind Turbine" class="h-60 w-full object-contain">
+              <img src="assets/img/cad/wind_generator_render.png" alt="Ducted Aerodynamic Flow Generator 2x2" class="h-60 w-full object-contain">
             </div>
             <div class="p-8 space-y-3">
-              <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold block" data-i18n="p2_tag">AERODİNAMİK ENERJİ SİSTEMLERİ</span>
-              <h3 class="text-xl font-bold text-slate-900" data-i18n="p2_title">Kanallı Aerodinamik Rüzgar Jeneratörü</h3>
+              <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold block" data-i18n="p2_tag">AERODYNAMIC SIMULATION &amp; FLOW SYSTEMS</span>
+              <h3 class="text-xl font-bold text-slate-900" data-i18n="p2_title">Ducted Aerodynamic Flow Generator (2x2)</h3>
               <p class="text-slate-600 text-sm leading-relaxed" data-i18n="p2_desc">
-                Özel difüzör kanal geometrisi ile sınır tabaka hava akışını optimize eden mikro rüzgar türbini. Düşük rüzgar hızlarında yüksek tork ve verimli enerji dönüşümü sağlar.
+                Specialized diffuser-augmented ducted flow system engineered for aerodynamic simulations, wind tunnel experiments, and boundary-layer fluid flow research, delivering controlled velocity profiles.
               </p>
             </div>
           </div>
           <div class="p-8 pt-0">
-            <a href="#contact" data-target-machine="Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero)" class="w-full btn-outline text-xs justify-center text-center block">
-              <span data-i18n="p2_btn">Detay ve Şartname</span>
+            <a href="#contact" data-target-machine="1" class="w-full btn-outline text-xs justify-center text-center block">
+              <span data-i18n="p2_btn">Request Specifications</span>
             </a>
           </div>
         </div>
 
-        <!-- System 3: Industrial Shredder -->
+        <!-- System 3: Single-Shaft Shredder (SH-MK8) -->
         <div class="executive-card flex flex-col justify-between overflow-hidden">
           <div>
             <div class="bg-slate-100/80 p-8 flex items-center justify-center border-b border-slate-200">
-              <img src="assets/img/cad/shredder_mk8_render.png" alt="Industrial Shredder" class="h-60 w-full object-contain">
+              <img src="assets/img/cad/shredder_mk8_render.png" alt="Single-Shaft Industrial Shredder SH-MK8" class="h-60 w-full object-contain">
             </div>
             <div class="p-8 space-y-3">
-              <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold block" data-i18n="p3_tag">ENDÜSTRİYEL İŞLEME</span>
-              <h3 class="text-xl font-bold text-slate-900" data-i18n="p3_title">Yüksek Torklu Endüstriyel Parçalayıcı</h3>
+              <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold block" data-i18n="p3_tag">INDUSTRIAL PROCESSING</span>
+              <h3 class="text-xl font-bold text-slate-900" data-i18n="p3_title">Single-Shaft Industrial Shredder (SH-MK8)</h3>
               <p class="text-slate-600 text-sm leading-relaxed" data-i18n="p3_desc">
-                Teknik polimerler ve kompozit malzemeler için tasarlanmış çift şaftlı endüstriyel kırma makinesi. Mukavemet analizli kesici şaftları ve planet redüktör tahrik sistemi ile kesintisiz çalışma sunar.
+                Heavy-duty single-shaft shredder engineered for technical polymers, composite materials, and production scrap reduction. Equipped with hardened cutting tools and a high-reduction planetary drive.
               </p>
             </div>
           </div>
           <div class="p-8 pt-0">
-            <a href="#contact" data-target-machine="Yüksek Torklu Endüstriyel Parçalayıcı (SH-MK8)" class="w-full btn-outline text-xs justify-center text-center block">
-              <span data-i18n="p3_btn">Detay ve Şartname</span>
+            <a href="#contact" data-target-machine="2" class="w-full btn-outline text-xs justify-center text-center block">
+              <span data-i18n="p3_btn">Request Specifications</span>
             </a>
           </div>
         </div>
@@ -209,34 +208,34 @@
     </div>
   </section>
 
-  <!-- Core Competencies (Minimalist, Executive, No Clutter) -->
+  <!-- Core Competencies -->
   <section id="capabilities" class="py-24 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="max-w-2xl mx-auto text-center mb-16">
-        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="cap_badge">KURUMSAL YETKİNLİKLER</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight" data-i18n="cap_title">Uçtan Uca Mühendislik ve Üretim</h2>
-        <p class="text-slate-600 mt-2 text-base" data-i18n="cap_desc">Fikirden nihai makineye kadar her aşamada analitik doğrulama ve yüksek kalite standartları.</p>
+        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="cap_badge">CORE COMPETENCIES</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight" data-i18n="cap_title">End-to-End Engineering &amp; Manufacturing</h2>
+        <p class="text-slate-600 mt-2 text-base" data-i18n="cap_desc">Analytical rigor and uncompromising quality standards from initial concept through shop-floor commissioning.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <div class="p-8 rounded-lg bg-slate-50 border border-slate-200 space-y-3">
           <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">01</div>
-          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_1_title">Parametrik CAD &amp; Mekanik Tasarım</h3>
-          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_1_desc">Tolerans yığılım analizi, kinematik mekanizmalar ve montaj optimizasyonu ile endüstriyel 3D modelleme.</p>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_1_title">Parametric CAD &amp; Mechanical Design</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_1_desc">3D solid modeling, kinematic mechanisms, and tolerance stackup analysis for industrial machinery.</p>
         </div>
 
         <div class="p-8 rounded-lg bg-slate-50 border border-slate-200 space-y-3">
           <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">02</div>
-          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_2_title">Mühendislik Simülasyonu</h3>
-          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_2_desc">Yapısal gerilme, dinamik yorulma ve aerodinamik akışkanlar mekaniği hesaplamalı doğrulamaları.</p>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_2_title">Aerodynamic &amp; Mechanical Simulation</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_2_desc">Fluid flow dynamics, structural kinematics, and motion verification for demanding operational conditions.</p>
         </div>
 
         <div class="p-8 rounded-lg bg-slate-50 border border-slate-200 space-y-3">
           <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">03</div>
-          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_3_title">Gömülü Sistemler ve Otomasyon</h3>
-          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_3_desc">Yüksek hızlı DSP sinyal işleme, optik sensör sürücüleri ve endüstriyel haberleşme mimarileri.</p>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_3_title">Embedded Systems &amp; Automation</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_3_desc">High-speed DSP signal processing, optical sensor pipelines, and industrial communication architectures.</p>
         </div>
 
       </div>
@@ -249,48 +248,48 @@
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-12 space-y-2">
-        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="contact_badge">İLETİŞİM</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight" data-i18n="contact_title">Projeniz İçin Doğrudan İletişime Geçin</h2>
+        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="contact_badge">CONTACT</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight" data-i18n="contact_title">Direct Engineering Inquiries</h2>
         <p class="text-slate-600 text-sm sm:text-base" data-i18n="contact_desc">
-          Özel makine tasarımı, metroloji entegrasyonu veya teknik şartnameler için bizimle bağlantı kurun.
+          Contact our engineering group directly regarding machinery specifications, custom engineering, or technical collaboration.
         </p>
       </div>
 
       <div class="executive-card p-8 sm:p-10 bg-white border-slate-200 shadow-sm border-t-4 border-t-burgundy-700">
         <form id="contactForm" class="space-y-4 text-xs font-mono">
           <div>
-            <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_machine_label">İlgilendiğiniz Sistem</label>
+            <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_machine_label">Target System</label>
             <select id="formTargetMachine" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
-              <option value="Optik Filament Çap Ölçüm Cihazı (FM-1)" data-i18n="form_machine_opt1">Optik Filament Çap Ölçüm Cihazı (FM-1)</option>
-              <option value="Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero)" data-i18n="form_machine_opt2">Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero)</option>
-              <option value="Yüksek Torklu Endüstriyel Parçalayıcı (SH-MK8)" data-i18n="form_machine_opt3">Yüksek Torklu Endüstriyel Parçalayıcı (SH-MK8)</option>
-              <option value="Özel Mühendislik Danışmanlığı / Diğer" data-i18n="form_machine_opt4">Özel Mühendislik Danışmanlığı / Diğer</option>
+              <option value="Optical Filament Diameter Gauge (FM-1)" data-i18n="form_machine_opt1">Optical Filament Diameter Gauge (FM-1)</option>
+              <option value="Ducted Aerodynamic Flow Generator (2x2)" data-i18n="form_machine_opt2">Ducted Aerodynamic Flow Generator (2x2)</option>
+              <option value="Single-Shaft Industrial Shredder (SH-MK8)" data-i18n="form_machine_opt3">Single-Shaft Industrial Shredder (SH-MK8)</option>
+              <option value="Custom Engineering Consultation / Other" data-i18n="form_machine_opt4">Custom Engineering Consultation / Other</option>
             </select>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_name">Adınız Soyadınız</label>
-              <input type="text" required placeholder="Ad Soyad" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
+              <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_name_label">Full Name</label>
+              <input type="text" required placeholder="First and Last Name" data-i18n-placeholder="form_name_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
             </div>
             <div>
-              <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_company">Firma / Kurum</label>
-              <input type="text" required placeholder="Firma Adı" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
+              <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_company_label">Company / Organization</label>
+              <input type="text" required placeholder="Company Name" data-i18n-placeholder="form_company_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
             </div>
           </div>
 
           <div>
-            <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_email">Kurumsal E-posta</label>
-            <input type="email" required placeholder="muhendislik@firma.com" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
+            <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_email_label">Corporate Email Address</label>
+            <input type="email" required placeholder="engineering@company.com" data-i18n-placeholder="form_email_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
           </div>
 
           <div>
-            <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_notes">Teknik Talepler &amp; Açıklamalar</label>
-            <textarea rows="3" placeholder="Proje kapsamı veya teknik gereksinimler..." class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm"></textarea>
+            <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_notes_label">Technical Requirements &amp; Project Scope</label>
+            <textarea rows="3" placeholder="Project scope, technical parameters, or specifications..." data-i18n-placeholder="form_notes_placeholder" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm"></textarea>
           </div>
 
           <button type="submit" class="w-full btn-burgundy justify-center text-sm py-3 mt-2">
-            <span data-i18n="form_submit">Talebi Gönder</span>
+            <span data-i18n="form_submit">Transmit Inquiry</span>
           </button>
         </form>
 
@@ -299,16 +298,16 @@
           <div class="w-12 h-12 rounded-full bg-burgundy-50 border border-burgundy-300 text-burgundy-700 flex items-center justify-center mx-auto">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
           </div>
-          <h4 class="text-xl font-bold text-slate-900" data-i18n="form_success_title">Talebiniz Alındı</h4>
-          <p class="text-slate-600 text-xs max-w-sm mx-auto" data-i18n="form_success_desc">Mühendislik ekibimiz gereksinimlerinizi inceleyerek en kısa sürede geri dönüş sağlayacaktır.</p>
+          <h4 class="text-xl font-bold text-slate-900" data-i18n="form_success_title">Inquiry Received</h4>
+          <p class="text-slate-600 text-xs max-w-sm mx-auto" data-i18n="form_success_desc">Our engineering group will review your specifications and follow up promptly.</p>
         </div>
 
         <div class="pt-6 mt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-2">
           <div>
-            <span>Doğrudan İletişim:</span>
+            <span data-i18n="contact_direct_label">Direct Inquiries:</span>
             <a href="mailto:info@aph-labs.com" class="text-burgundy-700 font-semibold hover:underline ml-1">info@aph-labs.com</a>
           </div>
-          <div data-i18n="footer_domain">Resmi Alan Adı: www.aph-labs.com</div>
+          <div data-i18n="footer_domain">Official Domain: www.aph-labs.com</div>
         </div>
       </div>
 
@@ -323,13 +322,13 @@
         <div class="w-6 h-6 rounded bg-burgundy-700 flex items-center justify-center text-white">
           <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg>
         </div>
-        <span class="text-white font-bold tracking-wider" data-i18n="footer_copy">APH LABS © 2026 • Hassas Makine Sistemleri ve Metroloji</span>
+        <span class="text-white font-bold tracking-wider" data-i18n="footer_copy">APH LABS © 2026 • Precision Machinery &amp; Industrial Metrology</span>
       </div>
 
       <div class="flex items-center gap-6 text-slate-400">
-        <a href="#systems" class="hover:text-white transition-colors" data-i18n="nav_systems">Sistemler</a>
-        <a href="#capabilities" class="hover:text-white transition-colors" data-i18n="nav_capabilities">Yetkinlikler</a>
-        <a href="#contact" class="hover:text-white transition-colors" data-i18n="nav_contact">İletişim</a>
+        <a href="#systems" class="hover:text-white transition-colors" data-i18n="nav_systems">Systems</a>
+        <a href="#capabilities" class="hover:text-white transition-colors" data-i18n="nav_capabilities">Capabilities</a>
+        <a href="#contact" class="hover:text-white transition-colors" data-i18n="nav_contact">Contact</a>
       </div>
 
     </div>
