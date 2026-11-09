@@ -1,6 +1,6 @@
 # APH Labs / APH Systems — Official Website
 
-Modern, high-performance website for **APH Labs**, specializing in precision machinery, in-line optical filament metrology, ducted wind turbines, and industrial shredders.
+Modern, high-performance website for **APH Labs**, specializing in precision machinery, optical instruments, ducted aerodynamic flow systems, and industrial shredders.
 
 ## 🚀 Live Production & DNS Configuration
 

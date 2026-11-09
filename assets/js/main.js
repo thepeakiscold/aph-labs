@@ -12,9 +12,9 @@ const translations = {
     btn_rfq: "Contact Us",
     
     // Hero
-    hero_badge: "PRECISION MACHINERY & ADVANCED METROLOGY",
-    hero_title: "Precision Machine Engineering & Industrial Metrology",
-    hero_desc: "APH Labs engineers high-precision optical metrology equipment, specialized aerodynamic simulation systems, and heavy-duty industrial processing machinery.",
+    hero_badge: "PRECISION MACHINERY & ADVANCED INSTRUMENTS",
+    hero_title: "Precision Machine Engineering & Industrial Instruments",
+    hero_desc: "APH Labs engineers high-precision optical instruments, specialized aerodynamic simulation systems, and heavy-duty industrial processing machinery.",
     hero_btn_explore: "Explore Systems",
     hero_btn_contact: "Engineering Inquiry",
 
@@ -24,7 +24,7 @@ const translations = {
     section_systems_desc: "Proprietary machinery engineered for demanding industrial environments, tight tolerances, and operational reliability.",
 
     // System 1: Filament Gauge
-    p1_tag: "METROLOGY & QUALITY INSPECTION",
+    p1_tag: "OPTICAL INSTRUMENTS & QUALITY INSPECTION",
     p1_title: "Optical Filament Diameter Gauge",
     p1_desc: "Non-contact dual-axis optical measurement system developed for precision filament extrusion lines. Delivers sub-micron repeatability and dedicated high-frequency embedded DSP processing for accurate tolerance verification.",
     p1_btn: "Request Specifications",
@@ -76,7 +76,7 @@ const translations = {
     
     // Direct contact and Footer
     contact_direct_label: "Direct Inquiries:",
-    footer_copy: "APH LABS © 2026 • Precision Machinery & Industrial Metrology",
+    footer_copy: "APH LABS © 2026 • Precision Machinery & Industrial Instruments",
     footer_domain: "Official Domain: www.aph-labs.com"
   },
 
@@ -88,9 +88,9 @@ const translations = {
     btn_rfq: "İletişime Geçin",
     
     // Hero
-    hero_badge: "HASSAS MAKİNE VE İLERİ METROLOJİ",
-    hero_title: "Hassas Makine Mühendisliği ve Endüstriyel Metroloji",
-    hero_desc: "APH Labs; yüksek hassasiyetli optik metroloji cihazları, özel aerodinamik simülasyon sistemleri ve ağır hizmet tipi endüstriyel makineler tasarlar ve üretir.",
+    hero_badge: "HASSAS MAKİNE VE ENDÜSTRİYEL CİHAZLAR",
+    hero_title: "Hassas Makine Mühendisliği ve Endüstriyel Cihazlar",
+    hero_desc: "APH Labs; yüksek hassasiyetli optik ölçüm cihazları, özel aerodinamik simülasyon sistemleri ve ağır hizmet tipi endüstriyel makineler tasarlar ve üretir.",
     hero_btn_explore: "Sistemlerimizi İnceleyin",
     hero_btn_contact: "Mühendislik Talebi",
 
@@ -100,7 +100,7 @@ const translations = {
     section_systems_desc: "Zorlu endüstriyel koşullar, dar toleranslar ve yüksek çalışma stabilitesi için geliştirilmiş tescilli çözümler.",
 
     // System 1: Filament Gauge
-    p1_tag: "METROLOJİ & KALİTE KONTROL",
+    p1_tag: "HASSAS CİHAZLAR & KALİTE KONTROL",
     p1_title: "Optik Filament Çap Ölçüm Cihazı",
     p1_desc: "Hassas filament ekstrüzyon hatları için geliştirilmiş temassız çift eksenli optik ölçüm cihazı. Yüksek frekanslı optik algılama ve özel DSP işlemci mimarisiyle sub-mikron tekrarlanabilirlik ve kararlı tolerans denetimi sağlar.",
     p1_btn: "Detay ve Şartname",
@@ -131,7 +131,7 @@ const translations = {
     // Contact Section
     contact_badge: "İLETİŞİM",
     contact_title: "Projeniz İçin Doğrudan İletişime Geçin",
-    contact_desc: "Özel makine tasarımı, metroloji entegrasyonu veya teknik şartnameler için bizimle bağlantı kurun.",
+    contact_desc: "Özel makine tasarımı, hassas cihaz entegrasyonu veya teknik şartnameler için bizimle bağlantı kurun.",
     form_machine_label: "İlgilendiğiniz Sistem",
     form_machine_opt1: "Optik Filament Çap Ölçüm Cihazı",
     form_machine_opt2: "Kanallı Aerodinamik Akış Jeneratörü",
@@ -152,7 +152,7 @@ const translations = {
     
     // Direct contact and Footer
     contact_direct_label: "Doğrudan İletişim:",
-    footer_copy: "APH LABS © 2026 • Hassas Makine Sistemleri ve Endüstriyel Metroloji",
+    footer_copy: "APH LABS © 2026 • Hassas Makine Sistemleri ve Endüstriyel Cihazlar",
     footer_domain: "Resmi Alan Adı: www.aph-labs.com"
   }
 };
