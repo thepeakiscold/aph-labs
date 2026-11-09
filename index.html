@@ -308,32 +308,12 @@
       </div>
 
       <!-- DESIGN 03: Single-Shaft Industrial Shredder -->
-      <div id="design-shredder" class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center pt-16 border-t border-slate-100">
+      <div id="design-shredder" class="pt-20 border-t border-slate-100">
         
-        <!-- Large Studio Render Showcase with Interactive Core Toggle (7 cols) -->
-        <div class="lg:col-span-7">
-          <div class="studio-frame p-6 sm:p-12 flex flex-col items-center justify-center min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] relative overflow-hidden">
-            <img id="shredderMainImg" src="assets/img/renders/shredder_render.jpg" alt="Single-Shaft Industrial Shredder" class="max-h-[450px] w-full object-contain filter drop-shadow-md transition-opacity duration-200">
-            
-            <!-- Interactive Design Switcher -->
-            <div class="absolute bottom-5 inset-x-0 flex justify-center">
-              <div class="inline-flex items-center gap-1.5 bg-white/95 backdrop-blur-md p-1.5 rounded-lg border border-slate-200/90 shadow-md">
-                <button type="button" id="shredderBtnAssembly" class="view-switch-btn active" data-i18n="view_assembly">Benchtop Assembly</button>
-                <button type="button" id="shredderBtnCore" class="view-switch-btn" data-i18n="view_core">SS316 Cutting Core</button>
-              </div>
-            </div>
-
-            <div class="absolute top-4 left-4">
-              <span class="feature-chip">52 RPM / 40 Nm • SS316 Core</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Specifications & Narrative (5 cols) -->
-        <div class="lg:col-span-5 space-y-5">
+        <!-- Header & Executive Intro -->
+        <div class="max-w-3xl mx-auto text-center mb-12 space-y-4">
           <span class="text-xs font-mono text-burgundy-700 uppercase tracking-widest font-bold block" data-i18n="p3_tag">INDUSTRIAL PROCESSING &amp; RECYCLING</span>
-          
-          <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight" data-i18n="p3_title">Single-Shaft Industrial Shredder</h3>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight" data-i18n="p3_title">Single-Shaft Industrial Shredder</h3>
           
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-mono text-slate-700">
             <span class="w-2 h-2 rounded-full bg-burgundy-700"></span>
@@ -343,56 +323,96 @@
           <p class="text-slate-600 text-sm sm:text-base leading-relaxed" data-i18n="p3_desc">
             Benchtop single-shaft shredder engineered for technical polymers and composite scrap reduction. 52 RPM high-shear cutting, 40 Nm torque, and full SS316 stainless steel cutting core.
           </p>
+        </div>
 
-          <!-- Architectural Highlights -->
-          <ul class="space-y-3 text-xs sm:text-sm text-slate-700 pt-3 border-t border-slate-100 font-sans">
-            <li class="flex items-start gap-2.5">
-              <svg class="w-4 h-4 text-burgundy-700 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <span data-i18n="p3_h1">Direct-to-Extruder Regrind: 4.0 mm tooth pitch produces uniform ~4 mm flakes that drop directly into desktop extruders.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <svg class="w-4 h-4 text-burgundy-700 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <span data-i18n="p3_h2">Surgical-Grade SS316 Core: Full CNC/laser-machined SS316 stainless steel resists corrosion and abrasive composite wear.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <svg class="w-4 h-4 text-burgundy-700 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <span data-i18n="p3_h3">52 RPM / 40 Nm High Shear: Low-speed rotation eliminates thermal softening, keeping polymers cold to preserve properties.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <svg class="w-4 h-4 text-burgundy-700 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <span data-i18n="p3_h4">Ultra-Quiet Benchtop Profile: &lt; 65 dB acoustic signature under full load, suitable for desktop lab environments.</span>
-            </li>
-          </ul>
-
-          <!-- Collapsible Specifications Drawer -->
-          <details class="spec-drawer group mt-5 pt-3 border-t border-slate-100">
-            <summary class="flex items-center justify-between text-xs font-semibold text-burgundy-700 hover:text-burgundy-800 py-2 select-none">
-              <span data-i18n="btn_view_specs">View Technical Specifications</span>
-              <svg class="w-4 h-4 transition-transform text-burgundy-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </summary>
-            <div class="mt-3 space-y-0.5 bg-slate-50 p-4 rounded-lg border border-slate-200/80">
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k1">Motor &amp; Power Supply</span><span class="spec-val" data-i18n="s3_v1">Single-Phase Industrial AC Induction Motor, 220V AC / 50 Hz</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k2">Speed &amp; Torque</span><span class="spec-val" data-i18n="s3_v2">52 RPM Low-Speed Shear, 40 Nm Continuous Output Rating</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k3">Cutting Architecture</span><span class="spec-val" data-i18n="s3_v3">Single-Shaft Rotor + Precision Stationary Counter-Knives</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k4">Blade Material</span><span class="spec-val" data-i18n="s3_v4">Premium SS316 Stainless Steel (Corrosion &amp; Wear Resistant)</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k5">Tooth Pitch &amp; Clearance</span><span class="spec-val" data-i18n="s3_v5">4.0 mm Precision Pitch (~4 mm Granular Flakes)</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k6">Cutting Chamber</span><span class="spec-val" data-i18n="s3_v6">160 × 140 × 110 mm (Multi-Hook Autonomous Pull-In Geometry)</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k7">Throughput Capacity</span><span class="spec-val" data-i18n="s3_v7">2–6 kg/h (Geometry &amp; Polymer Dependent)</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k8">Max Processable Wall</span><span class="spec-val" data-i18n="s3_v8">Up to 3.5 mm Rigid Structural Cross-Section</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k9">Compatible Polymers</span><span class="spec-val" data-i18n="s3_v9">PLA, PETG, ABS, PA/Nylon, PP, HDPE, LDPE, PS</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k10">Discharge Sizing Screen</span><span class="spec-val" data-i18n="s3_v10">Interchangeable Perforated Stainless Steel Mesh (4–5 mm)</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k11">Operation &amp; Safety</span><span class="spec-val" data-i18n="s3_v11">Forward / Stop / Instant Reverse Switchgear + Momentary Jam Clearing</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k12">Acoustic Signature</span><span class="spec-val" data-i18n="s3_v12">&lt; 65 dB (Ultra-Low Noise, Desktop Lab Rated)</span></div>
-              <div class="spec-row"><span class="spec-key" data-i18n="s3_k13">Operating Temperature</span><span class="spec-val text-burgundy-700 font-bold" data-i18n="s3_v13">-20 °C to +70 °C</span></div>
+        <!-- Dual Visual Windows (Dedicated Separate Studio Frames for Machine and Core) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          
+          <!-- Visual Window 1: Benchtop Machine Assembly -->
+          <div class="studio-frame p-6 sm:p-10 flex items-center justify-center min-h-[440px] sm:min-h-[500px] relative overflow-hidden group">
+            <img src="assets/img/renders/shredder_render.jpg" alt="Single-Shaft Industrial Shredder Assembly" class="max-h-[420px] w-full object-contain filter drop-shadow-md">
+            
+            <div class="absolute top-4 left-4">
+              <span class="feature-chip" data-i18n="label_shredder_assembly">Benchtop Machine Assembly</span>
             </div>
-          </details>
-
-          <div class="pt-2">
-            <a href="#contact" data-target-machine="2" class="btn-burgundy text-xs">
-              <span data-i18n="btn_rfq_short">Request Quote</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </a>
+            <div class="absolute bottom-4 right-4">
+              <span class="text-[11px] font-mono text-slate-500 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded border border-slate-200">52 RPM • 40 Nm Continuous Rating</span>
+            </div>
           </div>
+
+          <!-- Visual Window 2: SS316 Cutting Core (Separate Visual Window) -->
+          <div class="studio-frame p-6 sm:p-10 flex items-center justify-center min-h-[440px] sm:min-h-[500px] relative overflow-hidden group">
+            <img src="assets/img/renders/shredder_core_render.jpg" alt="SS316 Stainless Steel Cutting Core" class="max-h-[420px] w-full object-contain filter drop-shadow-md">
+            
+            <div class="absolute top-4 left-4">
+              <span class="feature-chip text-burgundy-700 bg-burgundy-50 border-burgundy-200" data-i18n="label_shredder_core">SS316 Stainless Cutting Core</span>
+            </div>
+            <div class="absolute bottom-4 right-4">
+              <span class="text-[11px] font-mono text-slate-500 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded border border-slate-200">4.0 mm Pitch • SS316 Multi-Hook Rotor</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Specifications & Architectural Details Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start bg-slate-50 p-8 sm:p-10 rounded-2xl border border-slate-200/80">
+          
+          <!-- Left Column: Highlights & CTA -->
+          <div class="lg:col-span-6 space-y-4">
+            <h4 class="text-base font-bold text-slate-900 font-sans uppercase tracking-wider text-xs font-mono text-burgundy-700" data-i18n="p3_highlights_title">Core Performance Highlights</h4>
+            
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-700 font-sans">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-burgundy-700 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span data-i18n="p3_h1">Direct-to-Extruder Regrind: 4.0 mm tooth pitch produces uniform ~4 mm flakes that drop directly into desktop extruders.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-burgundy-700 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span data-i18n="p3_h2">Surgical-Grade SS316 Core: Full CNC/laser-machined SS316 stainless steel resists corrosion and abrasive composite wear.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-burgundy-700 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span data-i18n="p3_h3">52 RPM / 40 Nm High Shear: Low-speed rotation eliminates thermal softening, keeping polymers cold to preserve properties.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-burgundy-700 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span data-i18n="p3_h4">Ultra-Quiet Benchtop Profile: &lt; 65 dB acoustic signature under full load, suitable for desktop lab environments.</span>
+              </li>
+            </ul>
+
+            <div class="pt-2">
+              <a href="#contact" data-target-machine="2" class="btn-burgundy text-xs">
+                <span data-i18n="btn_rfq_short">Request Quote</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Collapsible Technical Specifications Drawer -->
+          <div class="lg:col-span-6">
+            <details class="spec-drawer group bg-white p-5 rounded-xl border border-slate-200">
+              <summary class="flex items-center justify-between text-xs font-semibold text-burgundy-700 hover:text-burgundy-800 py-1 select-none cursor-pointer">
+                <span data-i18n="btn_view_specs">View Technical Specifications</span>
+                <svg class="w-4 h-4 transition-transform text-burgundy-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="mt-4 space-y-0.5 pt-2 border-t border-slate-100">
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k1">Motor &amp; Power Supply</span><span class="spec-val" data-i18n="s3_v1">Single-Phase Industrial AC Induction Motor, 220V AC / 50 Hz</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k2">Speed &amp; Torque</span><span class="spec-val" data-i18n="s3_v2">52 RPM Low-Speed Shear, 40 Nm Continuous Output Rating</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k3">Cutting Architecture</span><span class="spec-val" data-i18n="s3_v3">Single-Shaft Rotor + Precision Stationary Counter-Knives</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k4">Blade Material</span><span class="spec-val" data-i18n="s3_v4">Premium SS316 Stainless Steel (Corrosion &amp; Wear Resistant)</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k5">Tooth Pitch &amp; Clearance</span><span class="spec-val" data-i18n="s3_v5">4.0 mm Precision Pitch (~4 mm Granular Flakes)</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k6">Cutting Chamber</span><span class="spec-val" data-i18n="s3_v6">160 × 140 × 110 mm (Multi-Hook Autonomous Pull-In Geometry)</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k7">Throughput Capacity</span><span class="spec-val" data-i18n="s3_v7">2–6 kg/h (Geometry &amp; Polymer Dependent)</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k8">Max Processable Wall</span><span class="spec-val" data-i18n="s3_v8">Up to 3.5 mm Rigid Structural Cross-Section</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k9">Compatible Polymers</span><span class="spec-val" data-i18n="s3_v9">PLA, PETG, ABS, PA/Nylon, PP, HDPE, LDPE, PS</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k10">Discharge Sizing Screen</span><span class="spec-val" data-i18n="s3_v10">Interchangeable Perforated Stainless Steel Mesh (4–5 mm)</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k11">Operation &amp; Safety</span><span class="spec-val" data-i18n="s3_v11">Forward / Stop / Instant Reverse Switchgear + Momentary Jam Clearing</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k12">Acoustic Signature</span><span class="spec-val" data-i18n="s3_v12">&lt; 65 dB (Ultra-Low Noise, Desktop Lab Rated)</span></div>
+                <div class="spec-row"><span class="spec-key" data-i18n="s3_k13">Operating Temperature</span><span class="spec-val text-burgundy-700 font-bold" data-i18n="s3_v13">-20 °C to +70 °C</span></div>
+              </div>
+            </details>
+          </div>
+
         </div>
 
       </div>

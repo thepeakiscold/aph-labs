@@ -100,6 +100,10 @@ const translations = {
     th_drive: "Drive & Architecture",
     th_temp: "Operating Temperature",
 
+    label_shredder_assembly: "Benchtop Machine Assembly",
+    label_shredder_core: "SS316 Stainless Cutting Core",
+    p3_highlights_title: "Core Performance Highlights",
+
     // Capabilities Section
     cap_badge: "CORE COMPETENCIES",
     cap_title: "End-to-End Engineering & Manufacturing",
@@ -110,10 +114,10 @@ const translations = {
     cap_2_desc: "Computational fluid dynamics, multi-fan flow array synchronization, boundary-layer studies, and anti-swirl flow conditioning.",
     cap_3_title: "Non-Contact Metrology & Optical Inspection",
     cap_3_desc: "Orthogonal dual-axis gauging, sub-micron edge detection algorithms, telecentric backlighting stages, and real-time ovality tracking.",
-    cap_4_title: "Embedded Control, DSP & Automation",
-    cap_4_desc: "Real-time closed-loop line synchronization, high-speed DSP signal processing pipelines, and industrial fieldbus architectures (CAN, UART, Ethernet).",
-    cap_5_title: "Precision CNC Machining & SS316 Fabrication",
-    cap_5_desc: "Surgical-grade SS316 stainless steel cutting cores, precision counter-knives, structural aluminum profile chassis, and custom tooling.",
+    cap_4_title: "Embedded Systems & High-Speed DSP Firmware",
+    cap_4_desc: "High-speed DSP signal acquisition, real-time edge processing algorithms, optical sensor drivers, and industrial communication architectures (CAN, UART, RS-485, Ethernet).",
+    cap_5_title: "Industrial Automation & Closed-Loop Control",
+    cap_5_desc: "Real-time closed-loop line synchronization, automated extruder puller speed and screw RPM regulation, dynamic sensor feedback loops, and industrial automation control systems.",
     cap_6_title: "Custom Turnkey Machinery & Specialized Prototyping",
     cap_6_desc: "Bespoke machine design from initial concept through shop-floor commissioning, rapid iterative prototyping, and benchtop lab machinery.",
 
@@ -242,6 +246,10 @@ const translations = {
     th_drive: "Tahrik & Mimari",
     th_temp: "Çalışma Sıcaklığı",
 
+    label_shredder_assembly: "Tezgah Üstü Makine Montajı",
+    label_shredder_core: "SS316 Paslanmaz Kesici Çekirdek",
+    p3_highlights_title: "Temel Performans Özellikleri",
+
     // Capabilities Section
     cap_badge: "KURUMSAL YETKİNLİKLER",
     cap_title: "Uçtan Uca Mühendislik ve İmalat",
@@ -252,10 +260,10 @@ const translations = {
     cap_2_desc: "Hesaplamalı akışkanlar dinamiği, çoklu fan akış matrisi senkronizasyonu, sınır tabaka araştırmaları ve anti-girdap akış şartlandırması.",
     cap_3_title: "Temassız Metroloji & Optik Muayene",
     cap_3_desc: "Ortogonal çift eksenli optik ölçüm, sub-mikron kenar algılama algoritmaları, telecentric aydınlatma kademeleri ve anlık ovallik takibi.",
-    cap_4_title: "Gömülü Kontrol, DSP & Otomasyon",
-    cap_4_desc: "Gerçek zamanlı kapalı çevrim hat hızı PID kontrolü, yüksek hızlı DSP sinyal işleme ve endüstriyel haberleşme protokolleri (CAN, UART, Ethernet).",
-    cap_5_title: "Hassas CNC İşleme & SS316 Paslanmaz İmalat",
-    cap_5_desc: "Cerrahi sınıf SS316 paslanmaz çelik kesici çekirdekler, CNC/lazer hassas kesim, sertleştirilmiş karşı bıçaklar ve rijit profil şasiler.",
+    cap_4_title: "Gömülü Sistemler ve Yüksek Hızlı DSP Yazılımı",
+    cap_4_desc: "Yüksek hızlı DSP sinyal işleme, gerçek zamanlı kenar yakalama algoritmaları, optik sensör sürücüleri ve endüstriyel haberleşme protokolleri (CAN, UART, RS-485, Ethernet).",
+    cap_5_title: "Endüstriyel Otomasyon ve Kapalı Çevrim Kontrol",
+    cap_5_desc: "Gerçek zamanlı kapalı çevrim hat senkronizasyonu, ekstrüzyon çekici hızı ve vida devri otomatik regülasyonu, dinamik sensör geri besleme döngüleri ve endüstriyel otomasyon sistemleri.",
     cap_6_title: "Özel Anahtar Teslim Makine & Prototipleme",
     cap_6_desc: "Fikirden nihai çalışan makineye kadar kuruma özel mekanik tasarım, hızlı prototipleme, masaüstü lab cihazları ve hat devreye alma.",
 
@@ -448,31 +456,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
       }
-    });
-  }
-
-  // Shredder View Switcher
-  const shredderBtnAssembly = document.getElementById('shredderBtnAssembly');
-  const shredderBtnCore = document.getElementById('shredderBtnCore');
-  const shredderMainImg = document.getElementById('shredderMainImg');
-  if (shredderBtnAssembly && shredderBtnCore && shredderMainImg) {
-    shredderBtnAssembly.addEventListener('click', () => {
-      shredderMainImg.style.opacity = '0.4';
-      setTimeout(() => {
-        shredderMainImg.src = 'assets/img/renders/shredder_render.jpg';
-        shredderMainImg.style.opacity = '1';
-      }, 120);
-      shredderBtnAssembly.classList.add('active');
-      shredderBtnCore.classList.remove('active');
-    });
-    shredderBtnCore.addEventListener('click', () => {
-      shredderMainImg.style.opacity = '0.4';
-      setTimeout(() => {
-        shredderMainImg.src = 'assets/img/renders/shredder_core_render.jpg';
-        shredderMainImg.style.opacity = '1';
-      }, 120);
-      shredderBtnCore.classList.add('active');
-      shredderBtnAssembly.classList.remove('active');
     });
   }
 
