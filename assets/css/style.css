@@ -1,5 +1,5 @@
-/* APH LABS — Minimalist Bordo & Beyaz (Burgundy & White) Industrial Theme */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+/* APH LABS — Executive Minimalist Bordo & Beyaz (Burgundy & White) Theme */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
   --burgundy-primary: #7A0C2E;
@@ -8,12 +8,12 @@
   --burgundy-accent: #9B1B40;
   --burgundy-subtle: #FDF4F6;
   --burgundy-border: #F1CCD4;
-  --burgundy-glow: rgba(122, 12, 46, 0.12);
+  --burgundy-glow: rgba(122, 12, 46, 0.08);
   
   --bg-main: #FFFFFF;
-  --bg-section: #F8FAFC;
-  --bg-card: #FFFFFF;
+  --bg-neutral: #F8FAFC;
   --border-color: #E2E8F0;
+  --border-subtle: #F1F5F9;
   
   --text-primary: #0F172A;
   --text-secondary: #475569;
@@ -40,46 +40,38 @@ html {
 body {
   overflow-x: hidden;
   background-color: var(--bg-main);
+  -webkit-font-smoothing: antialiased;
 }
 
 .font-mono {
   font-family: var(--font-mono);
 }
 
-/* Subtle Technical Grid Background */
-.bg-tech-grid {
-  background-size: 48px 48px;
-  background-image: 
-    linear-gradient(to right, rgba(122, 12, 46, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(122, 12, 46, 0.04) 1px, transparent 1px);
-}
-
 /* Navigation Blur */
 .nav-blur {
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
 }
 
-/* Bordo Buttons */
+/* Minimalist Executive Buttons */
 .btn-burgundy {
   background-color: var(--burgundy-primary);
   color: #FFFFFF;
   font-weight: 600;
-  padding: 0.7rem 1.5rem;
+  padding: 0.75rem 1.75rem;
   border-radius: 6px;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  box-shadow: 0 4px 14px rgba(122, 12, 46, 0.2);
 }
 
 .btn-burgundy:hover {
   background-color: var(--burgundy-hover);
-  box-shadow: 0 6px 20px rgba(122, 12, 46, 0.32);
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(122, 12, 46, 0.25);
 }
 
 .btn-outline {
@@ -87,7 +79,7 @@ body {
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   font-weight: 600;
-  padding: 0.7rem 1.5rem;
+  padding: 0.75rem 1.75rem;
   border-radius: 6px;
   transition: all 0.2s ease;
   display: inline-flex;
@@ -101,19 +93,17 @@ body {
   background-color: var(--burgundy-subtle);
 }
 
-/* Product & Feature Cards */
-.minimal-card {
-  background: var(--bg-card);
+/* Clean Product & Feature Cards */
+.executive-card {
+  background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   transition: all 0.25s ease;
-  position: relative;
 }
 
-.minimal-card:hover {
+.executive-card:hover {
   border-color: var(--burgundy-border);
-  box-shadow: 0 16px 36px -12px var(--burgundy-glow);
-  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px var(--burgundy-glow);
 }
 
 /* Language Switcher */
@@ -121,7 +111,7 @@ body {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.25rem 0.6rem;
+  padding: 0.25rem 0.55rem;
   border-radius: 4px;
   transition: all 0.15s ease;
   cursor: pointer;
@@ -139,26 +129,4 @@ body {
 .lang-toggle-btn:not(.active):hover {
   color: var(--burgundy-primary);
   background-color: var(--burgundy-subtle);
-}
-
-/* Status Indicator Dot */
-.status-dot-pulse {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #10B981;
-  box-shadow: 0 0 0 rgba(16, 185, 129, 0.4);
-  animation: pulse-ring 2s infinite;
-}
-
-@keyframes pulse-ring {
-  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
-  70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-}
-
-/* Live Waveform Sparkline */
-.sparkline-svg {
-  width: 100%;
-  height: 48px;
 }

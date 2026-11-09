@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>APH Labs | Precision Machinery &amp; Industrial Metrology</title>
-  <meta name="description" content="APH Labs develops precision industrial machinery: in-line optical filament gauges, ducted aerodynamic wind generators, and high-torque shredders.">
+  <meta name="description" content="APH Labs designs and manufactures specialized industrial machinery, high-precision optical metrology instrumentation, and clean energy systems.">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -30,9 +30,6 @@
     }
   </script>
 
-  <!-- Google Model Viewer for Interactive 3D CAD Inspection -->
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237A0C2E' stroke-width='2.5'><polygon points='12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2'/></svg>">
@@ -43,9 +40,9 @@
   <header class="fixed top-0 left-0 right-0 z-50 nav-blur">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Brand Logo -->
+      <!-- Brand Mark -->
       <a href="#" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-lg bg-burgundy-700 flex items-center justify-center text-white shadow-md shadow-burgundy-700/20 group-hover:bg-burgundy-800 transition-colors">
+        <div class="w-10 h-10 rounded-lg bg-burgundy-700 flex items-center justify-center text-white shadow-sm group-hover:bg-burgundy-800 transition-colors">
           <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
             <line x1="12" y1="22" x2="12" y2="15.5"></line>
@@ -58,29 +55,28 @@
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
+      <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-        <a href="#products" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_products">Sistemler</a>
+        <a href="#systems" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_systems">Sistemler</a>
         <a href="#capabilities" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_capabilities">Yetkinlikler</a>
-        <a href="#specs" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_specs">Teknik Veriler</a>
         <a href="#contact" class="hover:text-burgundy-700 transition-colors" data-i18n="nav_contact">İletişim</a>
       </nav>
 
-      <!-- Language Selector & Action Button -->
+      <!-- Language & Contact Action -->
       <div class="hidden md:flex items-center gap-5">
         <!-- TR / EN Switcher -->
-        <div class="flex items-center border border-slate-200 rounded-md p-0.5 bg-slate-50 text-xs">
+        <div class="flex items-center border border-slate-200 rounded p-0.5 bg-slate-50 text-xs">
           <button type="button" class="lang-toggle-btn lang-btn-tr active">TR</button>
           <button type="button" class="lang-toggle-btn lang-btn-en">EN</button>
         </div>
 
         <a href="#contact" class="btn-burgundy text-xs py-2 px-4">
-          <span data-i18n="btn_rfq">Teklif Al</span>
+          <span data-i18n="btn_rfq">İletişime Geçin</span>
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
       </div>
 
-      <!-- Mobile Hamburger Button -->
+      <!-- Mobile Menu Button -->
       <div class="flex items-center gap-3 md:hidden">
         <div class="flex items-center border border-slate-200 rounded p-0.5 bg-slate-50 text-xs">
           <button type="button" class="lang-toggle-btn lang-btn-tr active text-[10px] px-1.5 py-0.5">TR</button>
@@ -95,267 +91,115 @@
 
     <!-- Mobile Drawer -->
     <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 shadow-lg">
-      <a href="#products" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_products">Sistemler</a>
+      <a href="#systems" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_systems">Sistemler</a>
       <a href="#capabilities" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_capabilities">Yetkinlikler</a>
-      <a href="#specs" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_specs">Teknik Veriler</a>
       <a href="#contact" class="block text-slate-800 hover:text-burgundy-700 text-base font-semibold" data-i18n="nav_contact">İletişim</a>
-      <a href="#contact" class="btn-burgundy w-full justify-center text-xs mt-2" data-i18n="btn_rfq">Teklif Al</a>
+      <a href="#contact" class="btn-burgundy w-full justify-center text-xs mt-2" data-i18n="btn_rfq">İletişime Geçin</a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative pt-36 pb-20 lg:pt-44 lg:pb-28 bg-tech-grid border-b border-slate-100 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  <!-- Hero Section (Clean, Impactful Executive Header) -->
+  <section class="pt-40 pb-24 lg:pt-48 lg:pb-32 border-b border-slate-100">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
       
-      <!-- Top Badge -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-burgundy-50 border border-burgundy-200 text-xs font-mono text-burgundy-800 mb-6">
-        <span class="status-dot-pulse"></span>
-        <span data-i18n="hero_badge">ENDÜSTRİYEL MAKİNE &amp; HASSAS METROLOJİ</span>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-burgundy-50 border border-burgundy-200 text-xs font-mono text-burgundy-800">
+        <span class="w-2 h-2 rounded-full bg-burgundy-700"></span>
+        <span data-i18n="hero_badge">ENDÜSTRİYEL SİSTEMLER VE METROLOJİ</span>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
-        <!-- Left Hero Content -->
-        <div class="lg:col-span-7 space-y-6">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.12]" data-i18n="hero_title">
-            Hassas Makine Mühendisliği ve İleri Metroloji
-          </h1>
-          <p class="text-lg sm:text-xl text-slate-600 max-w-2xl leading-relaxed" data-i18n="hero_desc">
-            APH Labs; hat içi optik filament çap ölçüm sistemleri, aerodinamik kanallı rüzgar jeneratörleri ve yüksek torklu endüstriyel kırma makineleri tasarlar ve üretir.
-          </p>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.12]" data-i18n="hero_title">
+        Hassas Makine Mühendisliği ve İleri Metroloji
+      </h1>
 
-          <div class="flex flex-wrap items-center gap-4 pt-4">
-            <a href="#products" class="btn-burgundy">
-              <span data-i18n="hero_btn_explore">Sistemleri İnceleyin</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-            </a>
-            <a href="#contact" class="btn-outline">
-              <span data-i18n="hero_btn_contact">Mühendislik Talebi</span>
-              <svg class="w-4 h-4 text-burgundy-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </a>
-          </div>
-        </div>
+      <p class="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed" data-i18n="hero_desc">
+        APH Labs; yüksek hassasiyetli optik metroloji cihazları, aerodinamik enerji sistemleri ve ağır hizmet tipi endüstriyel makineler tasarlar ve üretir.
+      </p>
 
-        <!-- Right Hero: Live Interactive Telemetry Box -->
-        <div class="lg:col-span-5">
-          <div class="minimal-card p-6 bg-white border-slate-200 shadow-xl border-t-4 border-t-burgundy-700">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
-              <div class="flex items-center gap-2">
-                <span class="status-dot-pulse"></span>
-                <span class="text-xs font-mono font-semibold text-slate-700 tracking-wider" data-i18n="sim_title">HAT İÇİ OPTİK LAZER MİKROMETRE CANLI VERİ</span>
-              </div>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 border border-emerald-300 text-emerald-700 font-bold" data-i18n="sim_status">AKTİF KAPALI ÇEVRİM</span>
-            </div>
-
-            <div class="space-y-4">
-              <div>
-                <span class="text-xs font-mono text-slate-500 uppercase block" data-i18n="sim_reading_label">Anlık Filament Çapı (Nominal: 1.750 mm)</span>
-                <div class="flex items-baseline gap-3 mt-1">
-                  <span id="liveReading" class="text-4xl sm:text-5xl font-mono font-bold text-burgundy-700 tracking-tight">1.750 mm</span>
-                  <span id="liveDeviation" class="text-sm font-mono font-semibold text-emerald-600">+0.2 µm</span>
-                </div>
-              </div>
-
-              <!-- Live Waveform Sparkline -->
-              <div class="bg-slate-50 p-3 rounded border border-slate-200">
-                <div class="flex justify-between text-[11px] font-mono text-slate-500 mb-1">
-                  <span data-i18n="sim_waveform_label">Lazer Tarama Sinyali</span>
-                  <span id="liveStdDev" class="text-burgundy-700 font-semibold">&plusmn;0.0018 mm</span>
-                </div>
-                <svg class="sparkline-svg" viewBox="0 0 240 48">
-                  <line x1="0" y1="10" x2="240" y2="10" stroke="#EF4444" stroke-width="0.75" stroke-dasharray="3,3" opacity="0.6"/>
-                  <line x1="0" y1="38" x2="240" y2="38" stroke="#EF4444" stroke-width="0.75" stroke-dasharray="3,3" opacity="0.6"/>
-                  <line x1="0" y1="24" x2="240" y2="24" stroke="#7A0C2E" stroke-width="0.5" opacity="0.25"/>
-                  <polyline id="sparklinePoints" fill="none" stroke="#7A0C2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="0,24 26.6,24.5 53.3,23.2 80,25.1 106.6,22.8 133.3,24.2 160,23.8 186.6,24.4 213.3,24.1 240,24"/>
-                </svg>
-                <div class="flex justify-between text-[10px] font-mono text-slate-400 mt-1">
-                  <span>-0.05 mm limit</span>
-                  <span>Hedef: 1.750 mm</span>
-                  <span>+0.05 mm limit</span>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-2 gap-2 text-xs font-mono pt-1">
-                <div class="bg-slate-50 p-2.5 rounded border border-slate-200">
-                  <span class="text-slate-400 block text-[10px]" data-i18n="sim_sampling_label">ÖRNEKLEME FREKANSI</span>
-                  <span class="text-slate-900 font-bold" data-i18n="sim_sampling_val">1.200 Ölçüm / sn</span>
-                </div>
-                <div class="bg-slate-50 p-2.5 rounded border border-slate-200">
-                  <span class="text-slate-400 block text-[10px]" data-i18n="sim_compute_label">İŞLEMCİ MİMARİSİ</span>
-                  <span class="text-slate-900 font-bold" data-i18n="sim_compute_val">ESP32-P4 + DSP</span>
-                </div>
-              </div>
-
-              <div class="text-[11px] font-mono text-slate-500 flex items-center justify-between pt-1">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-2 h-2 rounded-full bg-burgundy-700"></span>
-                  <span data-i18n="sim_loop_status">Ekstrüzyon Hat Hızı Otomatik Dengeleme Aktif</span>
-                </span>
-                <span class="text-slate-700 font-semibold">%0.05 Drift</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+        <a href="#systems" class="btn-burgundy">
+          <span data-i18n="hero_btn_explore">Sistemlerimizi İnceleyin</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <a href="#contact" class="btn-outline">
+          <span data-i18n="hero_btn_contact">Mühendislik Talebi</span>
+          <svg class="w-4 h-4 text-burgundy-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
       </div>
+
     </div>
   </section>
 
-  <!-- Products Portfolio with Real STEP CAD Renders -->
-  <section id="products" class="py-24 bg-slate-50 border-b border-slate-200">
+  <!-- Systems Portfolio (High-res Studio Renders, Clean Presentation) -->
+  <section id="systems" class="py-24 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="max-w-2xl mb-16">
-        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="section_products_badge">ÜRETİM &amp; SİSTEMLER</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight" data-i18n="section_products_title">Geliştirdiğimiz Sistemler</h2>
-        <p class="text-slate-600 mt-2 text-base" data-i18n="section_products_desc">Tolerans sınırlarını zorlayan, yüksek çalışma süreli ve verimlilik odaklı endüstriyel makineler.</p>
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="section_systems_badge">MÜHENDİSLİK PORTFÖYÜ</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight" data-i18n="section_systems_title">Öne Çıkan Sistemler</h2>
+        <p class="text-slate-600 mt-2 text-base" data-i18n="section_systems_desc">Yüksek güvenilirlik, dar toleranslar ve endüstriyel standartlar için geliştirilmiş tescilli çözümler.</p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        <!-- Product 1: Filament Gauge (ASSEMBLY V2.0) -->
-        <div class="minimal-card flex flex-col justify-between bg-white overflow-hidden">
+        <!-- System 1: Optical Filament Gauge -->
+        <div class="executive-card flex flex-col justify-between overflow-hidden">
           <div>
-            <!-- Real CAD Render Display -->
-            <div class="relative bg-slate-100/70 border-b border-slate-200 p-6 flex items-center justify-center group">
-              <img src="assets/img/cad/filament_gauge_render.png" alt="Filament Diameter Gauge CAD Assembly V2.0" class="h-56 w-full object-contain transition-transform duration-300 group-hover:scale-105">
-              <button 
-                type="button" 
-                data-model-src="assets/models/filament_gauge.glb" 
-                data-model-title="Optik Filament Çap Ölçüm Cihazı (Assembly V2.0)"
-                class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-white/90 border border-slate-300 text-[11px] font-mono font-semibold text-slate-800 hover:text-burgundy-700 hover:border-burgundy-400 shadow-sm flex items-center gap-1.5 backdrop-blur-sm transition-colors">
-                <svg class="w-3.5 h-3.5 text-burgundy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                <span data-i18n="btn_view_3d">3D CAD Modelini İncele</span>
-              </button>
+            <div class="bg-slate-100/80 p-8 flex items-center justify-center border-b border-slate-200">
+              <img src="assets/img/cad/filament_gauge_render.png" alt="Optical Filament Gauge" class="h-60 w-full object-contain">
             </div>
-
-            <div class="p-7 space-y-4">
-              <div>
-                <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold" data-i18n="p1_tag">SERİ FM-1 • METROLOJİ</span>
-                <h3 class="text-xl font-bold text-slate-900 mt-1" data-i18n="p1_title">Optik Filament Çap Ölçüm Cihazı</h3>
-              </div>
+            <div class="p-8 space-y-3">
+              <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold block" data-i18n="p1_tag">METROLOJİ &amp; KALİTE KONTROL</span>
+              <h3 class="text-xl font-bold text-slate-900" data-i18n="p1_title">Optik Filament Çap Ölçüm Cihazı</h3>
               <p class="text-slate-600 text-sm leading-relaxed" data-i18n="p1_desc">
-                3D yazıcı filament ekstrüzyon hatları için tasarlanmış, temassız çift eksenli optik mikrometre. Sub-mikron hassasiyetle anlık çap analizi ve kapalı çevrim çekici hız kontrolü.
+                3D yazıcı filament ekstrüzyon hatları için geliştirilmiş temassız çift eksenli optik ölçüm sistemi. Sub-mikron tekrarlanabilirlik, anlık veri işleme ve kapalı çevrim hat entegrasyonu sunar.
               </p>
-
-              <ul class="space-y-2 text-xs font-mono text-slate-600 pt-3 border-t border-slate-100">
-                <li class="flex items-center gap-2">
-                  <span class="text-burgundy-700 font-bold">&bull;</span>
-                  <span data-i18n="p1_f1">Hassasiyet: ±0.002 mm (±2 mikron) tekrarlanabilirlik</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="text-burgundy-700 font-bold">&bull;</span>
-                  <span data-i18n="p1_f2">Donanım: Çift çekirdek ESP32-P4 ve yüksek hızlı DSP</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="text-burgundy-700 font-bold">&bull;</span>
-                  <span data-i18n="p1_f3">Entegrasyon: Kapalı çevrim çekici hız geri beslemesi</span>
-                </li>
-              </ul>
             </div>
           </div>
-
-          <div class="p-7 pt-0">
-            <a href="#contact" data-target-machine="Optik Filament Çap Ölçüm Cihazı (FM-1 / Assembly V2.0)" class="w-full btn-outline text-xs justify-center text-center block">
-              <span data-i18n="p1_btn">FM-1 Teklif Al</span>
+          <div class="p-8 pt-0">
+            <a href="#contact" data-target-machine="Optik Filament Çap Ölçüm Cihazı (FM-1)" class="w-full btn-outline text-xs justify-center text-center block">
+              <span data-i18n="p1_btn">Detay ve Şartname</span>
             </a>
           </div>
         </div>
 
-        <!-- Product 2: Wind Generator (2x2.STEP) -->
-        <div class="minimal-card flex flex-col justify-between bg-white overflow-hidden">
+        <!-- System 2: Ducted Wind Generator -->
+        <div class="executive-card flex flex-col justify-between overflow-hidden">
           <div>
-            <!-- Real CAD Render Display -->
-            <div class="relative bg-slate-100/70 border-b border-slate-200 p-6 flex items-center justify-center group">
-              <img src="assets/img/cad/wind_generator_render.png" alt="2x2 Ducted Wind Generator CAD Assembly" class="h-56 w-full object-contain transition-transform duration-300 group-hover:scale-105">
-              <button 
-                type="button" 
-                data-model-src="assets/models/wind_generator.glb" 
-                data-model-title="Kanallı Aerodinamik Rüzgar Jeneratörü (2x2)"
-                class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-white/90 border border-slate-300 text-[11px] font-mono font-semibold text-slate-800 hover:text-burgundy-700 hover:border-burgundy-400 shadow-sm flex items-center gap-1.5 backdrop-blur-sm transition-colors">
-                <svg class="w-3.5 h-3.5 text-burgundy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                <span data-i18n="btn_view_3d">3D CAD Modelini İncele</span>
-              </button>
+            <div class="bg-slate-100/80 p-8 flex items-center justify-center border-b border-slate-200">
+              <img src="assets/img/cad/wind_generator_render.png" alt="Ducted Wind Turbine" class="h-60 w-full object-contain">
             </div>
-
-            <div class="p-7 space-y-4">
-              <div>
-                <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold" data-i18n="p2_tag">SERİ WG-AERO • YENİLENEBİLİR ENERJİ</span>
-                <h3 class="text-xl font-bold text-slate-900 mt-1" data-i18n="p2_title">Kanallı Aerodinamik Rüzgar Jeneratörü (2x2)</h3>
-              </div>
+            <div class="p-8 space-y-3">
+              <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold block" data-i18n="p2_tag">AERODİNAMİK ENERJİ SİSTEMLERİ</span>
+              <h3 class="text-xl font-bold text-slate-900" data-i18n="p2_title">Kanallı Aerodinamik Rüzgar Jeneratörü</h3>
               <p class="text-slate-600 text-sm leading-relaxed" data-i18n="p2_desc">
-                Altıgenden kareye geçişli difüzör kanal geometrisi ile tasarlanmış, sınır tabaka hızlandırmalı mikro rüzgar türbini. Düşük rüzgarda yüksek tork ve güç katsayısı.
+                Özel difüzör kanal geometrisi ile sınır tabaka hava akışını optimize eden mikro rüzgar türbini. Düşük rüzgar hızlarında yüksek tork ve verimli enerji dönüşümü sağlar.
               </p>
-
-              <ul class="space-y-2 text-xs font-mono text-slate-600 pt-3 border-t border-slate-100">
-                <li class="flex items-center gap-2">
-                  <span class="text-burgundy-700 font-bold">&bull;</span>
-                  <span data-i18n="p2_f1">Aerodinamik: Venturi kanallı hava akış ivmelendirmesi</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="text-burgundy-700 font-bold">&bull;</span>
-                  <span data-i18n="p2_f2">Başlama Hızı: &lt; 1.8 m/s ultra düşük kalkış</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="text-burgundy-700 font-bold">&bull;</span>
-                  <span data-i18n="p2_f3">Uygulama: Mikroşebekeler, telekom, endüstriyel çatı sistemleri</span>
-                </li>
-              </ul>
             </div>
           </div>
-
-          <div class="p-7 pt-0">
-            <a href="#contact" data-target-machine="Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero / 2x2)" class="w-full btn-outline text-xs justify-center text-center block">
-              <span data-i18n="p2_btn">WG-Aero Teklif Al</span>
+          <div class="p-8 pt-0">
+            <a href="#contact" data-target-machine="Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero)" class="w-full btn-outline text-xs justify-center text-center block">
+              <span data-i18n="p2_btn">Detay ve Şartname</span>
             </a>
           </div>
         </div>
 
-        <!-- Product 3: Industrial Shredder (MK8 SHREDDER.stp) -->
-        <div class="minimal-card flex flex-col justify-between bg-white overflow-hidden">
+        <!-- System 3: Industrial Shredder -->
+        <div class="executive-card flex flex-col justify-between overflow-hidden">
           <div>
-            <!-- Real CAD Render Display -->
-            <div class="relative bg-slate-100/70 border-b border-slate-200 p-6 flex items-center justify-center group">
-              <img src="assets/img/cad/shredder_mk8_render.png" alt="MK8 Industrial Shredder CAD Assembly" class="h-56 w-full object-contain transition-transform duration-300 group-hover:scale-105">
-              <button 
-                type="button" 
-                data-model-src="assets/models/shredder_mk8.glb" 
-                data-model-title="Yüksek Torklu Endüstriyel Parçalayıcı (MK8)"
-                class="absolute bottom-3 right-3 px-3 py-1.5 rounded bg-white/90 border border-slate-300 text-[11px] font-mono font-semibold text-slate-800 hover:text-burgundy-700 hover:border-burgundy-400 shadow-sm flex items-center gap-1.5 backdrop-blur-sm transition-colors">
-                <svg class="w-3.5 h-3.5 text-burgundy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                <span data-i18n="btn_view_3d">3D CAD Modelini İncele</span>
-              </button>
+            <div class="bg-slate-100/80 p-8 flex items-center justify-center border-b border-slate-200">
+              <img src="assets/img/cad/shredder_mk8_render.png" alt="Industrial Shredder" class="h-60 w-full object-contain">
             </div>
-
-            <div class="p-7 space-y-4">
-              <div>
-                <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold" data-i18n="p3_tag">SERİ SH-MK8 • GERİ DÖNÜŞÜM &amp; İŞLEME</span>
-                <h3 class="text-xl font-bold text-slate-900 mt-1" data-i18n="p3_title">Yüksek Torklu Endüstriyel Parçalayıcı (MK8)</h3>
-              </div>
+            <div class="p-8 space-y-3">
+              <span class="text-xs font-mono text-burgundy-700 uppercase tracking-wider font-semibold block" data-i18n="p3_tag">ENDÜSTRİYEL İŞLEME</span>
+              <h3 class="text-xl font-bold text-slate-900" data-i18n="p3_title">Yüksek Torklu Endüstriyel Parçalayıcı</h3>
               <p class="text-slate-600 text-sm leading-relaxed" data-i18n="p3_desc">
-                Polimer atıkları, filament fireleri ve teknik kompozitlerin boyut küçültmesi için geliştirilmiş çift şaftlı endüstriyel parçalayıcı. ANSYS statik mukavemet (FEA) onaylı.
+                Teknik polimerler ve kompozit malzemeler için tasarlanmış çift şaftlı endüstriyel kırma makinesi. Mukavemet analizli kesici şaftları ve planet redüktör tahrik sistemi ile kesintisiz çalışma sunar.
               </p>
-
-              <ul class="space-y-2 text-xs font-mono text-slate-600 pt-3 border-t border-slate-100">
-                <li class="flex items-center gap-2">
-                  <span class="text-burgundy-700 font-bold">&bull;</span>
-                  <span data-i18n="p3_f1">Bıçaklar: CNC hassas işlenmiş sertleştirilmiş takım çeliği</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="text-burgundy-700 font-bold">&bull;</span>
-                  <span data-i18n="p3_f2">Doğrulama: ANSYS ile statik ve dinamik gerilme analizi</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <span class="text-burgundy-700 font-bold">&bull;</span>
-                  <span data-i18n="p3_f3">Tahrik: Planet redüktör ve sıkışma önleyici otomatik geri sarma</span>
-                </li>
-              </ul>
             </div>
           </div>
-
-          <div class="p-7 pt-0">
+          <div class="p-8 pt-0">
             <a href="#contact" data-target-machine="Yüksek Torklu Endüstriyel Parçalayıcı (SH-MK8)" class="w-full btn-outline text-xs justify-center text-center block">
-              <span data-i18n="p3_btn">SH-MK8 Teklif Al</span>
+              <span data-i18n="p3_btn">Detay ve Şartname</span>
             </a>
           </div>
         </div>
@@ -365,77 +209,34 @@
     </div>
   </section>
 
-  <!-- Engineering & R&D Capabilities -->
+  <!-- Core Competencies (Minimalist, Executive, No Clutter) -->
   <section id="capabilities" class="py-24 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="max-w-2xl mx-auto text-center mb-16">
+        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="cap_badge">KURUMSAL YETKİNLİKLER</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight" data-i18n="cap_title">Uçtan Uca Mühendislik ve Üretim</h2>
+        <p class="text-slate-600 mt-2 text-base" data-i18n="cap_desc">Fikirden nihai makineye kadar her aşamada analitik doğrulama ve yüksek kalite standartları.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <div class="lg:col-span-6 space-y-6">
-          <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="cap_badge">MÜHENDİSLİK YETKİNLİKLERİ</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight" data-i18n="cap_title">Tasarım, Simülasyon ve İmalat</h2>
-          <p class="text-slate-600 leading-relaxed text-base" data-i18n="cap_desc">
-            Kağıt üzerindeki tasarımdan atölye zeminine kadar her aşamada analitik doğrulama.
-          </p>
-
-          <div class="space-y-4 pt-2">
-            <div class="flex items-start gap-4">
-              <div class="w-8 h-8 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 shrink-0 font-mono text-xs font-bold">01</div>
-              <div>
-                <h4 class="text-slate-900 font-bold text-base" data-i18n="cap_c1_title">Parametrik CAD ve Kinematik Tasarım</h4>
-                <p class="text-slate-500 text-xs mt-1" data-i18n="cap_c1_desc">STEP, SolidWorks ve Fusion ortamında tolerans yığılım analizli eksiksiz 3D mekanik modelleme.</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-8 h-8 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 shrink-0 font-mono text-xs font-bold">02</div>
-              <div>
-                <h4 class="text-slate-900 font-bold text-base" data-i18n="cap_c2_title">FEA Mukavemet ve CFD Akış Analizi</h4>
-                <p class="text-slate-500 text-xs mt-1" data-i18n="cap_c2_desc">Şasi ve bıçak mekanik gerilimlerinin ANSYS ile doğrulanması; akışkanlar mekaniği optimizasyonu.</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-8 h-8 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 shrink-0 font-mono text-xs font-bold">03</div>
-              <div>
-                <h4 class="text-slate-900 font-bold text-base" data-i18n="cap_c3_title">Gömülü Sistemler ve Sensör Füzyonu</h4>
-                <p class="text-slate-500 text-xs mt-1" data-i18n="cap_c3_desc">ESP32-P4, ARM mikrodenetleyiciler, optik sensör sürücüleri ve endüstriyel haberleşme protokolleri.</p>
-              </div>
-            </div>
-          </div>
+        <div class="p-8 rounded-lg bg-slate-50 border border-slate-200 space-y-3">
+          <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">01</div>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_1_title">Parametrik CAD &amp; Mekanik Tasarım</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_1_desc">Tolerans yığılım analizi, kinematik mekanizmalar ve montaj optimizasyonu ile endüstriyel 3D modelleme.</p>
         </div>
 
-        <!-- FEA Analysis & CAD Sub-Assembly Visual Panel -->
-        <div class="lg:col-span-6">
-          <div class="minimal-card p-6 bg-slate-50 border-slate-200 shadow-sm">
-            <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
-              <span class="text-xs font-mono font-semibold text-slate-700" data-i18n="cap_fea_box_title">FEA STATİK GERİLME DOĞRULAMASI</span>
-              <span class="text-[11px] font-mono text-burgundy-700 font-bold">ANSYS + STEP CAD</span>
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="bg-white rounded p-2 border border-slate-200 relative group">
-                <img src="assets/img/cad/shredder_sub_render.png" alt="Shredder Cutting Shaft Sub-Assembly CAD" class="rounded w-full h-44 object-contain">
-                <button 
-                  type="button" 
-                  data-model-src="assets/models/shredder_sub.glb" 
-                  data-model-title="Kesici Şaft Alt Montajı (Sub Assembly MK8)"
-                  class="absolute bottom-2 right-2 px-2 py-1 rounded bg-white/90 border border-slate-300 text-[10px] font-mono font-semibold text-slate-800 hover:text-burgundy-700 shadow-sm">
-                  3D İncele
-                </button>
-                <span class="block text-[11px] font-mono text-slate-500 text-center mt-2">Kesici Şaft ve Bıçak Montajı (CAD)</span>
-              </div>
+        <div class="p-8 rounded-lg bg-slate-50 border border-slate-200 space-y-3">
+          <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">02</div>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_2_title">Mühendislik Simülasyonu</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_2_desc">Yapısal gerilme, dinamik yorulma ve aerodinamik akışkanlar mekaniği hesaplamalı doğrulamaları.</p>
+        </div>
 
-              <div class="bg-white rounded p-2 border border-slate-200">
-                <img src="assets/img/shredder-fea.png" alt="Shredder Blade FEA Analysis" class="rounded w-full h-44 object-contain">
-                <span class="block text-[11px] font-mono text-slate-500 text-center mt-2">Bıçak Gerilme Dağılımı (von Mises)</span>
-              </div>
-            </div>
-
-            <div class="mt-4 p-3 rounded bg-white border border-slate-200 flex items-center justify-between text-xs font-mono">
-              <span class="text-slate-600 font-medium" data-i18n="cap_fea_box_sub">Maksimum Güvenlik Katsayısı: 2.84 • 7/24 Kesintisiz Çalışma Onaylı</span>
-            </div>
-          </div>
+        <div class="p-8 rounded-lg bg-slate-50 border border-slate-200 space-y-3">
+          <div class="w-10 h-10 rounded bg-burgundy-50 border border-burgundy-200 flex items-center justify-center text-burgundy-700 font-mono text-sm font-bold">03</div>
+          <h3 class="text-lg font-bold text-slate-900" data-i18n="cap_3_title">Gömülü Sistemler ve Otomasyon</h3>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_3_desc">Yüksek hızlı DSP sinyal işleme, optik sensör sürücüleri ve endüstriyel haberleşme mimarileri.</p>
         </div>
 
       </div>
@@ -443,114 +244,63 @@
     </div>
   </section>
 
-  <!-- Technical Benchmarks Table -->
-  <section id="specs" class="py-24 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Executive Contact Section -->
+  <section id="contact" class="py-24 bg-slate-50 relative">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="max-w-2xl mb-12">
-        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="spec_badge">TEKNİK KARŞILAŞTIRMA</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight" data-i18n="spec_title">Sistem Parametreleri</h2>
-      </div>
-
-      <div class="minimal-card overflow-hidden bg-white border-slate-200 shadow-sm">
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-sm text-slate-700 font-mono">
-            <thead class="bg-slate-100 text-xs uppercase text-slate-600 border-b border-slate-200">
-              <tr>
-                <th scope="col" class="py-4 px-6" data-i18n="th_system">Sistem</th>
-                <th scope="col" class="py-4 px-6" data-i18n="th_range">Çalışma Aralığı</th>
-                <th scope="col" class="py-4 px-6" data-i18n="th_precision">Hassasiyet / Verim</th>
-                <th scope="col" class="py-4 px-6" data-i18n="th_compute">Hesaplama Çekirdeği</th>
-                <th scope="col" class="py-4 px-6" data-i18n="th_interface">Haberleşme</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100">
-              <tr class="hover:bg-slate-50 transition-colors">
-                <td class="py-4 px-6 font-bold text-slate-900">Filament Gauge FM-1 (V2.0)</td>
-                <td class="py-4 px-6">1.75 mm / 2.85 mm</td>
-                <td class="py-4 px-6 text-burgundy-700 font-bold">&plusmn;0.002 mm (&plusmn;2 µm)</td>
-                <td class="py-4 px-6">ESP32-P4 + Hızlı DSP</td>
-                <td class="py-4 px-6">Modbus RTU / TCP / MQTT</td>
-              </tr>
-              <tr class="hover:bg-slate-50 transition-colors">
-                <td class="py-4 px-6 font-bold text-slate-900">Ducted Turbine WG-Aero (2x2)</td>
-                <td class="py-4 px-6">0.5 kW – 3.0 kW Ölçeklenebilir</td>
-                <td class="py-4 px-6 text-burgundy-700 font-bold">Cp &gt; 0.42 (Difüzör Kanallı)</td>
-                <td class="py-4 px-6">MPPT Güç Elektroniği</td>
-                <td class="py-4 px-6">CAN Bus / RS485 Inverter Bağlantısı</td>
-              </tr>
-              <tr class="hover:bg-slate-50 transition-colors">
-                <td class="py-4 px-6 font-bold text-slate-900">Industrial Shredder SH-MK8</td>
-                <td class="py-4 px-6">15 – 35 kg/saat Besleme</td>
-                <td class="py-4 px-6 text-burgundy-700 font-bold">Sertleştirilmiş Takım Çeliği Bıçaklar</td>
-                <td class="py-4 px-6">PLC + Otomatik Geri Dönüş</td>
-                <td class="py-4 px-6">Endüstriyel Dokunmatik HMI</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact & RFQ Section -->
-  <section id="contact" class="py-24 bg-white relative">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="contact_badge">İLETİŞİM &amp; TEKLİF</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight" data-i18n="contact_title">Projeniz İçin Mühendislik Desteği Alın</h2>
-        <p class="text-slate-600 mt-2 text-sm sm:text-base" data-i18n="contact_desc">
-          Hassas ölçüm sistemleri, rüzgar enerjisi çözümleri veya özel makine talepleriniz için doğrudan bize ulaşın.
+      <div class="text-center mb-12 space-y-2">
+        <span class="text-xs font-mono uppercase tracking-widest text-burgundy-700 bg-burgundy-50 border border-burgundy-200 px-3 py-1 rounded" data-i18n="contact_badge">İLETİŞİM</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight" data-i18n="contact_title">Projeniz İçin Doğrudan İletişime Geçin</h2>
+        <p class="text-slate-600 text-sm sm:text-base" data-i18n="contact_desc">
+          Özel makine tasarımı, metroloji entegrasyonu veya teknik şartnameler için bizimle bağlantı kurun.
         </p>
       </div>
 
-      <div class="minimal-card p-8 bg-slate-50 border-slate-200 shadow-sm border-t-4 border-t-burgundy-700">
+      <div class="executive-card p-8 sm:p-10 bg-white border-slate-200 shadow-sm border-t-4 border-t-burgundy-700">
         <form id="contactForm" class="space-y-4 text-xs font-mono">
           <div>
             <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_machine_label">İlgilendiğiniz Sistem</label>
-            <select id="formTargetMachine" class="w-full bg-white border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700">
-              <option value="Optik Filament Çap Ölçüm Cihazı (FM-1 / Assembly V2.0)" data-i18n="form_machine_opt1">Optik Filament Çap Ölçüm Cihazı (FM-1 / Assembly V2.0)</option>
-              <option value="Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero / 2x2)" data-i18n="form_machine_opt2">Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero / 2x2)</option>
+            <select id="formTargetMachine" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
+              <option value="Optik Filament Çap Ölçüm Cihazı (FM-1)" data-i18n="form_machine_opt1">Optik Filament Çap Ölçüm Cihazı (FM-1)</option>
+              <option value="Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero)" data-i18n="form_machine_opt2">Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero)</option>
               <option value="Yüksek Torklu Endüstriyel Parçalayıcı (SH-MK8)" data-i18n="form_machine_opt3">Yüksek Torklu Endüstriyel Parçalayıcı (SH-MK8)</option>
-              <option value="Özel Makine Tasarımı / Mühendislik Danışmanlığı" data-i18n="form_machine_opt4">Özel Makine Tasarımı / Mühendislik Danışmanlığı</option>
+              <option value="Özel Mühendislik Danışmanlığı / Diğer" data-i18n="form_machine_opt4">Özel Mühendislik Danışmanlığı / Diğer</option>
             </select>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_name">Adınız Soyadınız</label>
-              <input type="text" required placeholder="Ad Soyad" class="w-full bg-white border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700">
+              <input type="text" required placeholder="Ad Soyad" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
             </div>
             <div>
               <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_company">Firma / Kurum</label>
-              <input type="text" required placeholder="Firma Adı" class="w-full bg-white border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700">
+              <input type="text" required placeholder="Firma Adı" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
             </div>
           </div>
 
           <div>
             <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_email">Kurumsal E-posta</label>
-            <input type="email" required placeholder="muhendislik@firma.com" class="w-full bg-white border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700">
+            <input type="email" required placeholder="muhendislik@firma.com" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm">
           </div>
 
           <div>
-            <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_notes">Teknik Talepler &amp; Detaylar</label>
-            <textarea rows="3" placeholder="Tolerans sınırları, hat hızları veya proje şartnamesi..." class="w-full bg-white border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700"></textarea>
+            <label class="block text-slate-700 font-semibold mb-1" data-i18n="form_notes">Teknik Talepler &amp; Açıklamalar</label>
+            <textarea rows="3" placeholder="Proje kapsamı veya teknik gereksinimler..." class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2.5 text-slate-800 focus:outline-none focus:border-burgundy-700 font-sans text-sm"></textarea>
           </div>
 
           <button type="submit" class="w-full btn-burgundy justify-center text-sm py-3 mt-2">
-            <span data-i18n="form_submit">Teklif Talebini İlet</span>
+            <span data-i18n="form_submit">Talebi Gönder</span>
           </button>
         </form>
 
-        <!-- Success Feedback -->
+        <!-- Feedback Confirmation -->
         <div id="contactSuccess" class="hidden text-center py-10 space-y-3">
           <div class="w-12 h-12 rounded-full bg-burgundy-50 border border-burgundy-300 text-burgundy-700 flex items-center justify-center mx-auto">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
           </div>
           <h4 class="text-xl font-bold text-slate-900" data-i18n="form_success_title">Talebiniz Alındı</h4>
-          <p class="text-slate-600 text-xs max-w-sm mx-auto" data-i18n="form_success_desc">Mühendislik ekibimiz teknik şartlarınızı inceleyerek en kısa sürede dönüş yapacaktır.</p>
+          <p class="text-slate-600 text-xs max-w-sm mx-auto" data-i18n="form_success_desc">Mühendislik ekibimiz gereksinimlerinizi inceleyerek en kısa sürede geri dönüş sağlayacaktır.</p>
         </div>
 
         <div class="pt-6 mt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-2">
@@ -565,69 +315,25 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-400 py-10 text-xs font-mono border-t border-slate-800">
+  <!-- Clean Corporate Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-10 text-xs font-mono">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
       
       <div class="flex items-center gap-3">
         <div class="w-6 h-6 rounded bg-burgundy-700 flex items-center justify-center text-white">
           <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg>
         </div>
-        <span class="text-white font-bold tracking-wider" data-i18n="footer_copy">APH LABS © 2026 • Hassas Makine Sistemleri &amp; Metroloji</span>
+        <span class="text-white font-bold tracking-wider" data-i18n="footer_copy">APH LABS © 2026 • Hassas Makine Sistemleri ve Metroloji</span>
       </div>
 
       <div class="flex items-center gap-6 text-slate-400">
-        <a href="#products" class="hover:text-white transition-colors" data-i18n="nav_products">Sistemler</a>
+        <a href="#systems" class="hover:text-white transition-colors" data-i18n="nav_systems">Sistemler</a>
         <a href="#capabilities" class="hover:text-white transition-colors" data-i18n="nav_capabilities">Yetkinlikler</a>
-        <a href="#specs" class="hover:text-white transition-colors" data-i18n="nav_specs">Teknik Veriler</a>
         <a href="#contact" class="hover:text-white transition-colors" data-i18n="nav_contact">İletişim</a>
       </div>
 
     </div>
   </footer>
-
-  <!-- Interactive 3D Model Modal Dialog -->
-  <div id="modal3D" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 backdrop-blur-md p-4">
-    <div class="bg-white rounded-xl shadow-2xl max-w-4xl w-full overflow-hidden border border-slate-200 relative flex flex-col max-h-[90vh]">
-      
-      <!-- Modal Header -->
-      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-slate-50">
-        <div>
-          <span class="text-[10px] font-mono uppercase tracking-widest text-burgundy-700 font-bold block" data-i18n="modal_3d_title">İnteraktif 3D CAD Modeli</span>
-          <h3 id="modal3DTitle" class="text-lg font-bold text-slate-900 mt-0.5">3D CAD Model</h3>
-        </div>
-        <button id="close3DBtn" class="text-slate-400 hover:text-slate-700 p-2 rounded-lg hover:bg-slate-200 transition-colors" aria-label="Close 3D Viewer">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-        </button>
-      </div>
-
-      <!-- 3D Interactive Canvas -->
-      <div class="relative bg-slate-100 flex-1 min-h-[420px] sm:min-h-[500px]">
-        <model-viewer
-          id="cadModelViewer"
-          src=""
-          alt="APH Labs 3D Machine Assembly"
-          camera-controls
-          auto-rotate
-          shadow-intensity="1.2"
-          shadow-softness="0.8"
-          exposure="1.0"
-          interaction-prompt="auto"
-          style="width: 100%; height: 100%; position: absolute; inset: 0;"
-        ></model-viewer>
-      </div>
-
-      <!-- Modal Footer Hint -->
-      <div class="px-6 py-3 bg-white border-t border-slate-200 flex items-center justify-between text-xs font-mono text-slate-500">
-        <span class="flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-burgundy-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/></svg>
-          <span data-i18n="modal_3d_hint">Modeli fareniz veya dokunmatik ekranınızla 360° çevirebilir ve yakınlaştırabilirsiniz.</span>
-        </span>
-        <span class="text-slate-400 text-[10px]">APH LABS • STEP CAD ENGINE</span>
-      </div>
-
-    </div>
-  </div>
 
   <!-- Main Controller & i18n -->
   <script src="assets/js/main.js"></script>

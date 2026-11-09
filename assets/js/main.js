@@ -1,222 +1,150 @@
 /**
- * APH LABS — Multilingual Engine (TR / EN) & Interactive Controller
- * Minimalist Bordo & Beyaz Industrial Design
+ * APH LABS — Multilingual Engine (TR / EN) & Core Controller
+ * Executive Minimalist Theme
  */
 
 const translations = {
   tr: {
     // Nav
-    nav_products: "Sistemler",
+    nav_systems: "Sistemler",
+    nav_about: "Hakkımızda",
     nav_capabilities: "Yetkinlikler",
-    nav_specs: "Teknik Veriler",
     nav_contact: "İletişim",
-    btn_rfq: "Teklif Al",
+    btn_rfq: "İletişime Geçin",
     
     // Hero
-    hero_badge: "ENDÜSTRİYEL MAKİNE & HASSAS METROLOJİ",
+    hero_badge: "ENDÜSTRİYEL SİSTEMLER VE METROLOJİ",
     hero_title: "Hassas Makine Mühendisliği ve İleri Metroloji",
-    hero_desc: "APH Labs; hat içi optik filament çap ölçüm sistemleri, aerodinamik kanallı rüzgar jeneratörleri ve yüksek torklu endüstriyel kırma makineleri tasarlar ve üretir.",
-    hero_btn_explore: "Sistemleri İnceleyin",
+    hero_desc: "APH Labs; yüksek hassasiyetli optik metroloji cihazları, aerodinamik enerji sistemleri ve ağır hizmet tipi endüstriyel makineler tasarlar ve üretir.",
+    hero_btn_explore: "Sistemlerimizi İnceleyin",
     hero_btn_contact: "Mühendislik Talebi",
-    
-    // Live Simulator Card
-    sim_title: "HAT İÇİ OPTİK LAZER MİKROMETRE CANLI VERİ",
-    sim_status: "AKTİF KAPALI ÇEVRİM",
-    sim_reading_label: "Anlık Filament Çapı (Nominal: 1.750 mm)",
-    sim_waveform_label: "Lazer Tarama Sinyali",
-    sim_sampling_label: "ÖRNEKLEME FREKANSI",
-    sim_sampling_val: "1.200 Ölçüm / sn",
-    sim_compute_label: "İŞLEMCİ MİMARİSİ",
-    sim_compute_val: "ESP32-P4 + Sayısal Sinyal İşleme",
-    sim_loop_status: "Ekstrüzyon Hat Hızı Otomatik Dengeleme Aktif",
 
-    // Products Section
-    section_products_badge: "ÜRETİM & SİSTEMLER",
-    section_products_title: "Geliştirdiğimiz Sistemler",
-    section_products_desc: "Tolerans sınırlarını zorlayan, yüksek çalışma süreli ve verimlilik odaklı endüstriyel makineler.",
-    btn_view_3d: "3D CAD Modelini İncele",
-    
+    // Systems Section
+    section_systems_badge: "MÜHENDİSLİK PORTFÖYÜ",
+    section_systems_title: "Öne Çıkan Sistemler",
+    section_systems_desc: "Yüksek güvenilirlik, dar toleranslar ve endüstriyel standartlar için geliştirilmiş tescilli çözümler.",
+
     // Product 1
-    p1_tag: "SERİ FM-1 • METROLOJİ",
+    p1_tag: "METROLOJİ & KALİTE KONTROL",
     p1_title: "Optik Filament Çap Ölçüm Cihazı",
-    p1_desc: "3D yazıcı filament ekstrüzyon hatları için tasarlanmış, temassız çift eksenli optik mikrometre. Sub-mikron hassasiyetle anlık çap analizi ve kapalı çevrim çekici hız kontrolü.",
-    p1_f1: "Hassasiyet: ±0.002 mm (±2 mikron) tekrarlanabilirlik",
-    p1_f2: "Donanım: Çift çekirdek ESP32-P4 ve yüksek hızlı DSP",
-    p1_f3: "Entegrasyon: Kapalı çevrim çekici hız geri beslemesi",
-    p1_btn: "FM-1 Teklif Al",
+    p1_desc: "3D yazıcı filament ekstrüzyon hatları için geliştirilmiş temassız çift eksenli optik ölçüm sistemi. Sub-mikron tekrarlanabilirlik, anlık veri işleme ve kapalı çevrim hat entegrasyonu sunar.",
+    p1_btn: "Detay ve Şartname",
 
     // Product 2
-    p2_tag: "SERİ WG-AERO • YENİLENEBİLİR ENERJİ",
-    p2_title: "Kanallı Aerodinamik Rüzgar Jeneratörü (2x2)",
-    p2_desc: "Altıgenden kareye geçişli difüzör kanal geometrisi ile tasarlanmış, sınır tabaka hızlandırmalı mikro rüzgar türbini. Düşük rüzgarda yüksek tork ve güç katsayısı.",
-    p2_f1: "Aerodinamik: Venturi kanallı hava akış ivmelendirmesi",
-    p2_f2: "Başlama Hızı: < 1.8 m/s ultra düşük kalkış",
-    p2_f3: "Uygulama: Mikroşebekeler, telekom, endüstriyel çatı sistemleri",
-    p2_btn: "WG-Aero Teklif Al",
+    p2_tag: "AERODİNAMİK ENERJİ SİSTEMLERİ",
+    p2_title: "Kanallı Aerodinamik Rüzgar Jeneratörü",
+    p2_desc: "Özel difüzör kanal geometrisi ile sınır tabaka hava akışını optimize eden mikro rüzgar türbini. Düşük rüzgar hızlarında yüksek tork ve verimli enerji dönüşümü sağlar.",
+    p2_btn: "Detay ve Şartname",
 
     // Product 3
-    p3_tag: "SERİ SH-MK8 • GERİ DÖNÜŞÜM & İŞLEME",
-    p3_title: "Yüksek Torklu Endüstriyel Parçalayıcı (MK8)",
-    p3_desc: "Polimer atıkları, filament fireleri ve teknik kompozitlerin boyut küçültmesi için geliştirilmiş çift şaftlı endüstriyel parçalayıcı. ANSYS statik mukavemet (FEA) onaylı.",
-    p3_f1: "Bıçaklar: CNC hassas işlenmiş sertleştirilmiş takım çeliği",
-    p3_f2: "Doğrulama: ANSYS ile statik ve dinamik gerilme analizi",
-    p3_f3: "Tahrik: Planet redüktör ve sıkışma önleyici otomatik geri sarma",
-    p3_btn: "SH-MK8 Teklif Al",
-
-    // 3D Modal
-    modal_3d_title: "İnteraktif 3D CAD Modeli",
-    modal_3d_hint: "Modeli fareniz veya dokunmatik ekranınızla 360° çevirebilir ve yakınlaştırabilirsiniz.",
+    p3_tag: "ENDÜSTRİYEL İŞLEME",
+    p3_title: "Yüksek Torklu Endüstriyel Parçalayıcı",
+    p3_desc: "Teknik polimerler ve kompozit malzemeler için tasarlanmış çift şaftlı endüstriyel kırma makinesi. Mukavemet analizli kesici şaftları ve planet redüktör tahrik sistemi ile kesintisiz çalışma sunar.",
+    p3_btn: "Detay ve Şartname",
 
     // Capabilities Section
-    cap_badge: "MÜHENDİSLİK YETKİNLİKLERİ",
-    cap_title: "Tasarım, Simülasyon ve İmalat",
-    cap_desc: "Kağıt üzerindeki tasarımdan atölye zeminine kadar her aşamada analitik doğrulama.",
-    cap_c1_title: "Parametrik CAD ve Kinematik Tasarım",
-    cap_c1_desc: "STEP, SolidWorks ve Fusion ortamında tolerans yığılım analizli eksiksiz 3D mekanik modelleme.",
-    cap_c2_title: "FEA Mukavemet ve CFD Akış Analizi",
-    cap_c2_desc: "Şasi ve bıçak mekanik gerilimlerinin ANSYS ile doğrulanması; akışkanlar mekaniği optimizasyonu.",
-    cap_c3_title: "Gömülü Sistemler ve Sensör Füzyonu",
-    cap_c3_desc: "ESP32-P4, ARM mikrodenetleyiciler, optik sensör sürücüleri ve endüstriyel haberleşme protokolleri.",
-    cap_fea_box_title: "FEA STATİK GERİLME DOĞRULAMASI",
-    cap_fea_box_sub: "Maksimum Güvenlik Katsayısı: 2.84 • 7/24 Kesintisiz Çalışma Onaylı",
-
-    // Specifications Table
-    spec_badge: "TEKNİK KARŞILAŞTIRMA",
-    spec_title: "Sistem Parametreleri",
-    th_system: "Sistem",
-    th_range: "Çalışma Aralığı",
-    th_precision: "Hassasiyet / Verim",
-    th_compute: "Hesaplama Çekirdeği",
-    th_interface: "Haberleşme",
+    cap_badge: "KURUMSAL YETKİNLİKLER",
+    cap_title: "Uçtan Uca Mühendislik ve Üretim",
+    cap_desc: "Fikirden nihai makineye kadar her aşamada analitik doğrulama ve yüksek kalite standartları.",
+    cap_1_title: "Parametrik CAD & Mekanik Tasarım",
+    cap_1_desc: "Tolerans yığılım analizi, kinematik mekanizmalar ve montaj optimizasyonu ile endüstriyel 3D modelleme.",
+    cap_2_title: "Mühendislik Simülasyonu",
+    cap_2_desc: "Yapısal gerilme, dinamik yorulma ve aerodinamik akışkanlar mekaniği hesaplamalı doğrulamaları.",
+    cap_3_title: "Gömülü Sistemler ve Otomasyon",
+    cap_3_desc: "Yüksek hızlı DSP sinyal işleme, optik sensör sürücüleri ve endüstriyel haberleşme mimarileri.",
 
     // Contact Section
-    contact_badge: "İLETİŞİM & TEKLİF",
-    contact_title: "Projeniz İçin Mühendislik Desteği Alın",
-    contact_desc: "Hassas ölçüm sistemleri, rüzgar enerjisi çözümleri veya özel makine talepleriniz için doğrudan bize ulaşın.",
+    contact_badge: "İLETİŞİM",
+    contact_title: "Projeniz İçin Doğrudan İletişime Geçin",
+    contact_desc: "Özel makine tasarımı, metroloji entegrasyonu veya teknik şartnameler için bizimle bağlantı kurun.",
     form_machine_label: "İlgilendiğiniz Sistem",
-    form_machine_opt1: "Optik Filament Çap Ölçüm Cihazı (FM-1 / Assembly V2.0)",
-    form_machine_opt2: "Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero / 2x2)",
+    form_machine_opt1: "Optik Filament Çap Ölçüm Cihazı (FM-1)",
+    form_machine_opt2: "Kanallı Aerodinamik Rüzgar Jeneratörü (WG-Aero)",
     form_machine_opt3: "Yüksek Torklu Endüstriyel Parçalayıcı (SH-MK8)",
-    form_machine_opt4: "Özel Makine Tasarımı / Mühendislik Danışmanlığı",
+    form_machine_opt4: "Özel Mühendislik Danışmanlığı / Diğer",
     form_name: "Adınız Soyadınız",
     form_company: "Firma / Kurum",
     form_email: "Kurumsal E-posta",
-    form_notes: "Teknik Talepler & Detaylar (Toleranslar, kapasite, çalışma ortamı vb.)",
-    form_submit: "Teklif Talebini İlet",
-    form_transmitting: "İletiliyor...",
+    form_notes: "Teknik Talepler & Açıklamalar",
+    form_submit: "Talebi Gönder",
+    form_transmitting: "Gönderiliyor...",
     form_success_title: "Talebiniz Alındı",
-    form_success_desc: "Mühendislik ekibimiz teknik şartlarınızı inceleyerek en kısa sürede dönüş yapacaktır.",
+    form_success_desc: "Mühendislik ekibimiz gereksinimlerinizi inceleyerek en kısa sürede geri dönüş sağlayacaktır.",
     
     // Footer
-    footer_copy: "APH LABS © 2026 • Hassas Makine Sistemleri & Metroloji",
+    footer_copy: "APH LABS © 2026 • Hassas Makine Sistemleri ve Metroloji",
     footer_domain: "Resmi Alan Adı: www.aph-labs.com"
   },
 
   en: {
     // Nav
-    nav_products: "Systems",
+    nav_systems: "Systems",
+    nav_about: "About",
     nav_capabilities: "Capabilities",
-    nav_specs: "Specifications",
     nav_contact: "Contact",
-    btn_rfq: "Request Quote",
+    btn_rfq: "Contact Us",
     
     // Hero
-    hero_badge: "INDUSTRIAL MACHINERY & PRECISION METROLOGY",
+    hero_badge: "INDUSTRIAL SYSTEMS & METROLOGY",
     hero_title: "Precision Machine Engineering & Advanced Metrology",
-    hero_desc: "APH Labs designs and manufactures in-line optical filament measurement systems, aerodynamic ducted wind turbines, and high-torque industrial processing machinery.",
+    hero_desc: "APH Labs engineers high-precision optical metrology equipment, specialized aerodynamic energy systems, and heavy-duty industrial processing machinery.",
     hero_btn_explore: "Explore Systems",
     hero_btn_contact: "Engineering Inquiry",
-    
-    // Live Simulator Card
-    sim_title: "IN-LINE OPTICAL LASER MICROMETER LIVE FEED",
-    sim_status: "ACTIVE CLOSED-LOOP",
-    sim_reading_label: "Live Filament Diameter (Nominal: 1.750 mm)",
-    sim_waveform_label: "Laser Scan Signal",
-    sim_sampling_label: "SAMPLING RATE",
-    sim_sampling_val: "1,200 Scans / Sec",
-    sim_compute_label: "COMPUTE ARCH",
-    sim_compute_val: "ESP32-P4 + Digital Signal Processing",
-    sim_loop_status: "Extrusion Speed Auto-Compensating Active",
 
-    // Products Section
-    section_products_badge: "PRODUCTION & SYSTEMS",
-    section_products_title: "Engineered Machinery Portfolio",
-    section_products_desc: "Built to push tolerance limits, maximize uptime, and deliver consistent industrial performance.",
-    btn_view_3d: "Inspect 3D CAD Model",
-    
+    // Systems Section
+    section_systems_badge: "ENGINEERING PORTFOLIO",
+    section_systems_title: "Engineered Machinery",
+    section_systems_desc: "Proprietary solutions developed for high uptime, tight tolerances, and demanding industrial standards.",
+
     // Product 1
-    p1_tag: "SERIES FM-1 • METROLOGY",
+    p1_tag: "METROLOGY & PROCESS CONTROL",
     p1_title: "Optical Filament Diameter Gauge",
-    p1_desc: "Non-contact dual-axis optical micrometer built for 3D printing filament extrusion lines. Sub-micron precision, real-time closed-loop puller speed regulation, and rapid line tracking.",
-    p1_f1: "Precision: ±0.002 mm (±2 microns) repeatability",
-    p1_f2: "Hardware: Dual-core ESP32-P4 & high-speed DSP",
-    p1_f3: "Control: Closed-loop puller speed feedback",
-    p1_btn: "Request FM-1 Quote",
+    p1_desc: "In-line dual-axis non-contact optical measurement gauge designed for filament extrusion lines. Delivers sub-micron repeatability, high-speed DSP processing, and closed-loop process integration.",
+    p1_btn: "Request Specifications",
 
     // Product 2
-    p2_tag: "SERIES WG-AERO • RENEWABLE ENERGY",
-    p2_title: "Ducted Aerodynamic Wind Generator (2x2)",
-    p2_desc: "Diffuser-augmented micro wind turbine featuring a hexagonal-to-square ducted shroud. Accelerates boundary layer airflow for exceptional low-wind startup torque and power density.",
-    p2_f1: "Aerodynamics: Venturi ducted airflow acceleration",
-    p2_f2: "Cut-in Speed: < 1.8 m/s ultra-low startup",
-    p2_f3: "Applications: Microgrids, telecom towers, industrial rooftops",
-    p2_btn: "Request WG-Aero Quote",
+    p2_tag: "AERODYNAMIC ENERGY SYSTEMS",
+    p2_title: "Ducted Aerodynamic Wind Turbine",
+    p2_desc: "Micro wind turbine utilizing diffuser-augmented shroud geometry to optimize boundary-layer airflow, ensuring exceptional startup torque and efficient power capture at low wind speeds.",
+    p2_btn: "Request Specifications",
 
     // Product 3
-    p3_tag: "SERIES SH-MK8 • MATERIAL PROCESSING",
-    p3_title: "High-Torque Industrial Shredder (MK8)",
-    p3_desc: "Heavy-duty dual-shaft shredder built for polymers, production scraps, and technical composites. Verified with comprehensive ANSYS finite element stress analysis (FEA).",
-    p3_f1: "Blades: CNC-profiled hardened alloy tool steel",
-    p3_f2: "Validation: Full ANSYS static and dynamic structural FEA",
-    p3_f3: "Drive: High-reduction planetary gear with anti-jam reverse",
-    p3_btn: "Request SH-MK8 Quote",
-
-    // 3D Modal
-    modal_3d_title: "Interactive 3D CAD Model",
-    modal_3d_hint: "Rotate 360° and zoom using your mouse or touch gestures.",
+    p3_tag: "INDUSTRIAL PROCESSING",
+    p3_title: "High-Torque Industrial Shredder",
+    p3_desc: "Heavy-duty dual-shaft shredder engineered for continuous polymer processing, production scrap reduction, and composite breakdown with planetary drive and anti-jam protection.",
+    p3_btn: "Request Specifications",
 
     // Capabilities Section
-    cap_badge: "ENGINEERING RIGOR",
-    cap_title: "Design, Simulation & Fabrication",
-    cap_desc: "Analytical verification at every milestone, bridging parametric CAD with shop-floor manufacturing.",
-    cap_c1_title: "Parametric CAD & Kinematic Assemblies",
-    cap_c1_desc: "STEP, SolidWorks, and Fusion solid modeling with rigorous tolerance stackup calculations.",
-    cap_c2_title: "FEA Structural & CFD Aerodynamic Simulation",
-    cap_c2_desc: "ANSYS finite element chassis stress validation and computational fluid dynamics shroud testing.",
-    cap_c3_title: "Embedded Systems & Sensor Fusion",
-    cap_c3_desc: "ESP32-P4, ARM microcontrollers, optical sensor pipelines, and industrial fieldbus integration.",
-    cap_fea_box_title: "FEA STATIC STRESS VERIFICATION",
-    cap_fea_box_sub: "Maximum Safety Factor: 2.84 • Certified for 24/7 Operations",
-
-    // Specifications Table
-    spec_badge: "TECHNICAL BENCHMARKS",
-    spec_title: "System Parameters",
-    th_system: "System Platform",
-    th_range: "Operating Range",
-    th_precision: "Accuracy / Efficiency",
-    th_compute: "Compute Core",
-    th_interface: "Connectivity",
+    cap_badge: "CORE COMPETENCIES",
+    cap_title: "End-to-End Engineering & Manufacturing",
+    cap_desc: "Analytical verification and rigorous quality standards from initial concept through shop-floor commissioning.",
+    cap_1_title: "Parametric CAD & Mechanical Design",
+    cap_1_desc: "3D solid modeling, kinematic mechanisms, and tolerance stackup analysis for industrial machinery.",
+    cap_2_title: "Engineering Simulation",
+    cap_2_desc: "Structural stress verification, dynamic fatigue analysis, and aerodynamic fluid flow optimization.",
+    cap_3_title: "Embedded Systems & Automation",
+    cap_3_desc: "High-speed DSP signal acquisition, optical sensor pipelines, and industrial communication protocols.",
 
     // Contact Section
-    contact_badge: "CONTACT & INQUIRY",
-    contact_title: "Request Engineering Specifications",
-    contact_desc: "Get in touch directly with our engineering team for customized metrology, renewable generation, or custom machinery.",
-    form_machine_label: "Target Machine System",
-    form_machine_opt1: "Optical Filament Diameter Gauge (FM-1 / Assembly V2.0)",
-    form_machine_opt2: "Ducted Aerodynamic Wind Generator (WG-Aero / 2x2)",
+    contact_badge: "CONTACT",
+    contact_title: "Direct Engineering Inquiries",
+    contact_desc: "Contact our engineering group directly regarding custom machinery, metrology integration, or technical specifications.",
+    form_machine_label: "Target System",
+    form_machine_opt1: "Optical Filament Diameter Gauge (FM-1)",
+    form_machine_opt2: "Ducted Aerodynamic Wind Turbine (WG-Aero)",
     form_machine_opt3: "High-Torque Industrial Shredder (SH-MK8)",
-    form_machine_opt4: "Custom Machine Design / Engineering Consultation",
+    form_machine_opt4: "Custom Engineering Consultation / Other",
     form_name: "Full Name",
     form_company: "Company / Organization",
     form_email: "Corporate Email Address",
-    form_notes: "Technical Requirements (Tolerances, feed rates, operational conditions)",
-    form_submit: "Transmit Engineering Request",
+    form_notes: "Technical Requirements & Project Scope",
+    form_submit: "Transmit Inquiry",
     form_transmitting: "Transmitting...",
     form_success_title: "Inquiry Received",
     form_success_desc: "Our engineering group will review your specifications and follow up promptly.",
     
     // Footer
-    footer_copy: "APH LABS © 2026 • Precision Machinery & Metrology",
+    footer_copy: "APH LABS © 2026 • Precision Machinery & Industrial Metrology",
     footer_domain: "Official Domain: www.aph-labs.com"
   }
 };
@@ -231,10 +159,8 @@ function setLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('aph_lang', lang);
 
-  // Update HTML lang attribute
   document.documentElement.lang = lang;
 
-  // Update all data-i18n elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang][key]) {
@@ -246,7 +172,6 @@ function setLanguage(lang) {
     }
   });
 
-  // Update active states on language switch buttons
   document.querySelectorAll('.lang-btn-tr').forEach(btn => {
     btn.classList.toggle('active', lang === 'tr');
   });
@@ -256,7 +181,7 @@ function setLanguage(lang) {
 }
 
 /**
- * Automatic Location / Browser Language Detection
+ * Auto-detect user's preferred language
  */
 async function detectUserLanguage() {
   const saved = localStorage.getItem('aph_lang');
@@ -287,10 +212,9 @@ async function detectUserLanguage() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize i18n
   detectUserLanguage();
 
-  // Language Button Listeners
+  // Language Toggles
   document.querySelectorAll('.lang-btn-tr').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -304,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Mobile Menu Toggle
+  // Mobile Menu
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
   if (mobileMenuBtn && mobileMenu) {
@@ -316,83 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Interactive 3D Model Modal
-  const modal3D = document.getElementById('modal3D');
-  const modelViewer = document.getElementById('cadModelViewer');
-  const modal3DTitle = document.getElementById('modal3DTitle');
-  const close3DBtn = document.getElementById('close3DBtn');
-
-  const open3D = (modelSrc, titleText) => {
-    if (modal3D && modelViewer) {
-      modelViewer.src = modelSrc;
-      if (modal3DTitle) modal3DTitle.textContent = titleText;
-      modal3D.classList.remove('hidden');
-      modal3D.classList.add('flex');
-      document.body.style.overflow = 'hidden';
-    }
-  };
-
-  const close3D = () => {
-    if (modal3D) {
-      modal3D.classList.add('hidden');
-      modal3D.classList.remove('flex');
-      document.body.style.overflow = '';
-      if (modelViewer) modelViewer.src = '';
-    }
-  };
-
-  document.querySelectorAll('[data-model-src]').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const src = btn.getAttribute('data-model-src');
-      const title = btn.getAttribute('data-model-title') || '3D CAD Model';
-      open3D(src, title);
-    });
-  });
-
-  if (close3DBtn) close3DBtn.addEventListener('click', close3D);
-  if (modal3D) {
-    modal3D.addEventListener('click', (e) => {
-      if (e.target === modal3D) close3D();
-    });
-  }
-
-  // Live Optical Filament Measurement Simulator
-  const liveReading = document.getElementById('liveReading');
-  const liveDeviation = document.getElementById('liveDeviation');
-  const liveStdDev = document.getElementById('liveStdDev');
-  const sparkPoints = document.getElementById('sparklinePoints');
-
-  if (liveReading && liveDeviation) {
-    let history = [1.750, 1.751, 1.749, 1.750, 1.752, 1.749, 1.750, 1.751, 1.750, 1.750];
-
-    setInterval(() => {
-      const noise = (Math.random() - 0.5) * 0.005;
-      const val = parseFloat((1.750 + noise).toFixed(3));
-      const devMicrons = parseFloat(((val - 1.750) * 1000).toFixed(1));
-
-      liveReading.textContent = val.toFixed(3) + ' mm';
-      liveDeviation.textContent = (devMicrons >= 0 ? '+' : '') + devMicrons.toFixed(1) + ' µm';
-      
-      if (liveStdDev) {
-        liveStdDev.textContent = '±' + (Math.abs(noise) * 0.8 + 0.0012).toFixed(4) + ' mm';
-      }
-
-      history.shift();
-      history.push(val);
-
-      if (sparkPoints) {
-        const coords = history.map((v, i) => {
-          const x = (i / (history.length - 1)) * 240;
-          const y = 24 - ((v - 1.750) * 1600);
-          return `${x.toFixed(1)},${y.toFixed(1)}`;
-        }).join(' ');
-        sparkPoints.setAttribute('points', coords);
-      }
-    }, 800);
-  }
-
-  // Contact Form Submission
+  // Contact Form
   const contactForm = document.getElementById('contactForm');
   const contactSuccess = document.getElementById('contactSuccess');
   if (contactForm && contactSuccess) {
@@ -411,17 +259,17 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.classList.add('hidden');
         contactSuccess.classList.remove('hidden');
         contactForm.reset();
-      }, 700);
+      }, 600);
     });
   }
 
-  // Pre-fill Target Machine in Contact form when clicking product buttons
+  // Pre-fill target machine in form
   document.querySelectorAll('[data-target-machine]').forEach(btn => {
     btn.addEventListener('click', () => {
-      const targetMachine = btn.getAttribute('data-target-machine');
+      const machine = btn.getAttribute('data-target-machine');
       const select = document.getElementById('formTargetMachine');
-      if (select && targetMachine) {
-        select.value = targetMachine;
+      if (select && machine) {
+        select.value = machine;
       }
     });
   });
