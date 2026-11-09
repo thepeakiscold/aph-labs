@@ -5,37 +5,42 @@
 
 const translations = {
   en: {
+    // Meta & Brand
+    meta_title: "APH Labs | Precision Engineering & Industrial Instruments",
+    meta_desc: "APH Labs engineers high-precision optical instruments, specialized aerodynamic simulation systems, and heavy-duty industrial processing equipment.",
+    nav_brand_tag: "Precision Engineering",
+
     // Navigation
     nav_systems: "Systems",
-    nav_specs: "Specifications",
     nav_capabilities: "Capabilities",
     nav_contact: "Contact",
     btn_rfq: "Contact Us",
     
     // Hero
-    hero_badge: "PRECISION MACHINERY & ADVANCED INSTRUMENTS",
+    hero_badge: "PRECISION ENGINEERING & ADVANCED INSTRUMENTS",
     hero_title: "Precision Engineering & Industrial Instruments",
-    hero_desc: "APH Labs engineers high-precision optical instruments, specialized aerodynamic simulation systems, and heavy-duty industrial processing machinery.",
+    hero_desc: "APH Labs engineers high-precision optical instruments, specialized aerodynamic simulation systems, and heavy-duty industrial processing equipment.",
     hero_btn_explore: "Explore Systems",
     hero_btn_contact: "Engineering Inquiry",
+    hero_jump_filament: "↓ Optical Gauging",
+    hero_jump_aero: "↓ Flow Generation",
+    hero_jump_shredder: "↓ Industrial Shearing",
 
     // Systems Section
     section_systems_title: "Featured Systems",
     section_systems_desc: "Proprietary machinery engineered for demanding industrial environments, tight tolerances, and operational reliability.",
     btn_view_specs: "View Technical Specifications",
-    btn_request_spec: "Request Specifications",
     btn_rfq_short: "Request Quote",
     badge_temp: "Operating Temp: -20 °C to +70 °C",
-    view_assembly: "Benchtop Assembly",
-    view_core: "SS316 Cutting Core",
 
     // System 1: Filament Gauge
     p1_tag: "OPTICAL INSTRUMENTS & QUALITY INSPECTION",
     p1_title: "Optical Filament Diameter Gauge",
     p1_desc: "100% non-contact orthogonal dual-axis optical gauging system for precision extrusion lines. Sub-micron accuracy, true ovality monitoring, zero physical deformation, and zero line drag.",
-    p1_h1: "100% Non-Contact Metrology: Zero deformation on flexible/warm polymers, zero mechanical wear, fully immune to abrasive CF/GF composites.",
+    p1_h1: "100% Non-Contact Optical Gauging: Zero deformation on flexible/warm polymers, zero mechanical wear, fully immune to abrasive CF/GF composites.",
     p1_h2: "Orthogonal Dual-Axis Tracking: Simultaneous 90° X/Y profile acquisition eliminates single-axis blind spots and false-roundness readings.",
     p1_h3: "Micron-Level Precision: 0.001 mm resolution with ±0.003 mm accuracy and ±0.001 mm repeatability.",
+    chip_filament: "0.001 mm Resolution • 100% Non-Contact",
     s1_k1: "Measurement Principle", s1_v1: "100% Non-Contact Orthogonal Dual-Axis (90° Offset)",
     s1_k2: "Target Stock Diameters", s1_v2: "1.75 mm Nominal (0.5 mm – 3.5 mm Configurable)",
     s1_k3: "Resolution & Repeatability", s1_v3: "0.001 mm (1 µm) / ±0.001 mm (±1 µm)",
@@ -56,6 +61,7 @@ const translations = {
     p2_h1: "2×2 Multi-Fan Active Flow Array: 4 independently controlled/synchronized high-response flow units.",
     p2_h2: "Up to 40 m/s (144 km/h): Continuously variable velocity control from low-speed laminar onset to peak airspeed.",
     p2_h3: "Rotational Wake Cancellation: Integrated downstream 3D aerodynamic stators eliminate swirl effects.",
+    chip_aero: "40 m/s Airspeed • Anti-Swirl Stators",
     s2_k1: "Array Architecture", s2_v1: "2×2 Multi-Fan Active Flow Array (4 Synchronized Flow Units)",
     s2_k2: "Maximum Air Velocity", s2_v2: "Up to 40 m/s (144 km/h / ~78 kts)",
     s2_k3: "Velocity Controllability", s2_v3: "Continuously Variable Regulation from Laminar Onset to Peak",
@@ -76,6 +82,11 @@ const translations = {
     p3_h2: "Surgical-Grade SS316 Core: Full CNC/laser-machined SS316 stainless steel resists corrosion and abrasive composite wear.",
     p3_h3: "52 RPM / 40 Nm High Shear: Low-speed rotation eliminates thermal softening, keeping polymers cold to preserve properties.",
     p3_h4: "Ultra-Quiet Benchtop Profile: < 65 dB acoustic signature under full load, suitable for desktop lab environments.",
+    label_shredder_assembly: "Benchtop Machine Assembly",
+    label_shredder_core: "SS316 Stainless Cutting Core",
+    chip_shredder_rpm: "52 RPM • 40 Nm Continuous Rating",
+    chip_shredder_pitch: "4.0 mm Pitch • SS316 Multi-Hook Rotor",
+    p3_highlights_title: "Core Performance Highlights",
     s3_k1: "Motor & Power Supply", s3_v1: "Single-Phase Industrial AC Induction Motor, 220V AC / 50 Hz",
     s3_k2: "Speed & Torque", s3_v2: "52 RPM Low-Speed Shear, 40 Nm Continuous Output Rating",
     s3_k3: "Cutting Architecture", s3_v3: "Single-Shaft Rotor + Precision Stationary Counter-Knives",
@@ -90,20 +101,6 @@ const translations = {
     s3_k12: "Acoustic Signature", s3_v12: "< 65 dB (Ultra-Low Noise, Desktop Lab Rated)",
     s3_k13: "Operating Temperature", s3_v13: "-20 °C to +70 °C",
 
-    // Specifications Comparison Table Section
-    section_specs_badge: "TECHNICAL MATRIX",
-    section_specs_title: "System Parameters Overview",
-    section_specs_desc: "Direct engineering comparison across our core machine platforms.",
-    th_system: "System Platform",
-    th_capacity: "Operating Capacity / Range",
-    th_precision: "Key Performance Metric",
-    th_drive: "Drive & Architecture",
-    th_temp: "Operating Temperature",
-
-    label_shredder_assembly: "Benchtop Machine Assembly",
-    label_shredder_core: "SS316 Stainless Cutting Core",
-    p3_highlights_title: "Core Performance Highlights",
-
     // Capabilities Section
     cap_badge: "CORE COMPETENCIES",
     cap_title: "End-to-End Engineering & Manufacturing",
@@ -112,7 +109,7 @@ const translations = {
     cap_1_desc: "3D solid modeling, kinematic mechanisms, tolerance stackup analysis, and DFM/DFA optimization for industrial machinery.",
     cap_2_title: "Aerodynamic Simulation & Flow Research",
     cap_2_desc: "Computational fluid dynamics, multi-fan flow array synchronization, boundary-layer studies, and anti-swirl flow conditioning.",
-    cap_3_title: "Non-Contact Metrology & Optical Inspection",
+    cap_3_title: "Non-Contact Optical Gauging & Inspection Instruments",
     cap_3_desc: "Orthogonal dual-axis gauging, sub-micron edge detection algorithms, telecentric backlighting stages, and real-time ovality tracking.",
     cap_4_title: "Embedded Systems & High-Speed DSP Firmware",
     cap_4_desc: "High-speed DSP signal acquisition, real-time edge processing algorithms, optical sensor drivers, and industrial communication architectures (CAN, UART, RS-485, Ethernet).",
@@ -141,47 +138,53 @@ const translations = {
     form_submit: "Transmit Inquiry",
     form_transmitting: "Transmitting...",
     form_success_title: "Inquiry Received",
-    form_success_desc: "Your inquiry has been successfully transmitted directly to our engineering desk (furkaniusprimes@gmail.com). We will review your specifications and follow up promptly.",
+    form_success_desc: "Your inquiry has been received and routed directly to our engineering desk. We will review your technical parameters and respond within one business day.",
+    btn_send_another: "Send Another Inquiry",
     
     // Direct contact and Footer
     contact_direct_label: "Direct Inquiries:",
     contact_phone_label: "Direct Phone:",
-    footer_copy: "APH LABS © 2026 • Precision Machinery & Industrial Instruments",
+    footer_copy: "APH LABS © 2026 • Precision Engineering & Industrial Instruments",
     footer_domain: "Official Domain: www.aph-labs.com"
   },
 
   tr: {
+    // Meta & Brand
+    meta_title: "APH Labs | Hassas Mühendislik & Endüstriyel Cihazlar",
+    meta_desc: "APH Labs; yüksek hassasiyetli optik ölçüm cihazları, özel aerodinamik simülasyon sistemleri ve ağır hizmet tipi endüstriyel sistemler tasarlar ve üretir.",
+    nav_brand_tag: "Hassas Mühendislik",
+
     // Navigation
     nav_systems: "Sistemler",
-    nav_specs: "Teknik Özellikler",
     nav_capabilities: "Yetkinlikler",
     nav_contact: "İletişim",
     btn_rfq: "İletişime Geçin",
     
     // Hero
-    hero_badge: "HASSAS MAKİNE VE ENDÜSTRİYEL CİHAZLAR",
+    hero_badge: "HASSAS MÜHENDİSLİK VE ENDÜSTRİYEL CİHAZLAR",
     hero_title: "Hassas Mühendislik ve Endüstriyel Cihazlar",
-    hero_desc: "APH Labs; yüksek hassasiyetli optik ölçüm cihazları, özel aerodinamik simülasyon sistemleri ve ağır hizmet tipi endüstriyel makineler tasarlar ve üretir.",
+    hero_desc: "APH Labs; yüksek hassasiyetli optik ölçüm cihazları, özel aerodinamik simülasyon sistemleri ve ağır hizmet tipi endüstriyel sistemler tasarlar ve üretir.",
     hero_btn_explore: "Sistemlerimizi İnceleyin",
     hero_btn_contact: "Mühendislik Talebi",
+    hero_jump_filament: "↓ Optik Ölçüm",
+    hero_jump_aero: "↓ Akış Jeneratörü",
+    hero_jump_shredder: "↓ Endüstriyel Kırma",
 
     // Systems Section
     section_systems_title: "Öne Çıkan Sistemler",
     section_systems_desc: "Zorlu endüstriyel koşullar, dar toleranslar ve yüksek çalışma stabilitesi için geliştirilmiş tescilli çözümler.",
     btn_view_specs: "Teknik Özellikleri İncele",
-    btn_request_spec: "Detay ve Şartname",
     btn_rfq_short: "Teklif Al",
     badge_temp: "Çalışma Sıcaklığı: -20 °C ila +70 °C",
-    view_assembly: "Tezgah Üstü Montaj",
-    view_core: "SS316 Kesici Çekirdek",
 
     // System 1: Filament Gauge
     p1_tag: "HASSAS CİHAZLAR & KALİTE KONTROL",
     p1_title: "Optik Filament Çap Ölçüm Cihazı",
     p1_desc: "Hassas ekstrüzyon hatları için %100 temassız ortogonal çift eksenli optik ölçüm sistemi. Sub-mikron hassasiyet, anlık ovallik takibi, sıfır mekanik deformasyon ve sıfır hat sürtünmesi.",
-    p1_h1: "%100 Temassız Ölçüm: Esnek ve sıcak polimerlerde sıfır deformasyon, aşındırıcı karbon/cam elyaf katkılı filamentlerde sıfır mekanik aşınma.",
+    p1_h1: "%100 Temassız Optik Ölçüm: Esnek ve sıcak polimerlerde sıfır deformasyon, aşındırıcı karbon/cam elyaf katkılı filamentlerde sıfır mekanik aşınma.",
     p1_h2: "Ortogonal Çift Eksenli Takip: Eş zamanlı 90° X ve Y düzlem profili analizi ile tek eksenli kör noktaları ve sahte yuvarlaklık hatalarını eler.",
     p1_h3: "Mikron Seviyesinde Hassasiyet: 0.001 mm çözünürlük, ±0.003 mm mutlak doğruluk ve ±0.001 mm tekrarlanabilirlik.",
+    chip_filament: "0.001 mm Çözünürlük • %100 Temassız",
     s1_k1: "Ölçüm Prensibi", s1_v1: "%100 Temassız Ortogonal Çift Eksen (90° Açı)",
     s1_k2: "Hedef Filament Çapı", s1_v2: "1.75 mm Nominal (0.5 mm – 3.5 mm Ayarlanabilir)",
     s1_k3: "Çözünürlük & Tekrarlanabilirlik", s1_v3: "0.001 mm (1 µm) / ±0.001 mm (±1 µm)",
@@ -202,6 +205,7 @@ const translations = {
     p2_h1: "2×2 Çoklu Fan Aktif Akış Matrisi: Bağımsız kontrol edilebilen ve senkronize 4 adet yüksek tepkili akış ünitesi.",
     p2_h2: "40 m/s (144 km/h) Hız: Düşük hızlardan tepe hızlara kadar kademesiz hassas hız regülasyonu.",
     p2_h3: "Dönel Girdap Sönümleme: Çıkış yönündeki 3D aerodinamik statorlar dönme kaynaklı türbülansı ve girdapları tamamen yok eder.",
+    chip_aero: "40 m/s Hava Hızı • Anti-Girdap Statorları",
     s2_k1: "Matris Mimarisi", s2_v1: "2×2 Çoklu Fan Aktif Akış Matrisi (4 Senkronize Akış Ünitesi)",
     s2_k2: "Maksimum Hava Hızı", s2_v2: "40 m/s'ye Kadar (144 km/h / ~78 kts)",
     s2_k3: "Hız Kontrol Edilebilirliği", s2_v3: "Laminer Başlangıçtan Zirve Hıza Kademesiz Hız Regülasyonu",
@@ -222,6 +226,11 @@ const translations = {
     p3_h2: "Cerrahi Sınıf SS316 Çelik: CNC/lazer hassas işlenmiş SS316 paslanmaz çelik bıçaklar korozyona ve aşındırıcı kompozitlere karşı üstün direnç sağlar.",
     p3_h3: "52 RPM / 40 Nm Yüksek Kesme: Düşük devir yüksek tork ile malzemeyi ısıtmadan ve erime/sakızlaşma yaptırmadan soğuk kesim sağlar.",
     p3_h4: "Ultra Sessiz Masaüstü Form: Tam yük altında < 65 dB gürültü seviyesi ile laboratuvar ve atölye ortamlarına uygundur.",
+    label_shredder_assembly: "Tezgah Üstü Makine Montajı",
+    label_shredder_core: "SS316 Paslanmaz Kesici Çekirdek",
+    chip_shredder_rpm: "52 RPM • 40 Nm Sürekli Tork",
+    chip_shredder_pitch: "4.0 mm Diş Aralığı • SS316 Çok Kancalı Rotor",
+    p3_highlights_title: "Temel Performans Özellikleri",
     s3_k1: "Motor & Güç Kaynağı", s3_v1: "Tek Faz Endüstriyel AC İndüksiyon Motoru, 220V AC / 50 Hz",
     s3_k2: "Hız & Tork Derecesi", s3_v2: "52 RPM Düşük Devir Kesme, 40 Nm Sürekli Tork Değeri",
     s3_k3: "Kesici Mimarisi", s3_v3: "Tek Şaftlı Rotor + Hassas İşlenmiş Sabit Karşı Bıçaklar",
@@ -236,20 +245,6 @@ const translations = {
     s3_k12: "Akustik Ses Seviyesi", s3_v12: "< 65 dB (Ultra Düşük Gürültü, Laboratuvar ve Ofis Uyumlu)",
     s3_k13: "Çalışma Sıcaklığı", s3_v13: "-20 °C ila +70 °C",
 
-    // Specifications Comparison Table Section
-    section_specs_badge: "TEKNİK MATRİS",
-    section_specs_title: "Sistem Parametreleri Genel Bakış",
-    section_specs_desc: "Temel makine platformlarımızın teknik karşılaştırması.",
-    th_system: "Sistem Platformu",
-    th_capacity: "Çalışma Kapasitesi / Aralığı",
-    th_precision: "Temel Performans Metriği",
-    th_drive: "Tahrik & Mimari",
-    th_temp: "Çalışma Sıcaklığı",
-
-    label_shredder_assembly: "Tezgah Üstü Makine Montajı",
-    label_shredder_core: "SS316 Paslanmaz Kesici Çekirdek",
-    p3_highlights_title: "Temel Performans Özellikleri",
-
     // Capabilities Section
     cap_badge: "KURUMSAL YETKİNLİKLER",
     cap_title: "Uçtan Uca Mühendislik ve İmalat",
@@ -258,7 +253,7 @@ const translations = {
     cap_1_desc: "Endüstriyel makineler için 3D katı modelleme, kinematik mekanizmalar, tolerans yığılım analizi ve üretime uygun tasarım (DFM/DFA).",
     cap_2_title: "Aerodinamik Simülasyon & Akış Araştırmaları",
     cap_2_desc: "Hesaplamalı akışkanlar dinamiği, çoklu fan akış matrisi senkronizasyonu, sınır tabaka araştırmaları ve anti-girdap akış şartlandırması.",
-    cap_3_title: "Temassız Metroloji & Optik Muayene",
+    cap_3_title: "Temassız Optik Ölçüm & Muayene Cihazları",
     cap_3_desc: "Ortogonal çift eksenli optik ölçüm, sub-mikron kenar algılama algoritmaları, telecentric aydınlatma kademeleri ve anlık ovallik takibi.",
     cap_4_title: "Gömülü Sistemler ve Yüksek Hızlı DSP Yazılımı",
     cap_4_desc: "Yüksek hızlı DSP sinyal işleme, gerçek zamanlı kenar yakalama algoritmaları, optik sensör sürücüleri ve endüstriyel haberleşme protokolleri (CAN, UART, RS-485, Ethernet).",
@@ -287,12 +282,13 @@ const translations = {
     form_submit: "Talebi Gönder",
     form_transmitting: "Gönderiliyor...",
     form_success_title: "Talebiniz Alındı",
-    form_success_desc: "Mühendislik talebiniz doğrudan ilgili mühendis masasına (furkaniusprimes@gmail.com) iletilmiştir. Gereksinimleriniz incelenerek tarafınıza hızla dönüş sağlanacaktır.",
+    form_success_desc: "Mühendislik talebiniz doğrudan mühendislik birimimize iletilmiştir. Teknik gereksinimleriniz incelenerek bir iş günü içinde tarafınıza dönüş yapılacaktır.",
+    btn_send_another: "Yeni Bir Talep Gönder",
     
     // Direct contact and Footer
     contact_direct_label: "Doğrudan İletişim:",
     contact_phone_label: "Doğrudan Telefon:",
-    footer_copy: "APH LABS © 2026 • Hassas Makine Sistemleri ve Endüstriyel Cihazlar",
+    footer_copy: "APH LABS © 2026 • Hassas Mühendislik & Endüstriyel Cihazlar",
     footer_domain: "Resmi Alan Adı: www.aph-labs.com"
   }
 };
@@ -308,6 +304,15 @@ function setLanguage(lang) {
   localStorage.setItem('aph_lang', lang);
 
   document.documentElement.lang = lang;
+
+  // Dynamic Title & Meta Description
+  if (translations[lang] && translations[lang].meta_title) {
+    document.title = translations[lang].meta_title;
+  }
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc && translations[lang] && translations[lang].meta_desc) {
+    metaDesc.setAttribute('content', translations[lang].meta_desc);
+  }
 
   // Text contents
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -454,6 +459,23 @@ document.addEventListener('DOMContentLoaded', () => {
           if (submitTextSpan) {
             submitTextSpan.textContent = originalText;
           }
+        }
+      }
+    });
+  }
+
+  // Reset Contact Form from Confirmation Screen
+  const btnSendAnother = document.getElementById('btnSendAnother');
+  if (btnSendAnother && contactForm && contactSuccess) {
+    btnSendAnother.addEventListener('click', () => {
+      contactSuccess.classList.add('hidden');
+      contactForm.classList.remove('hidden');
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const submitTextSpan = submitBtn ? submitBtn.querySelector('span') : null;
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        if (submitTextSpan) {
+          submitTextSpan.textContent = translations[currentLang]?.form_submit || "Transmit Inquiry";
         }
       }
     });
