@@ -20,13 +20,14 @@ const translations = {
     hero_btn_contact: "Engineering Inquiry",
 
     // Systems Section
-    section_systems_badge: "ENGINEERING PORTFOLIO",
     section_systems_title: "Featured Systems",
     section_systems_desc: "Proprietary machinery engineered for demanding industrial environments, tight tolerances, and operational reliability.",
     btn_view_specs: "View Technical Specifications",
     btn_request_spec: "Request Specifications",
     btn_rfq_short: "Request Quote",
     badge_temp: "Operating Temp: -20 °C to +70 °C",
+    view_assembly: "Benchtop Assembly",
+    view_core: "SS316 Cutting Core",
 
     // System 1: Filament Gauge
     p1_tag: "OPTICAL INSTRUMENTS & QUALITY INSPECTION",
@@ -154,13 +155,14 @@ const translations = {
     hero_btn_contact: "Mühendislik Talebi",
 
     // Systems Section
-    section_systems_badge: "MÜHENDİSLİK PORTFÖYÜ",
     section_systems_title: "Öne Çıkan Sistemler",
     section_systems_desc: "Zorlu endüstriyel koşullar, dar toleranslar ve yüksek çalışma stabilitesi için geliştirilmiş tescilli çözümler.",
     btn_view_specs: "Teknik Özellikleri İncele",
     btn_request_spec: "Detay ve Şartname",
     btn_rfq_short: "Teklif Al",
     badge_temp: "Çalışma Sıcaklığı: -20 °C ila +70 °C",
+    view_assembly: "Tezgah Üstü Montaj",
+    view_core: "SS316 Kesici Çekirdek",
 
     // System 1: Filament Gauge
     p1_tag: "HASSAS CİHAZLAR & KALİTE KONTROL",
@@ -390,6 +392,31 @@ document.addEventListener('DOMContentLoaded', () => {
         contactSuccess.classList.remove('hidden');
         contactForm.reset();
       }, 500);
+    });
+  }
+
+  // Shredder View Switcher
+  const shredderBtnAssembly = document.getElementById('shredderBtnAssembly');
+  const shredderBtnCore = document.getElementById('shredderBtnCore');
+  const shredderMainImg = document.getElementById('shredderMainImg');
+  if (shredderBtnAssembly && shredderBtnCore && shredderMainImg) {
+    shredderBtnAssembly.addEventListener('click', () => {
+      shredderMainImg.style.opacity = '0.4';
+      setTimeout(() => {
+        shredderMainImg.src = 'assets/img/renders/shredder_render.jpg';
+        shredderMainImg.style.opacity = '1';
+      }, 120);
+      shredderBtnAssembly.classList.add('active');
+      shredderBtnCore.classList.remove('active');
+    });
+    shredderBtnCore.addEventListener('click', () => {
+      shredderMainImg.style.opacity = '0.4';
+      setTimeout(() => {
+        shredderMainImg.src = 'assets/img/renders/shredder_core_render.jpg';
+        shredderMainImg.style.opacity = '1';
+      }, 120);
+      shredderBtnCore.classList.add('active');
+      shredderBtnAssembly.classList.remove('active');
     });
   }
 

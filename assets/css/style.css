@@ -131,6 +131,72 @@ body {
   background-color: var(--burgundy-subtle);
 }
 
+/* Studio Showcase Frames for Large Renderings */
+.studio-frame {
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
+
+.studio-frame:hover {
+  border-color: var(--burgundy-border);
+  box-shadow: 0 20px 40px -15px var(--burgundy-glow);
+}
+
+.studio-frame img {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.studio-frame:hover img {
+  transform: scale(1.02);
+}
+
+/* Feature highlight tag */
+.feature-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.3rem 0.75rem;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  border-radius: 9999px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* View Switcher Button */
+.view-switch-btn {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.view-switch-btn.active {
+  background-color: var(--burgundy-primary);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(122, 12, 46, 0.3);
+}
+
+.view-switch-btn:not(.active) {
+  color: var(--text-muted);
+  background-color: transparent;
+}
+
+.view-switch-btn:not(.active):hover {
+  color: var(--text-primary);
+  background-color: #f1f5f9;
+}
+
 /* Specs Accordion Styling */
 details.spec-drawer summary::-webkit-details-marker {
   display: none;
