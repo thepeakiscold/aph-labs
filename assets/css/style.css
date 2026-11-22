@@ -241,3 +241,58 @@ details.spec-drawer[open] summary svg {
   font-weight: 600;
   text-align: right;
 }
+
+/* Full-Page Product Datasheet Rows */
+.spec-row-lg {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid #F1F5F9;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 640px) {
+  .spec-row-lg {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+  }
+}
+
+.spec-row-lg:last-child {
+  border-bottom: none;
+}
+
+.spec-row-lg .spec-key {
+  font-size: 0.8rem;
+  padding-right: 0;
+}
+
+.spec-row-lg .spec-val {
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  .spec-row-lg .spec-val {
+    text-align: right;
+  }
+}
+
+/* Header Systems Dropdown */
+.nav-dropdown-panel {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+}
+
+.nav-dropdown.open .nav-dropdown-panel,
+.nav-dropdown:hover .nav-dropdown-panel,
+.nav-dropdown:focus-within .nav-dropdown-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

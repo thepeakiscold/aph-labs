@@ -141,6 +141,79 @@ const translations = {
     form_success_desc: "Your inquiry has been received and routed directly to our engineering desk. We will review your technical parameters and respond within one business day.",
     btn_send_another: "Send Another Inquiry",
     
+    // Navigation & Multi-Page Architecture
+    nav_home: "Home",
+    nav_all_systems: "All Systems Overview",
+    nav_p1_sub: "0.001 mm Resolution • Dual-Axis",
+    nav_p2_sub: "2×2 Array • Up to 40 m/s",
+    nav_p3_sub: "52 RPM / 40 Nm • SS316 Core",
+    btn_view_product: "View Product Details",
+    btn_compare_systems: "Compare All Systems",
+    btn_jump_specs: "Technical Specifications",
+
+    // Product Catalog & Shared Datasheet Sections
+    meta_catalog_title: "Systems Catalog | APH Labs",
+    meta_catalog_desc: "Explore APH Labs precision engineering systems: Optical Filament Diameter Gauge, Ducted Aerodynamic Flow Generator, and Single-Shaft Industrial Shredder.",
+    meta_p1_title: "Optical Filament Diameter Gauge | APH Labs",
+    meta_p1_desc: "100% non-contact orthogonal dual-axis optical filament diameter gauge with 0.001 mm resolution, ±0.003 mm accuracy, and 100 Hz closed-loop extrusion control.",
+    meta_p2_title: "Ducted Aerodynamic Flow Generator | APH Labs",
+    meta_p2_desc: "2×2 multi-fan active aerodynamic flow generator delivering up to 40 m/s laminar airspeed with 3D anti-swirl stators and Python / ROS 2 digital control.",
+    meta_p3_title: "Single-Shaft Industrial Shredder | APH Labs",
+    meta_p3_desc: "Benchtop 52 RPM / 40 Nm single-shaft industrial polymer shredder with SS316 stainless steel cutting core, 4.0 mm pitch, and < 65 dB lab operation.",
+
+    catalog_badge: "PRODUCT ARCHITECTURE",
+    catalog_title: "APH Labs Industrial Systems",
+    catalog_desc: "Explore dedicated technical documentation, system architecture, and engineering specifications for each platform.",
+    catalog_compare_title: "Platform Comparison Matrix",
+    catalog_col_system: "System",
+    catalog_col_domain: "Engineering Domain",
+    catalog_col_metric: "Primary Benchmark",
+    catalog_col_interface: "Control & Interface",
+    catalog_col_temp: "Operating Range",
+    catalog_col_page: "Documentation",
+    catalog_custom_title: "Need a Custom Turnkey Configuration?",
+    catalog_custom_desc: "Discuss bespoke machine architectures, sensor integrations, or specialized process automation directly with our engineering team.",
+
+    section_arch_badge: "SYSTEM ARCHITECTURE",
+    section_arch_title: "Engineering Highlights & Subsystems",
+    section_specs_badge: "ENGINEERING DATASHEET",
+    section_specs_title: "Full Technical Specifications",
+    section_specs_desc: "Verified operational parameters, interfaces, and mechanical tolerances.",
+    section_related_title: "Explore Other APH Labs Systems",
+    product_inquiry_badge: "DIRECT ENGINEERING INQUIRY",
+    product_inquiry_title: "Request Engineering Quote & Datasheet",
+    product_inquiry_desc: "Submit your process parameters and target requirements directly to our engineering desk.",
+
+    // Product 1 KPIs & Subsystems
+    p1_kpi1_val: "0.001 mm", p1_kpi1_lbl: "Resolution (1 µm)",
+    p1_kpi2_val: "±0.003 mm", p1_kpi2_lbl: "Absolute Accuracy",
+    p1_kpi3_val: "100 Hz", p1_kpi3_lbl: "Dual-Plane Rate",
+    p1_kpi4_val: "90° X/Y", p1_kpi4_lbl: "Orthogonal Axes",
+    p1_sub1_title: "Optical Acquisition & Telecentric Stage",
+    p1_sub1_desc: "Dual synchronized CMOS machine vision sensors paired with macro optics and dual diffused telecentric LED backlighting measure continuous X/Y diameter, true ovality ratio, and eccentricity across 0.5 mm – 3.5 mm stock (1.75 mm nominal).",
+    p1_sub2_title: "Industrial Connectivity & Closed-Loop Control",
+    p1_sub2_desc: "Outputs timestamped CSV telemetry via USB (Virtual COM), UART, CAN, and Ethernet while regulating closed-loop puller speed and extruder screw RPM from a rigid 2020/3030 aluminum optical bench.",
+
+    // Product 2 KPIs & Subsystems
+    p2_kpi1_val: "2×2", p2_kpi1_lbl: "Active Flow Array",
+    p2_kpi2_val: "40 m/s", p2_kpi2_lbl: "Peak Airspeed",
+    p2_kpi3_val: "3D Stators", p2_kpi3_lbl: "Anti-Swirl Wake",
+    p2_kpi4_val: "ROS 2 / Py", p2_kpi4_lbl: "Digital Control API",
+    p2_sub1_title: "Multi-Fan Drive & Flow Conditioning",
+    p2_sub1_desc: "Four synchronized brushless electric flow units with digital ESCs drive continuously variable airspeeds up to 40 m/s (144 km/h), conditioned by downstream 3D anti-swirl stators and protective inlet/outlet FOD screens inside a Sigma aluminum T-slot frame.",
+    p2_sub2_title: "Modulation Profiles & Research Integration",
+    p2_sub2_desc: "Supports steady-state hold, automated ramping, dynamic gusts, and stepped wind profiles over UART, PWM, CAN, and USB (Python & ROS 2 API ready) for propeller testing, pitot/airspeed calibration, and UAV HIL simulation.",
+
+    // Product 3 KPIs & Subsystems
+    p3_kpi1_val: "52 RPM", p3_kpi1_lbl: "Low-Speed Shear",
+    p3_kpi2_val: "40 Nm", p3_kpi2_lbl: "Continuous Torque",
+    p3_kpi3_val: "SS316", p3_kpi3_lbl: "Cutting Core",
+    p3_kpi4_val: "< 65 dB", p3_kpi4_lbl: "Lab Acoustic",
+    p3_sub1_title: "SS316 Rotor Geometry & Sizing Screen",
+    p3_sub1_desc: "A 160 × 140 × 110 mm multi-hook autonomous pull-in chamber pairs a single-shaft SS316 rotor with stationary counter-knives at 4.0 mm pitch and interchangeable 4–5 mm stainless discharge mesh, outputting 2–6 kg/h of uniform ~4 mm regrind.",
+    p3_sub2_title: "AC Induction Drive, Safety & Polymer Range",
+    p3_sub2_desc: "Powered by a 220V AC / 50 Hz single-phase induction motor with Forward / Stop / Instant Reverse switchgear and momentary jam clearing, processing PLA, PETG, ABS, PA/Nylon, PP, HDPE, LDPE, and PS walls up to 3.5 mm quietly below 65 dB.",
+
     // Direct contact and Footer
     contact_direct_label: "Direct Inquiries:",
     contact_phone_label: "Direct Phone:",
@@ -285,6 +358,79 @@ const translations = {
     form_success_desc: "Mühendislik talebiniz doğrudan mühendislik birimimize iletilmiştir. Teknik gereksinimleriniz incelenerek bir iş günü içinde tarafınıza dönüş yapılacaktır.",
     btn_send_another: "Yeni Bir Talep Gönder",
     
+    // Navigation & Multi-Page Architecture
+    nav_home: "Ana Sayfa",
+    nav_all_systems: "Tüm Sistemlere Genel Bakış",
+    nav_p1_sub: "0.001 mm Çözünürlük • Çift Eksen",
+    nav_p2_sub: "2×2 Matris • 40 m/s'ye Kadar",
+    nav_p3_sub: "52 RPM / 40 Nm • SS316 Çekirdek",
+    btn_view_product: "Ürün Detaylarını İncele",
+    btn_compare_systems: "Tüm Sistemleri Karşılaştır",
+    btn_jump_specs: "Teknik Özellikler",
+
+    // Product Catalog & Shared Datasheet Sections
+    meta_catalog_title: "Sistem Kataloğu | APH Labs",
+    meta_catalog_desc: "APH Labs hassas mühendislik sistemlerini inceleyin: Optik Filament Çap Ölçüm Cihazı, Kanallı Aerodinamik Akış Jeneratörü ve Tek Şaftlı Endüstriyel Parçalayıcı.",
+    meta_p1_title: "Optik Filament Çap Ölçüm Cihazı | APH Labs",
+    meta_p1_desc: "0.001 mm çözünürlük, ±0.003 mm doğruluk ve 100 Hz kapalı çevrim ekstrüzyon kontrolü sunan %100 temassız ortogonal çift eksenli optik filament çap ölçüm cihazı.",
+    meta_p2_title: "Kanallı Aerodinamik Akış Jeneratörü | APH Labs",
+    meta_p2_desc: "3D anti-girdap statorları ve Python / ROS 2 dijital kontrol ile 40 m/s'ye kadar laminer hava hızı sağlayan 2×2 çoklu fan aktif aerodinamik akış jeneratörü.",
+    meta_p3_title: "Tek Şaftlı Endüstriyel Parçalayıcı | APH Labs",
+    meta_p3_desc: "SS316 paslanmaz çelik kesici çekirdek, 4.0 mm diş adımı ve < 65 dB laboratuvar sessizliğine sahip tezgah üstü 52 RPM / 40 Nm tek şaftlı endüstriyel parçalayıcı.",
+
+    catalog_badge: "ÜRÜN MİMARİSİ",
+    catalog_title: "APH Labs Endüstriyel Sistemleri",
+    catalog_desc: "Her platform için özel teknik dokümantasyonu, sistem mimarisini ve mühendislik şartnamelerini inceleyin.",
+    catalog_compare_title: "Platform Karşılaştırma Matrisi",
+    catalog_col_system: "Sistem",
+    catalog_col_domain: "Mühendislik Alanı",
+    catalog_col_metric: "Temel Performans",
+    catalog_col_interface: "Kontrol & Arayüz",
+    catalog_col_temp: "Çalışma Aralığı",
+    catalog_col_page: "Dokümantasyon",
+    catalog_custom_title: "Özel Anahtar Teslim Konfigürasyon mu Gerekiyor?",
+    catalog_custom_desc: "Özel makine mimarileri, sensör entegrasyonları veya prosese özel otomasyon çözümleri için mühendislik ekibimizle doğrudan görüşün.",
+
+    section_arch_badge: "SİSTEM MİMARİSİ",
+    section_arch_title: "Mühendislik Öne Çıkanları & Alt Sistemler",
+    section_specs_badge: "MÜHENDİSLİK VERİ SAYFASI",
+    section_specs_title: "Tam Teknik Özellikler",
+    section_specs_desc: "Doğrulanmış çalışma parametreleri, haberleşme arayüzleri ve mekanik toleranslar.",
+    section_related_title: "Diğer APH Labs Sistemlerini İnceleyin",
+    product_inquiry_badge: "DOĞRUDAN MÜHENDİSLİK TALEBİ",
+    product_inquiry_title: "Teklif ve Teknik Veri Talebi",
+    product_inquiry_desc: "Proses parametrelerinizi ve teknik gereksinimlerinizi doğrudan mühendislik birimimize iletin.",
+
+    // Product 1 KPIs & Subsystems
+    p1_kpi1_val: "0.001 mm", p1_kpi1_lbl: "Çözünürlük (1 µm)",
+    p1_kpi2_val: "±0.003 mm", p1_kpi2_lbl: "Mutlak Doğruluk",
+    p1_kpi3_val: "100 Hz", p1_kpi3_lbl: "Çift Düzlem Hızı",
+    p1_kpi4_val: "90° X/Y", p1_kpi4_lbl: "Ortogonal Eksen",
+    p1_sub1_title: "Optik Algılama & Telecentric Kademe",
+    p1_sub1_desc: "Makro lensli çift senkron CMOS makine görüsü sensörleri ve çift difüzörlü telecentric LED arka aydınlatma; 0.5 mm – 3.5 mm aralığında (1.75 mm nominal) anlık X/Y çapı, gerçek ovallik oranı ve dairesellik sapmasını ölçer.",
+    p1_sub2_title: "Endüstriyel Bağlantı & Kapalı Çevrim Kontrol",
+    p1_sub2_desc: "USB (Sanal COM), UART, CAN ve Ethernet üzerinden zaman damgalı CSV veri kaydı sunarken; rijit 2020/3030 alüminyum optik şasi üzerinde çekici hızı ve ekstrüder vidası devri için kapalı çevrim kontrol sağlar.",
+
+    // Product 2 KPIs & Subsystems
+    p2_kpi1_val: "2×2", p2_kpi1_lbl: "Aktif Akış Matrisi",
+    p2_kpi2_val: "40 m/s", p2_kpi2_lbl: "Maks. Hava Hızı",
+    p2_kpi3_val: "3D Stator", p2_kpi3_lbl: "Girdap Sönümleme",
+    p2_kpi4_val: "ROS 2 / Py", p2_kpi4_lbl: "Dijital Kontrol API",
+    p2_sub1_title: "Çoklu Fan Tahriki & Akış Şartlandırma",
+    p2_sub1_desc: "Dijital ESC'li dört senkronize fırçasız elektrik motorlu akış ünitesi 40 m/s'ye (144 km/h) kadar kademesiz hız üretir; çıkış 3D anti-girdap statorları ve giriş/çıkış FOD koruma ızgaraları ile Sigma alüminyum T-kanal şaside şartlandırılır.",
+    p2_sub2_title: "Modülasyon Modları & Araştırma Entegrasyonu",
+    p2_sub2_desc: "Pervane testleri, pitot/hız sensörü kalibrasyonu ve İHA HIL simülasyonları için UART, PWM, CAN ve USB (Python & ROS 2 API uyumlu) üzerinden sabit hız tutma, otomatik rampa, dinamik darbe ve adımlı rüzgar profilleri sunar.",
+
+    // Product 3 KPIs & Subsystems
+    p3_kpi1_val: "52 RPM", p3_kpi1_lbl: "Düşük Devir Kesme",
+    p3_kpi2_val: "40 Nm", p3_kpi2_lbl: "Sürekli Tork",
+    p3_kpi3_val: "SS316", p3_kpi3_lbl: "Kesici Çekirdek",
+    p3_kpi4_val: "< 65 dB", p3_kpi4_lbl: "Lab Ses Seviyesi",
+    p3_sub1_title: "SS316 Rotor Geometrisi & Elek Sistemi",
+    p3_sub1_desc: "160 × 140 × 110 mm çok kancalı otomatik beslemeli kesme haznesi; 4.0 mm diş adımında tek şaftlı SS316 rotor, sabit karşı bıçaklar ve değiştirilebilir 4–5 mm delikli paslanmaz elek ile saatte 2–6 kg homojen ~4 mm granül üretir.",
+    p3_sub2_title: "AC İndüksiyon Tahriki, Güvenlik & Polimer Uyumu",
+    p3_sub2_desc: "220V AC / 50 Hz tek faz endüstriyel AC indüksiyon motoru ve İleri / Dur / Anlık Geri şalteri ile donatılmıştır; 3.5 mm et kalınlığına kadar PLA, PETG, ABS, PA/Naylon, PP, HDPE, LDPE ve PS malzemeleri 65 dB altında işler.",
+
     // Direct contact and Footer
     contact_direct_label: "Doğrudan İletişim:",
     contact_phone_label: "Doğrudan Telefon:",
@@ -296,7 +442,16 @@ const translations = {
 let currentLang = 'en';
 
 /**
- * Apply Language to DOM
+ * Safely dispatch custom GA4 events without blocking when gtag is unavailable
+ */
+function trackAnalyticsEvent(eventName, params = {}) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName, params);
+  }
+}
+
+/**
+ * Apply Language to DOM across root and individual product pages
  */
 function setLanguage(lang) {
   if (!translations[lang]) lang = 'en';
@@ -305,28 +460,35 @@ function setLanguage(lang) {
 
   document.documentElement.lang = lang;
 
-  // Dynamic Title & Meta Description
-  if (translations[lang] && translations[lang].meta_title) {
-    document.title = translations[lang].meta_title;
+  const titleKey = document.body?.dataset.pageTitleKey || 'meta_title';
+  const descKey = document.body?.dataset.pageDescKey || 'meta_desc';
+  const dict = translations[lang];
+
+  if (dict && dict[titleKey]) {
+    document.title = dict[titleKey];
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', dict[titleKey]);
   }
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc && translations[lang] && translations[lang].meta_desc) {
-    metaDesc.setAttribute('content', translations[lang].meta_desc);
+  if (dict && dict[descKey]) {
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', dict[descKey]);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', dict[descKey]);
   }
 
   // Text contents
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (translations[lang] && translations[lang][key] !== undefined) {
-      el.textContent = translations[lang][key];
+    if (dict && dict[key] !== undefined) {
+      el.textContent = dict[key];
     }
   });
 
   // Placeholders
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const key = el.getAttribute('data-i18n-placeholder');
-    if (translations[lang] && translations[lang][key] !== undefined) {
-      el.placeholder = translations[lang][key];
+    if (dict && dict[key] !== undefined) {
+      el.placeholder = dict[key];
     }
   });
 
@@ -350,7 +512,7 @@ async function detectUserLanguage() {
   }
 
   const navLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-  let detected = navLang.startsWith('tr') ? 'tr' : 'en';
+  const detected = navLang.startsWith('tr') ? 'tr' : 'en';
   setLanguage(detected);
 
   try {
@@ -358,36 +520,43 @@ async function detectUserLanguage() {
     const timeoutId = setTimeout(() => controller.abort(), 1800);
     const res = await fetch('https://ipapi.co/json/', { signal: controller.signal });
     clearTimeout(timeoutId);
-    
+
     if (res.ok) {
       const data = await res.json();
-      if (data.country_code === 'TR') {
-        if (!localStorage.getItem('aph_lang')) {
-          setLanguage('tr');
-        }
+      if (data.country_code === 'TR' && !localStorage.getItem('aph_lang')) {
+        setLanguage('tr');
       }
     }
   } catch (err) {}
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  detectUserLanguage();
-
-  // Language Toggles
+/**
+ * Initialize header language toggles and dropdown navigation
+ */
+function initNavigation() {
   document.querySelectorAll('.lang-btn-tr').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       setLanguage('tr');
+      trackAnalyticsEvent('language_switch', { language: 'tr' });
     });
   });
   document.querySelectorAll('.lang-btn-en').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       setLanguage('en');
+      trackAnalyticsEvent('language_switch', { language: 'en' });
     });
   });
 
-  // Mobile Menu
+  document.querySelectorAll('a[href^="tel:"], a[href^="mailto:"]').forEach(link => {
+    link.addEventListener('click', () => {
+      const href = link.getAttribute('href') || '';
+      const method = href.startsWith('tel:') ? 'phone' : 'email';
+      trackAnalyticsEvent('contact_click', { contact_method: method });
+    });
+  });
+
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
   if (mobileMenuBtn && mobileMenu) {
@@ -399,77 +568,155 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Contact Form (Real-Time Dispatch to furkaniusprimes@gmail.com)
-  const contactForm = document.getElementById('contactForm');
-  const contactSuccess = document.getElementById('contactSuccess');
-  if (contactForm && contactSuccess) {
-    contactForm.addEventListener('submit', async (e) => {
+  // Accessible toggle support for desktop Systems dropdown
+  const dropdowns = document.querySelectorAll('.nav-dropdown');
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+    if (!trigger) return;
+
+    trigger.addEventListener('click', (e) => {
       e.preventDefault();
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const submitTextSpan = submitBtn ? submitBtn.querySelector('span') : null;
-      const originalText = submitTextSpan ? submitTextSpan.textContent : (submitBtn ? submitBtn.textContent : '');
+      const isOpen = dropdown.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', String(isOpen));
+    });
+  });
 
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        if (submitTextSpan) {
-          submitTextSpan.textContent = translations[currentLang].form_transmitting || "Transmitting...";
-        }
+  document.addEventListener('click', (e) => {
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+        const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+        if (trigger) trigger.setAttribute('aria-expanded', 'false');
       }
+    });
+  });
 
-      const targetSystem = document.getElementById('formTargetMachine')?.value || 'Precision Engineering Inquiry';
-      const fullName = document.getElementById('formFullName')?.value || '';
-      const company = document.getElementById('formCompany')?.value || '';
-      const email = document.getElementById('formEmail')?.value || '';
-      const notes = document.getElementById('formNotes')?.value || '';
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdowns.forEach(dropdown => {
+        dropdown.classList.remove('open');
+        const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+}
 
-      const payload = {
-        _subject: `New APH Labs Inquiry: ${targetSystem} [${company || fullName}]`,
-        _replyto: email,
-        _template: "table",
-        _captcha: "false",
-        "Target System": targetSystem,
-        "Contact Person": fullName,
-        "Company / Organization": company,
-        "Email Address": email,
-        "Technical Scope & Requirements": notes,
-        "Direct Phone Line": "+90 553 821 62 99"
-      };
+/**
+ * Resolve default product index for the inquiry select control
+ */
+function applyDefaultTargetSystem() {
+  const select = document.getElementById('formTargetMachine');
+  if (!select) return;
 
-      try {
-        await fetch("https://formsubmit.co/ajax/furkaniusprimes@gmail.com", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-          },
-          body: JSON.stringify(payload)
-        });
+  const params = new URLSearchParams(window.location.search);
+  const queryIndex = params.get('system');
+  const bodyIndex = document.body?.dataset.defaultSystem;
+  const rawIndex = queryIndex !== null ? queryIndex : bodyIndex;
 
-        contactForm.classList.add('hidden');
-        contactSuccess.classList.remove('hidden');
-        contactForm.reset();
-      } catch (err) {
-        console.warn("Transmission notice:", err);
-        contactForm.classList.add('hidden');
-        contactSuccess.classList.remove('hidden');
-        contactForm.reset();
-      } finally {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          if (submitTextSpan) {
-            submitTextSpan.textContent = originalText;
-          }
+  if (rawIndex !== undefined && rawIndex !== null && rawIndex !== '') {
+    const idx = parseInt(rawIndex, 10);
+    if (!Number.isNaN(idx) && idx >= 0 && idx < select.options.length) {
+      select.selectedIndex = idx;
+    }
+  }
+}
+
+/**
+ * Initialize Contact / RFQ Form (Real-Time Dispatch to furkaniusprimes@gmail.com)
+ */
+function initContactForm() {
+  applyDefaultTargetSystem();
+
+  document.querySelectorAll('[data-target-machine]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const machineIndex = btn.getAttribute('data-target-machine');
+      const select = document.getElementById('formTargetMachine');
+      if (select && machineIndex !== null) {
+        const idx = parseInt(machineIndex, 10);
+        if (!Number.isNaN(idx) && idx >= 0 && idx < select.options.length) {
+          select.selectedIndex = idx;
         }
       }
     });
-  }
+  });
 
-  // Reset Contact Form from Confirmation Screen
+  const contactForm = document.getElementById('contactForm');
+  const contactSuccess = document.getElementById('contactSuccess');
+  if (!contactForm || !contactSuccess) return;
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const submitTextSpan = submitBtn ? submitBtn.querySelector('span') : null;
+    const originalText = submitTextSpan ? submitTextSpan.textContent : (submitBtn ? submitBtn.textContent : '');
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      if (submitTextSpan) {
+        submitTextSpan.textContent = translations[currentLang].form_transmitting || "Transmitting...";
+      }
+    }
+
+    const targetSystem = document.getElementById('formTargetMachine')?.value || 'Precision Engineering Inquiry';
+    const fullName = document.getElementById('formFullName')?.value || '';
+    const company = document.getElementById('formCompany')?.value || '';
+    const email = document.getElementById('formEmail')?.value || '';
+    const notes = document.getElementById('formNotes')?.value || '';
+
+    const payload = {
+      _subject: `New APH Labs Inquiry: ${targetSystem} [${company || fullName}]`,
+      _replyto: email,
+      _template: "table",
+      _captcha: "false",
+      "Target System": targetSystem,
+      "Contact Person": fullName,
+      "Company / Organization": company,
+      "Email Address": email,
+      "Technical Scope & Requirements": notes,
+      "Source Page": window.location.pathname,
+      "Direct Phone Line": "+90 553 821 62 99"
+    };
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/furkaniusprimes@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+      if (response.ok) {
+        trackAnalyticsEvent('generate_lead', {
+          target_system: targetSystem,
+          page_language: currentLang
+        });
+      }
+    } catch (err) {
+      console.warn("Transmission notice:", err);
+    } finally {
+      contactForm.classList.add('hidden');
+      contactSuccess.classList.remove('hidden');
+      contactForm.reset();
+      applyDefaultTargetSystem();
+
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        if (submitTextSpan) {
+          submitTextSpan.textContent = originalText;
+        }
+      }
+    }
+  });
+
   const btnSendAnother = document.getElementById('btnSendAnother');
-  if (btnSendAnother && contactForm && contactSuccess) {
+  if (btnSendAnother) {
     btnSendAnother.addEventListener('click', () => {
       contactSuccess.classList.add('hidden');
       contactForm.classList.remove('hidden');
+      applyDefaultTargetSystem();
+
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const submitTextSpan = submitBtn ? submitBtn.querySelector('span') : null;
       if (submitBtn) {
@@ -480,15 +727,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+}
 
-  // Pre-fill target machine in form
-  document.querySelectorAll('[data-target-machine]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const machineIndex = btn.getAttribute('data-target-machine');
-      const select = document.getElementById('formTargetMachine');
-      if (select && machineIndex !== null) {
-        select.selectedIndex = parseInt(machineIndex, 10);
-      }
-    });
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  detectUserLanguage();
+  initNavigation();
+  initContactForm();
 });

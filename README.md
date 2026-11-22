@@ -29,14 +29,21 @@ Direct link: [Cloudflare DNS Records](https://dash.cloudflare.com/505c1a2d6a27a3
 
 ```
 APH SYSTEMS WEBPAGE/
-├── index.html                  # Main responsive single-page landing site
-├── CNAME                       # GitHub Pages domain routing (www.aph-labs.com)
-├── assets/
-│   ├── css/style.css           # Styling, dark engineering aesthetic, animations
-│   ├── js/main.js              # Telemetry simulator, RFQ modal, mobile drawer
-│   └── img/                    # Engineering graphics, FEA results, sensor snaps
-└── .github/workflows/
-    └── deploy.yml              # Automatic GitHub Pages CI/CD deployment
+├── index.html                                  # Main landing page (overview, systems summary, capabilities, contact)
+├── products/
+│   ├── index.html                              # Systems catalog & platform comparison matrix
+│   ├── optical-filament-gauge.html             # Optical Filament Diameter Gauge product page
+│   ├── aerodynamic-flow-generator.html         # Ducted Aerodynamic Flow Generator product page
+│   └── industrial-shredder.html                # Single-Shaft Industrial Shredder product page
+├── CNAME                                       # GitHub Pages domain routing (www.aph-labs.com)
+├── sitemap.xml                                 # Search engine sitemap covering homepage & product pages
+├── robots.txt                                  # Crawler directives
+└── assets/
+    ├── css/style.css                           # Styling, executive palette, datasheet & dropdown styles
+    ├── js/
+    │   ├── tailwind-config.js                  # Shared Tailwind theme palette configuration
+    │   └── main.js                             # Multilingual i18n (EN/TR), dropdowns, inquiry routing
+    └── img/                                    # Studio renders, branding assets, favicons
 ```
 
 ---
