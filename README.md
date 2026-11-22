@@ -29,13 +29,13 @@ Direct link: [Cloudflare DNS Records](https://dash.cloudflare.com/505c1a2d6a27a3
 
 ```
 APH SYSTEMS WEBPAGE/
-├── index.html                                  # Main landing page (overview, systems summary, capabilities, contact)
+├── index.html                                      # Main landing page (overview, products summary, capabilities, contact)
 ├── products/
-│   ├── index.html                              # Systems catalog & platform comparison matrix
-│   ├── optical-filament-gauge.html             # Optical Filament Diameter Gauge product page
-│   ├── aerodynamic-flow-generator.html         # Ducted Aerodynamic Flow Generator product page
-│   └── industrial-shredder.html                # Single-Shaft Industrial Shredder product page
-├── CNAME                                       # GitHub Pages domain routing (www.aph-labs.com)
+│   ├── index.html                                  # Products and Solutions catalog & comparison matrix (/products/)
+│   ├── optical-filament-gauge/index.html           # Optical Filament Diameter Gauge page (/products/optical-filament-gauge/)
+│   ├── aerodynamic-flow-generator/index.html       # Ducted Aerodynamic Flow Generator page (/products/aerodynamic-flow-generator/)
+│   └── industrial-shredder/index.html              # Single-Shaft Industrial Shredder page (/products/industrial-shredder/)
+├── CNAME                                           # GitHub Pages domain routing (www.aph-labs.com)
 ├── sitemap.xml                                 # Search engine sitemap covering homepage & product pages
 ├── robots.txt                                  # Crawler directives
 └── assets/
