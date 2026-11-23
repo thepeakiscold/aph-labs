@@ -35,7 +35,7 @@
   --font-text: 'Wix Madefor Text', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  --header-h: 52px;
+  --header-h: 64px;
   --radius-btn: 5px;
   --radius-video: 10px;
   --radius-card: 14px;
@@ -192,7 +192,7 @@ button {
 }
 
 .brand-logo-img {
-  height: 24px;
+  height: 42px;
   width: auto;
   object-fit: contain;
 }
@@ -1624,6 +1624,13 @@ button {
   gap: 20px;
 }
 
+.footer-logo-img {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.92;
+}
+
 .footer-legal-links a:hover {
   color: #ffffff;
 }
@@ -2208,6 +2215,10 @@ button {
 }
 
 @media (max-width: 560px) {
+  .brand-logo-img {
+    height: 34px;
+  }
+
   .form-row-2 {
     grid-template-columns: 1fr;
   }

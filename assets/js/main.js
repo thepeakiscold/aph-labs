@@ -267,7 +267,6 @@ const translations = {
     contact_title: "Projeniz İçin Mühendislik Ekibimizle Görüşün",
     contact_desc: "Standart platform teklifleri, laboratuvar demoları veya kuruma özel anahtar teslim makine tasarımları için doğrudan bizimle bağlantı kurun.",
     contact_email_lbl: "Doğrudan E-posta",
-    contact_phone_lbl: "Doğrudan Telefon",
     contact_domain_lbl: "Resmi Alan Adı",
     form_machine_label: "İlgilendiğiniz Sistem",
     form_machine_opt1: "Optik Filament Çap Ölçüm Cihazı",
@@ -284,6 +283,7 @@ const translations = {
     form_notes_placeholder: "Proses parametreleri, hedef toleranslar veya kurulum detayları...",
     form_submit: "Mühendislik Talebini Gönder",
     form_transmitting: "Gönderiliyor...",
+    form_error: "Talebiniz şu anda gönderilemedi. Lütfen doğrudan info@aphlaboratories.com adresine e-posta gönderin.",
     form_success_title: "Talebiniz Alındı",
     form_success_desc: "Mühendislik talebiniz ekibimize iletildi. Teknik parametreleriniz incelenerek bir iş günü içinde size dönüş yapılacaktır.",
     btn_send_another: "Yeni Bir Talep Gönder",
@@ -307,6 +307,7 @@ const translations = {
     footer_news_placeholder: "E-postanızı girin",
     footer_news_btn: "Bültene Abone Olun",
     footer_news_ok: "Kaydınız alındı. Yeni mühendislik duyurularında bilgilendirileceksiniz.",
+    footer_news_err: "Abonelik şu anda tamamlanamadı. Lütfen daha sonra tekrar deneyin.",
     footer_contact: "İletişim",
     footer_privacy: "Gizlilik Politikası",
     footer_copy: "© 2026 APH Labs — Hassas Mühendislik ve Endüstriyel Cihazlar"
@@ -575,7 +576,6 @@ const translations = {
     contact_title: "Speak Directly With Our Engineering Team",
     contact_desc: "Reach out for standard platform quotes, laboratory demonstrations, or custom turnkey machinery architectures.",
     contact_email_lbl: "Direct Email",
-    contact_phone_lbl: "Direct Phone",
     contact_domain_lbl: "Official Domain",
     form_machine_label: "Target System",
     form_machine_opt1: "Optical Filament Diameter Gauge",
@@ -592,6 +592,7 @@ const translations = {
     form_notes_placeholder: "Process parameters, target tolerances, or commissioning details...",
     form_submit: "Transmit Engineering Inquiry",
     form_transmitting: "Transmitting...",
+    form_error: "Unable to transmit your inquiry right now. Please email info@aphlaboratories.com directly.",
     form_success_title: "Inquiry Received",
     form_success_desc: "Your technical inquiry has been routed directly to our engineering desk. We will respond within one business day.",
     btn_send_another: "Send Another Inquiry",
@@ -615,6 +616,7 @@ const translations = {
     footer_news_placeholder: "Enter your email",
     footer_news_btn: "Subscribe",
     footer_news_ok: "Subscribed. We will share new engineering releases with you.",
+    footer_news_err: "Subscription could not be completed right now. Please try again later.",
     footer_contact: "Contact",
     footer_privacy: "Privacy Policy",
     footer_copy: "© 2026 APH Labs — Precision Engineering & Industrial Instruments"
@@ -995,11 +997,13 @@ function initScrollReveal() {
 }
 
 /* ==========================================================================
-   Contact & Newsletter Forms (Formsubmit -> furkaniusprimes@gmail.com)
+   Contact & Newsletter Forms (Formsubmit -> info@aphlaboratories.com)
    ========================================================================== */
+const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/info@aphlaboratories.com";
+
 function applyDefaultTargetSystem() {
   const select = document.getElementById("formTargetMachine");
-  if (!select) return;
+  if (!select || !select.options) return;
   const params = new URLSearchParams(window.location.search);
   const raw = params.get("system") ?? document.body?.dataset.defaultSystem;
   if (raw !== undefined && raw !== null && raw !== "") {
@@ -1010,6 +1014,19 @@ function applyDefaultTargetSystem() {
   }
 }
 
+function getOrCreateFormErrorEl(form) {
+  let errEl = form.querySelector(".form-error-banner");
+  if (!errEl) {
+    errEl = document.createElement("div");
+    errEl.className = "form-error-banner";
+    errEl.setAttribute("role", "alert");
+    errEl.style.cssText =
+      "display:none;margin-top:8px;padding:12px 14px;border-radius:8px;background:rgba(220,38,38,0.16);border:1px solid rgba(248,113,113,0.45);color:#fecaca;font-size:13.5px;line-height:1.5;";
+    form.appendChild(errEl);
+  }
+  return errEl;
+}
+
 function initContactAndNewsletter() {
   applyDefaultTargetSystem();
 
@@ -1017,7 +1034,7 @@ function initContactAndNewsletter() {
     btn.addEventListener("click", () => {
       const select = document.getElementById("formTargetMachine");
       const idx = parseInt(btn.getAttribute("data-target-machine"), 10);
-      if (select && !Number.isNaN(idx) && idx >= 0 && idx < select.options.length) {
+      if (select && select.options && !Number.isNaN(idx) && idx >= 0 && idx < select.options.length) {
         select.selectedIndex = idx;
       }
     });
@@ -1031,6 +1048,9 @@ function initContactAndNewsletter() {
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const labelSpan = submitBtn?.querySelector("span");
       const origText = labelSpan ? labelSpan.textContent : "";
+      const errEl = getOrCreateFormErrorEl(contactForm);
+      errEl.style.display = "none";
+      errEl.textContent = "";
 
       if (submitBtn) submitBtn.disabled = true;
       if (labelSpan) labelSpan.textContent = translations[currentLang].form_transmitting;
@@ -1059,21 +1079,26 @@ function initContactAndNewsletter() {
       };
 
       try {
-        const res = await fetch("https://formsubmit.co/ajax/furkaniusprimes@gmail.com", {
+        const res = await fetch(FORMSUBMIT_ENDPOINT, {
           method: "POST",
           headers: { "Content-Type": "application/json", Accept: "application/json" },
           body: JSON.stringify(payload)
         });
-        if (res.ok) {
-          trackAnalyticsEvent("generate_lead", { target_system: targetSystem, page_language: currentLang });
+        const data = await res.json().catch(() => null);
+        const succeeded = res.ok && (!data || (data.success !== "false" && data.success !== false));
+        if (!succeeded) {
+          throw new Error(data?.message || `HTTP ${res.status}`);
         }
-      } catch (err) {
-        console.warn("Form dispatch notice:", err);
-      } finally {
+        trackAnalyticsEvent("generate_lead", { target_system: targetSystem, page_language: currentLang });
         contactForm.style.display = "none";
         contactSuccess.classList.add("is-visible");
         contactForm.reset();
         applyDefaultTargetSystem();
+      } catch (err) {
+        console.warn("Form dispatch error:", err);
+        errEl.textContent = translations[currentLang].form_error;
+        errEl.style.display = "block";
+      } finally {
         if (submitBtn) submitBtn.disabled = false;
         if (labelSpan) labelSpan.textContent = origText;
       }
@@ -1097,11 +1122,8 @@ function initContactAndNewsletter() {
       const email = emailInput?.value?.trim();
       if (!email) return;
 
-      if (feedback) feedback.textContent = translations[currentLang].footer_news_ok;
-      nf.reset();
-
       try {
-        await fetch("https://formsubmit.co/ajax/furkaniusprimes@gmail.com", {
+        const res = await fetch(FORMSUBMIT_ENDPOINT, {
           method: "POST",
           headers: { "Content-Type": "application/json", Accept: "application/json" },
           body: JSON.stringify({
@@ -1111,7 +1133,17 @@ function initContactAndNewsletter() {
             Source: window.location.pathname
           })
         });
-      } catch (_) {}
+        const data = await res.json().catch(() => null);
+        const succeeded = res.ok && (!data || (data.success !== "false" && data.success !== false));
+        if (!succeeded) {
+          throw new Error(data?.message || `HTTP ${res.status}`);
+        }
+        if (feedback) feedback.textContent = translations[currentLang].footer_news_ok;
+        nf.reset();
+      } catch (err) {
+        console.warn("Newsletter dispatch error:", err);
+        if (feedback) feedback.textContent = translations[currentLang].footer_news_err;
+      }
     });
   });
 }
